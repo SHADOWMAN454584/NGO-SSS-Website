@@ -1,0 +1,488 @@
+.contact-page {
+  padding-top: 80px;
+}
+
+.page-hero {
+  background: linear-gradient(135deg, #FFE066 0%, #FFD23F 50%, #E8B10D 100%);
+  color: #2C2C2C;
+  padding: 6rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,101.3C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+  background-size: cover;
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.page-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.95;
+}
+
+.section {
+  padding: 5rem 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Contact Info Cards */
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.info-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.info-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.info-card h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.info-card p {
+  color: #7f8c8d;
+  line-height: 1.8;
+}
+
+/* Form Section */
+.form-section {
+  background: #f9f9f9;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.section-description {
+  color: #7f8c8d;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+}
+
+.contact-form {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333333;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #FFD23F;
+  box-shadow: 0 0 0 3px rgba(255, 210, 63, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.success-message {
+  background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.success-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.success-message p {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Form Image */
+.image-box {
+  background: linear-gradient(135deg, #84A59D 0%, #6b8a7f 100%);
+  border-radius: 20px;
+  padding: 3rem;
+  height: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-illustration {
+  text-align: center;
+  color: white;
+}
+
+.illustration-icon {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-illustration h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-illustration p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+/* Map Section */
+.map-section {
+  background: #f9f9f9;
+}
+
+.map-container {
+  height: 400px;
+  position: relative;
+}
+
+.map-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #FFFAF2 0%, #fef5e7 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #7f8c8d;
+}
+
+.map-icon {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.map-placeholder p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* FAQ Section */
+.faq-section {
+  background: white;
+}
+
+.section-heading.centered {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.faq-item {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 15px;
+  border-left: 4px solid #667eea;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.faq-item p {
+  color: #7f8c8d;
+  line-height: 1.7;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #FFD23F;
+  color: #2C2C2C;
+  font-weight: 700;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 210, 63, 0.4);
+  background: linear-gradient(135deg, #FFE066, #E8B10D);
+}
+
+.btn-large {
+  padding: 1.2rem 3rem;
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+/* Animations */
+.fade-in,
+.slide-up {
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+
+
+.fade-in.animate,
+.slide-up.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-up:nth-child(1) { transition-delay: 0.1s; }
+.slide-up:nth-child(2) { transition-delay: 0.2s; }
+.slide-up:nth-child(3) { transition-delay: 0.3s; }
+.slide-up:nth-child(4) { transition-delay: 0.4s; }
+
+/* Responsive */
+@media screen and (max-width: 968px) {
+  .page-hero {
+    padding: 5rem 1.5rem;
+  }
+
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .section {
+    padding: 4rem 1.5rem;
+  }
+
+  .contact-info-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .info-card {
+    padding: 2rem;
+  }
+
+  .form-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .image-box {
+    min-height: 300px;
+    aspect-ratio: 16/9;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+  }
+
+  .section-subheading {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page-hero {
+    padding: 4rem 1rem;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .page-subtitle {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .contact-info-grid {
+    gap: 1.5rem;
+  }
+
+  .info-card {
+    padding: 1.5rem;
+  }
+
+  .info-icon {
+    font-size: 2.5rem;
+  }
+
+  .info-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .info-card p {
+    font-size: 0.95rem;
+  }
+
+  .form-container {
+    gap: 2rem;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 0.95rem;
+    padding: 0.9rem;
+  }
+
+  .btn-large {
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+  }
+
+  .section-heading {
+    font-size: 1.8rem;
+  }
+
+  .section-subheading {
+    font-size: 0.95rem;
+  }
+
+  .faq-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .faq-item p {
+    font-size: 0.95rem;
+  }
+
+  .image-box {
+    min-height: 250px;
+  }
+}

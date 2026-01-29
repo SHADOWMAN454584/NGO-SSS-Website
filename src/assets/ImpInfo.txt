@@ -1,0 +1,5 @@
+dont try change the style, classes name or try to add 
+new elements it can disrup the page indentation 
+unitill unless you have the proper knowledge of the keywords in react
+use claude Sonnet to make changes in the code it tell you most efficient way to 
+add elements in your code, chat GPT or gemini will make mistakes for giving you the code
