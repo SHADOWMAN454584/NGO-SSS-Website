@@ -141,10 +141,7 @@ const Home = () => {
           {/* <p className="hero-subtitle">
             Empowering Communities Through Health, Hygiene, Education, and Compassionate Change for a Dignified Future
           </p> */}
-          <div className="hero-buttons">
-            <Link to="/Contact" className="btn btn-primary">Get Involved</Link>
-            <Link to="/What-We-Do" className="btn btn-secondary">Learn More</Link>
-          </div>
+          
         </div>
         <div className="scroll-indicator">
           <span>Scroll Down </span>
