@@ -519,6 +519,75 @@
   transform: translateX(5px);
 }
 
+/* Team Section */
+.team-section {
+  background: #f9f9f9;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.team-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.team-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FFD23F 0%, #E8B10D 100%);
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  flex-shrink: 0;
+}
+
+.team-card h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.team-role {
+  color: #E8B10D;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.team-bio {
+  color: #555;
+  line-height: 1.7;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: justify;
+  font-size: 1rem;
+}
+
 /* CTA Section */
 .cta-section {
   background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
@@ -831,6 +900,30 @@
     padding: 2rem;
   }
 
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+    max-width: 600px;
+  }
+
+  .team-card {
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .team-card h3,
+  .team-role,
+  .team-bio {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .team-bio {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+
   .cta-section {
     padding: 3rem 1.5rem;
   }
@@ -994,6 +1087,20 @@
 
   .work-card h3 {
     font-size: 1.3rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .team-card {
+    padding: 1.5rem;
+  }
+
+  .team-bio {
+    text-align: left;
+    font-size: 0.9rem;
   }
 
   .cta-section {
