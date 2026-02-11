@@ -161,10 +161,11 @@ const Home = () => {
             <div className="section-content">
               <h2 className="section-title">Who We Are</h2>
               <p className="section-text">
-                Selfless Serving Society was founded by a group of compassionate individuals united by a simple yet profound belief — that awareness of basic health and hygiene has the power to transform lives and uplift entire communities. In many underserved regions, limited access to essential health supplies, minimal exposure to hygienic practices, and the absence of regular outreach efforts allow preventable illnesses to silently persist — often affecting women, children, and the elderly the most.
+                Selfless Serving Society was born from a shared belief: basic health and hygiene knowledge can change lives and strengthen entire communities. In many underserved areas, lack of access to essential health supplies and minimal awareness of simple hygienic practices allow preventable illnesses to quietly impact families — especially women, children, and the elderly.
+
               </p>
               <p className="section-text">
-                We are a non-governmental, non-profit organisation dedicated to closing this gap. Through outreach programs, workshops, seminars, talks, and distribution of health-related products, we strive to empower people with knowledge, tools, and habits that help them live healthier, more dignified lives.
+                We are a non-governmental, non-profit organization committed to closing this gap. Through outreach programs, workshops, seminars, talks, and distribution of health products, we equip people with the knowledge and tools they need to live healthier, happier, and more dignified lives.
               </p>
               <Link to="/About" className="btn btn-link">
                 Learn About Us →
