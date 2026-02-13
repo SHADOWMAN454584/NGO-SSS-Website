@@ -183,12 +183,20 @@ const Home = () => {
             Dedicated leaders guiding our mission with expertise and compassion
           </p>
           <div className="team-grid">
+            <div className="team-card ">
+              <div className="team-photo">👤</div>
+              <h3>Konica Lishoy</h3>
+              <p className="team-role">Trustee</p>
+              <p className="team-bio">
+                KoNica Lishoy holds a diploma in Commercial Art. After working professionally, she took a break for motherhood. Her experience with the Teach for India project inspired her to support underprivileged children and women. After several years with an NGO, she founded the Selfless Serving Society, bringing her experience and compassion to its work.
+              </p>
+            </div>
             <div className="team-card">
               <div className="team-photo">👤</div>
               <h3>Nasreen Rishi Madaan</h3>
               <p className="team-role">Trustee</p>
               <p className="team-bio">
-                Nasreen Rishi Madaan holds a Master’s degree in Economics and brings valuable experience from a successful career in banking. As a Trustee of the Selfless Serving Society, she contributes her financial insight, practical wisdom, and compassionate approach to the organisation’s initiatives. A homemaker and mother of two, Nasreen balances her professional and personal pursuits while supporting the Society’s mission to empower communities.
+                Nasreen Rishi Madaan holds a Master’s degree in Economics and has a successful background in banking. As a Trustee of the Selfless Serving Society, she offers financial expertise and a compassionate perspective to its initiatives. A homemaker and mother of two, she actively supports the organisation’s mission to empower communities.
               </p>
             </div>
             <div className="team-card ">
@@ -196,7 +204,7 @@ const Home = () => {
               <h3>Sunita Fernandes</h3>
               <p className="team-role">Trustee</p>
               <p className="team-bio">
-                Sunita Fernandes holds a Post Graduate Diploma in Human Resources and brings nearly two decades of global experience across East Africa and India. An accomplished HR professional, she has led initiatives in people development, organisational transformation, and culture alignment. As Trustee, Sunita applies her expertise to foster a positive, people-centered approach in the Society’s operations and outreach programs.
+                Sunita Fernandes holds a Post Graduate Diploma in Human Resources and has nearly 20 years of experience across East Africa and India. As a Trustee, she brings her HR expertise and a people-centered approach to support the Society’s programs and operations.
               </p>
             </div>
             <div className="team-card ">
@@ -204,7 +212,7 @@ const Home = () => {
               <h3>Mamata Hulke John</h3>
               <p className="team-role">Trustee</p>
               <p className="team-bio">
-                Mamata Hulke John holds degrees in Commerce (B.Com), Physical Education (B.P.Ed), and Sports Management. A teacher turned entrepreneur with a growing interest in finance, she brings creativity, energy, and a people-focused approach to her role as Trustee. Her educational background and management experience enable her to contribute effectively to the organisation’s programs and social initiatives
+                Mamata Hulke John holds degrees in Commerce, Physical Education, and Sports Management. A teacher turned entrepreneur with an interest in finance, she brings energy and a people-focused approach as a Trustee, contributing effectively to the organisation’s programs and initiatives.
               </p>
             </div>
             <div className="team-card ">
@@ -212,7 +220,7 @@ const Home = () => {
               <h3>Pooja Nirala</h3>
               <p className="team-role">Trustee</p>
               <p className="team-bio">
-                Pooja Nirala holds a Master’s degree in Accounts and Finance and has over ten years of professional experience as a Senior Accountant. Passionate about social development, she has actively volunteered with several NGOs. As a Trustee, she leverages her financial expertise and commitment to community welfare to support the Selfless Serving Society’s mission of creating meaningful impact.
+                Pooja Nirala holds a Master’s degree in Accounts and Finance and has over ten years of experience as a Senior Accountant. As a Trustee, she uses her financial expertise and passion for social development to support the Selfless Serving Society’s mission.
               </p>
             </div>
             <div className="team-card ">
@@ -220,7 +228,7 @@ const Home = () => {
               <h3>Catherine Mrinal Dutta</h3>
               <p className="team-role">Trustee</p>
               <p className="team-bio">
-                Catherine Mrinal Dutta, the most senior member of the Trust, brings extensive experience, wisdom, and compassion. Hailing from Goa and raised by a single parent, she embodies resilience and empathy. Having witnessed the challenges faced by women and children firsthand, she contributes through ideation, guidance, and active support in every possible way. After a fulfilling career with a leading newspaper, she now dedicates her time to empowering women and children through the Society’s initiatives.
+                Catherine Mrinal Dutta, the senior-most Trustee, brings deep experience, resilience, and compassion. After a career with a leading newspaper, she now dedicates her time to supporting and empowering women and children through the Society’s initiatives.
               </p>
             </div>
             <div className="team-card ">
@@ -228,15 +236,7 @@ const Home = () => {
               <h3>Lishoy George</h3>
               <p className="team-role">Trustee</p>
               <p className="team-bio">
-                Lishoy George holds a degree from a reputed art college and brings over two decades of experience in the advertising industry. Currently associated with a leading advertising agency, he combines his creative expertise with strategic insight to support the initiatives and outreach programs of the Society. Driven by a strong commitment to giving back to society, he plays a key role in advancing the organisation’s mission.
-              </p>
-            </div>
-            <div className="team-card ">
-              <div className="team-photo">👤</div>
-              <h3>Konica Lishoy</h3>
-              <p className="team-role">Trustee</p>
-              <p className="team-bio">
-                Konica Lishoy holds a diploma in Commercial Art. After a professional career, she took a break to focus on motherhood. Her involvement with the Teach for India project, visiting underserved schools and interacting with parents, especially mothers, inspired her to work for children and women in need. Following several years with an NGO, she founded the Selfless Serving Society, bringing experience, knowledge, and a compassionate approach to the organisation’s programs.
+                Lishoy George holds a degree from a reputed art college and has over 20 years of experience in advertising. Currently working with a leading agency, he uses his creative and strategic expertise to support the Society’s initiatives and outreach efforts, contributing actively to its mission.
               </p>
             </div>
           </div>
