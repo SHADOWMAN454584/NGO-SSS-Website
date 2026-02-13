@@ -178,7 +178,7 @@ const Home = () => {
       
       <section className="section team-section">
         <div className="container">
-          <h2 className="section-heading centered">Our Trustees</h2>
+          <h2 className="section-heading centered">Our Pillars</h2>
           <p className="section-subheading centered">
             Dedicated leaders guiding our mission with expertise and compassion
           </p>
@@ -237,6 +237,66 @@ const Home = () => {
               <p className="team-role">Trustee</p>
               <p className="team-bio">
                 Lishoy George holds a degree from a reputed art college and has over 20 years of experience in advertising. Currently working with a leading agency, he uses his creative and strategic expertise to support the Society’s initiatives and outreach efforts, contributing actively to its mission.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Guiding Light Section */}
+      <section className="section team-section">
+        <div className="container">
+          <h2 className="section-heading centered">Our Guiding Light</h2>
+          <p className="section-subheading centered">
+            Dedicated leaders guiding our mission with expertise and compassion
+          </p>
+          <div className="team-grid">
+            <div className="team-card">
+              <div className="team-photo">👤</div>
+              <h3>Vivek Kamble</h3>
+              <p className="team-role">Guiding Member</p>
+              <p className="team-bio">
+                MSc. With over 21 years of experience in the biopharmaceutical and healthcare industry. works with a leading clinical research organization dedicated to patient safety and well-being.
+              </p>
+            </div>
+            <div className="team-card">
+              <div className="team-photo">👤</div>
+              <h3>Apurva Kulkarni</h3>
+              <p className="team-role">Guiding Member--</p>
+              <p className="team-bio">
+                Brief biography and background information about this guiding light member. Their experience, qualifications, and contribution to the organization's mission and vision.
+              </p>
+            </div>
+            <div className="team-card">
+              <div className="team-photo">👤</div>
+              <h3>Mahima Raval</h3>
+              <p className="team-role">Guiding Member</p>
+              <p className="team-bio">
+                Master's in Biotechnology, experienced in treatment counselling, and conducting sessions with respect to women health & hygiene, environment and surroundings hygiene.
+              </p>
+            </div>
+            <div className="team-card">
+              <div className="team-photo">👤</div>
+              <h3>Lalita Jaykrishnan</h3>
+              <p className="team-role">Guiding Member</p>
+              <p className="team-bio">
+                BA Entrepreneur Life Style Bags Manufacturing Also dealing in Natural Gas (petroleum sector) Love to explore new things, travelling, and gardening.
+              </p>
+            </div>
+            <div className="team-card">
+              <div className="team-photo">👤</div>
+              <h3>Kirti</h3>
+              <p className="team-role">Guiding Member--</p>
+              <p className="team-bio">
+                Brief biography and background information about this guiding light member. Their experience, qualifications, and contribution to the organization's mission and vision.
+              </p>
+            </div>
+            <div className="team-card">
+              <div className="team-photo">👤</div>
+              <h3>Gauri Chapekar</h3>
+              <p className="team-role">Guiding Member</p>
+              <p className="team-bio">
+                Masters in Counselling Psychology, Certified in many therapies like CBT, REBT, DBT, Inner child healing etc.
               </p>
             </div>
           </div>
