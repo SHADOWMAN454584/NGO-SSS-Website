@@ -293,9 +293,10 @@ const CaseStudies = () => {
               <button className="modal-arrow modal-arrow-left" onClick={prevModalPhoto}>
                 ‹
               </button>
+              
               <img
                 src={allCaseStudy1Photos[modalPhotoIndex]}
-                alt={`Case Study 1 Gallery - Photo ${modalPhotoIndex + 1}`}
+                alt={`Case Study 1 Gallery ${modalPhotoIndex + 1}`}
                 className="modal-image"
               />
               <button className="modal-arrow modal-arrow-right" onClick={nextModalPhoto}>
@@ -514,8 +515,8 @@ const CaseStudies = () => {
                   {study.id === 1 && (
                     <div className="show-more-container">
                       <button className="show-more-button" onClick={openModal}>
-                        <span className="button-icon">📸</span>
-                        More Photos
+                        {/* <span className="button-icon"></span> */}
+                        More Photos...
                       </button>
                     </div>
                   )}
