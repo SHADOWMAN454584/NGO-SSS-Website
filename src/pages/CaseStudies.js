@@ -210,12 +210,46 @@ const CaseStudies = () => {
     {
       id: 1,
       title: "Skill Development: Building Confidence, Creating Independence",
-      location: "Runwal Elegante, Mumbai",
-      year: "2024",
+      location: "",
+      year: "",
       image: "💫",
       photos: caseStudy1Photos,
+      overview: "This initiative focuses on empowering young rural girls and women through structured vocational skill development programs that create sustainable livelihood opportunities and long-term economic independence.",
       challenge: "Due to limited access to education and livelihood opportunities, many young rural girls face significant barriers to personal and economic growth. Financial constraints and the distance of schools further exacerbate these challenges, leaving them with few avenues to develop practical skills or earn a sustainable income.",
-      solution: "Skill Development for Economic Independence through structured vocational training in stitching, tailoring, handcraft, and jewelry-making, combined with urban market access and online selling guidance.",
+      objectives: [
+        "Provide accessible vocational skill training to rural girls and women",
+        "Encourage interest-based skill development",
+        "Create pathways for sustainable income generation",
+        "Build long-term financial independence and self-confidence"
+      ],
+      solution: "Skill Development for Economic Independence",
+      implementationStrategy: [
+        "Organized women and girls into focused groups of 10–15 participants",
+        "Aligned training programs with individual interests and skill potential",
+        "Collaborated with local tailoring classes",
+        "Partnered with hand-craft and jewelry-making centers",
+        "Provided structured hands-on vocational training"
+      ],
+      trainingModules: {
+        stitchingAndTailoring: [
+          "Training in stitching techniques",
+          "Creation of quality blouses, bags, dresses, and tailored products",
+          "Skill-building for independent order-based work"
+        ],
+        handcraftAndJewelryMaking: [
+          "Training in handwork and creative design",
+          "Jewelry-making skills development",
+          "Product finishing and quality improvement"
+        ]
+      },
+      participantEngagement: "The response was highly positive — participants showed strong engagement, quickly learned practical skills, and began producing finished products with confidence.",
+      economicEnablement: [
+        "Finished products transported to urban markets for sale at reasonable prices",
+        "Income generation opportunities created for participants",
+        "Guidance provided on online selling platforms",
+        "Support for expanding market reach",
+        "Encouragement to build sustainable micro-enterprises"
+      ],
       impact: [
         "30+ participants completed stitching training and are now working independently",
         "12+ participants progressing toward becoming professional bag designers",
@@ -224,6 +258,12 @@ const CaseStudies = () => {
         "60% started earning through small stitching orders",
         "Urban market access enabled and guidance on online selling provided",
         "Increased confidence, financial independence, and community pride"
+      ],
+      longTermOutcomes: [
+        "Enhanced self-reliance among rural women and girls",
+        "Improved economic stability within families",
+        "Development of entrepreneurial mindset",
+        "Strengthened community empowerment ecosystem"
       ]
     },
 
@@ -522,15 +562,107 @@ const CaseStudies = () => {
                   )}
 
                   <div className="case-study-content">
+                    {/* Overview (CS1) */}
+                    {study.overview && (
+                      <div className="case-study-section">
+                        <h4>Overview</h4>
+                        <p>{study.overview}</p>
+                      </div>
+                    )}
+
                     <div className="case-study-section">
                       <h4>The Challenge</h4>
                       <p>{study.challenge}</p>
                     </div>
 
+                    {/* Objectives (CS1) */}
+                    {study.objectives && (
+                      <div className="case-study-section">
+                        <h4>Objectives</h4>
+                        <ul className="impact-list">
+                          {study.objectives.map((item, idx) => (
+                            <li key={idx}>
+                              <span className="check-icon">✓</span>
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
                     <div className="case-study-section">
                       <h4>Our Solution</h4>
                       <p>{study.solution}</p>
                     </div>
+
+                    {/* Implementation Strategy (CS1) */}
+                    {study.implementationStrategy && (
+                      <div className="case-study-section">
+                        <h4>Implementation Strategy</h4>
+                        <ul className="impact-list">
+                          {study.implementationStrategy.map((item, idx) => (
+                            <li key={idx}>
+                              <span className="check-icon">✓</span>
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {/* Training Modules (CS1) */}
+                    {study.trainingModules && (
+                      <div className="case-study-section">
+                        <h4>Training Modules</h4>
+                        <div className="training-modules">
+                          <div className="training-module">
+                            <h5>Stitching & Tailoring</h5>
+                            <ul className="impact-list">
+                              {study.trainingModules.stitchingAndTailoring.map((item, idx) => (
+                                <li key={idx}>
+                                  <span className="check-icon">✓</span>
+                                  {item}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                          <div className="training-module">
+                            <h5>Handcraft & Jewelry Making</h5>
+                            <ul className="impact-list">
+                              {study.trainingModules.handcraftAndJewelryMaking.map((item, idx) => (
+                                <li key={idx}>
+                                  <span className="check-icon">✓</span>
+                                  {item}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Participant Engagement (CS1) */}
+                    {study.participantEngagement && (
+                      <div className="case-study-section">
+                        <h4>Participant Engagement</h4>
+                        <p>{study.participantEngagement}</p>
+                      </div>
+                    )}
+
+                    {/* Economic Enablement (CS1) */}
+                    {study.economicEnablement && (
+                      <div className="case-study-section">
+                        <h4>Economic Enablement</h4>
+                        <ul className="impact-list">
+                          {study.economicEnablement.map((item, idx) => (
+                            <li key={idx}>
+                              <span className="check-icon">✓</span>
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
 
                     <div className="case-study-section">
                       <h4>Impact Achieved</h4>
@@ -543,6 +675,21 @@ const CaseStudies = () => {
                         ))}
                       </ul>
                     </div>
+
+                    {/* Long-Term Outcomes (CS1) */}
+                    {study.longTermOutcomes && (
+                      <div className="case-study-section">
+                        <h4>Long-Term Outcomes</h4>
+                        <ul className="impact-list">
+                          {study.longTermOutcomes.map((item, idx) => (
+                            <li key={idx}>
+                              <span className="check-icon">✓</span>
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
                 </>
               )}

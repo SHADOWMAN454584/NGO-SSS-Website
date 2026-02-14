@@ -347,6 +347,34 @@
   line-height: 1.5;
 }
 
+/* Training Modules */
+.training-modules {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 8px;
+}
+
+.training-module {
+  background: #FFFBEA;
+  border-radius: 10px;
+  padding: 16px;
+  border-left: 3px solid #FFD23F;
+}
+
+.training-module h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .training-modules {
+    grid-template-columns: 1fr;
+  }
+}
+
 .check-icon {
   background: #FFD23F;
   color: #2C2C2C;
