@@ -151,20 +151,22 @@ const CaseStudies = () => {
   const caseStudies = [
     {
       id: 1,
-      title: "Empowering Women and Communities through Handcrafted Creations",
+      title: "Skill Development: Building Confidence, Creating Independence",
       location: "Runwal Elegante, Mumbai",
       year: "2024",
       image: "💫",
       photos: caseStudy1Photos,
-      challenge: "Limited livelihood opportunities for tribal women and individuals with physical challenges",
-      solution: "Participated in an All-Women Entrepreneurs Exhibition, showcasing handcrafted Diwali diyas, decorative items, jute bags, incense sticks, masalas, and eco-friendly baskets — all made by marginalized artisans",
+      challenge: "Due to limited access to education and livelihood opportunities, many young rural girls face significant barriers to personal and economic growth. Financial constraints and the distance of schools further exacerbate these challenges, leaving them with few avenues to develop practical skills or earn a sustainable income.",
+      solution: "Skill Development for Economic Independence through structured vocational training in stitching, tailoring, handcraft, and jewelry-making, combined with urban market access and online selling guidance.",
       impact: [
-        "120 corporate diya orders received",
-        "100% sales proceeds directed towards adolescent girls' health & hygiene programs",
-        "50+ women artisans gained sustainable income",
-        "Strengthened self-reliance & community pride"
+        "30+ participants completed stitching training and are now working independently",
+        "12+ participants progressing toward becoming professional bag designers",
+        "16+ participants engaged in jewelry-making as a livelihood activity",
+        "Urban market access enabled and guidance on online selling provided",
+        "Increased confidence, financial independence, and community pride"
       ]
     },
+
     {
       id: 2,
       title: "KAPAAD Project: Turning Compassion into Sustainable Action",
