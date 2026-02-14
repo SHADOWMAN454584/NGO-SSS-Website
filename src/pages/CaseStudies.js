@@ -15,7 +15,39 @@ const caseStudy1Photos = [
   require('../assets/Case Study 1/cs1 10.jpg'),
   require('../assets/Case Study 1/cs1 11.jpg'),
   require('../assets/Case Study 1/cs1 12.jpg'),
+  require('../assets/Case Study 3/cs3 1.jpg'),
+  require('../assets/Case Study 3/cs3 2.jpg'),
+  require('../assets/Case Study 3/cs3 3.jpg'),
+  require('../assets/Case Study 3/cs3 4.jpg'),
+  require('../assets/Case Study 3/cs3 5.jpg'),
+  require('../assets/Case Study 3/cs3 6.jpg'),
+  require('../assets/Case Study 3/cs3 7.jpg'),
+  require('../assets/Case Study 3/cs3 8.jpg'),
 ];
+
+// Import photos for CS1 Gallery (additional photos)
+const caseStudy1GalleryPhotos = [
+  require('../assets/Case Study 1/CS1Gallery/cs1g1.jpeg'),
+  require('../assets/Case Study 1/CS1Gallery/cs1g2.jpeg'),
+  require('../assets/Case Study 1/CS1Gallery/cs1g3.jpeg'),
+  require('../assets/Case Study 1/CS1Gallery/cs1g4.jpeg'),
+  require('../assets/Case Study 1/CS1Gallery/cs1g5.jpeg'),
+  require('../assets/Case Study 1/CS1Gallery/cs1g6.jpeg'),
+  require('../assets/Case Study 1/CS1Gallery/cs1g7.jpeg'),
+  require('../assets/Case Study 1/CS1Gallery/cs1g8.jpeg'),
+  require('../assets/Case Study 1/CS1Gallery/cs1g9.jpeg'),
+  require('../assets/Case Study 1/CS1Gallery/cs1g10.jpeg'),
+  require('../assets/Case Study 1/CS1Gallery/cs1g12.jpeg'),
+  require('../assets/Case Study 1/CS1Gallery/cs1g13.jpeg'),
+  require('../assets/Case Study 1/CS1Gallery/cs1g14.jpeg'),
+  require('../assets/Case Study 1/CS1Gallery/cs1g15.jpeg'),
+  require('../assets/Case Study 1/CS1Gallery/cs1g16.jpeg'),
+  require('../assets/Case Study 1/CS1Gallery/cs1g17.jpeg'),
+  require('../assets/Case Study 1/CS1Gallery/cs1g18.jpeg'),
+];
+
+// Combine all photos for the modal gallery
+const allCaseStudy1Photos = [...caseStudy1Photos, ...caseStudy1GalleryPhotos];
 
 // Import photos for case study 2
 const caseStudy2Photos = [
@@ -65,6 +97,8 @@ const CaseStudies = () => {
   const [currentPhotoIndexCS2, setCurrentPhotoIndexCS2] = useState(0);
   const [currentPhotoIndexCS3, setCurrentPhotoIndexCS3] = useState(0);
   const [currentPhotoIndexCS4, setCurrentPhotoIndexCS4] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalPhotoIndex, setModalPhotoIndex] = useState(0);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -148,6 +182,30 @@ const CaseStudies = () => {
     );
   };
 
+  // Modal handlers
+  const openModal = () => {
+    setIsModalOpen(true);
+    setModalPhotoIndex(0);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    document.body.style.overflow = 'auto';
+  };
+
+  const nextModalPhoto = () => {
+    setModalPhotoIndex((prevIndex) => 
+      (prevIndex + 1) % allCaseStudy1Photos.length
+    );
+  };
+
+  const prevModalPhoto = () => {
+    setModalPhotoIndex((prevIndex) => 
+      prevIndex === 0 ? allCaseStudy1Photos.length - 1 : prevIndex - 1
+    );
+  };
+
   const caseStudies = [
     {
       id: 1,
@@ -162,6 +220,8 @@ const CaseStudies = () => {
         "30+ participants completed stitching training and are now working independently",
         "12+ participants progressing toward becoming professional bag designers",
         "16+ participants engaged in jewelry-making as a livelihood activity",
+        "20 girls trained and certified in tailoring",
+        "60% started earning through small stitching orders",
         "Urban market access enabled and guidance on online selling provided",
         "Increased confidence, financial independence, and community pride"
       ]
@@ -183,22 +243,22 @@ const CaseStudies = () => {
         "Promoted sustainability and social responsibility within communities"
       ]
     },
-    {
-      id: 3,
-      title: "Empowering Rural Girls Through Tailoring Training",
-      location: "Rural Villages, Gujarat",
-      year: "2023",
-      image: "👧",
-      photos: caseStudy3Photos,
-      challenge: "Limited access to education and livelihood opportunities for young rural girls due to financial constraints and distant schools.",
-      solution: "Collaborated with a local tailoring center under the JOG initiative and sponsored two training batches for 20 girls, providing 3-month hands-on instruction in stitching and garment-making.",
-      impact: [
-        "20 girls trained and certified in tailoring",
-        "60% started earning through small stitching orders",
-        "Improved confidence and financial independence",
-        "Ongoing expansion to new rural communities"
-      ]
-    },
+    // {
+    //   id: 3,
+    //   title: "Empowering Rural Girls Through Tailoring Training",
+    //   location: "Rural Villages, Gujarat",
+    //   year: "2023",
+    //   image: "👧",
+    //   photos: caseStudy3Photos,
+    //   challenge: "Limited access to education and livelihood opportunities for young rural girls due to financial constraints and distant schools.",
+    //   solution: "Collaborated with a local tailoring center under the JOG initiative and sponsored two training batches for 20 girls, providing 3-month hands-on instruction in stitching and garment-making.",
+    //   impact: [
+    //     "20 girls trained and certified in tailoring",
+    //     "60% started earning through small stitching orders",
+    //     "Improved confidence and financial independence",
+    //     "Ongoing expansion to new rural communities"
+    //   ]
+    // },
     {
       id: 4,
       title: "Flood Relief at Rasikpur Village",
@@ -222,6 +282,33 @@ const CaseStudies = () => {
 
   return (
     <div className="case-studies-page">
+      {/* Modal Gallery */}
+      {isModalOpen && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={closeModal}>
+              ×
+            </button>
+            <div className="modal-slider">
+              <button className="modal-arrow modal-arrow-left" onClick={prevModalPhoto}>
+                ‹
+              </button>
+              <img
+                src={allCaseStudy1Photos[modalPhotoIndex]}
+                alt={`Case Study 1 Gallery - Photo ${modalPhotoIndex + 1}`}
+                className="modal-image"
+              />
+              <button className="modal-arrow modal-arrow-right" onClick={nextModalPhoto}>
+                ›
+              </button>
+            </div>
+            <div className="modal-info">
+              <p>{modalPhotoIndex + 1} / {allCaseStudy1Photos.length}</p>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Hero Section */}
       <section className="page-hero">
         <div className="page-hero-content">
@@ -420,6 +507,16 @@ const CaseStudies = () => {
                           ></span>
                         ))}
                       </div>
+                    </div>
+                  )}
+
+                  {/* Show More Button for Case Study 1 */}
+                  {study.id === 1 && (
+                    <div className="show-more-container">
+                      <button className="show-more-button" onClick={openModal}>
+                        <span className="button-icon">📸</span>
+                        More Photos
+                      </button>
                     </div>
                   )}
 

@@ -467,6 +467,179 @@
   transform: translateY(0);
 }
 
+/* Show More Button */
+.show-more-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.show-more-button {
+  background: linear-gradient(135deg, #FFD23F 0%, #E8B10D 100%);
+  color: #2C2C2C;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 210, 63, 0.3);
+}
+
+.show-more-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 210, 63, 0.5);
+  background: linear-gradient(135deg, #FFE066, #FFD23F);
+}
+
+.show-more-button .button-icon {
+  font-size: 1.2rem;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  line-height: 1;
+  padding-bottom: 5px;
+  backdrop-filter: blur(10px);
+}
+
+.modal-close:hover {
+  background: rgba(255, 210, 63, 0.8);
+  transform: rotate(90deg);
+  color: #2C2C2C;
+}
+
+.modal-slider {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 75vh;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.modal-arrow {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  font-size: 3.5rem;
+  width: 70px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+.modal-arrow:hover {
+  background: rgba(255, 210, 63, 0.7);
+  transform: scale(1.1);
+  color: #2C2C2C;
+}
+
+.modal-arrow-left {
+  left: 0;
+  border-radius: 0 12px 12px 0;
+  padding-bottom: 8px;
+}
+
+.modal-arrow-right {
+  right: 0;
+  border-radius: 12px 0 0 12px;
+  padding-bottom: 8px;
+}
+
+.modal-info {
+  margin-top: 20px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 24px;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+}
+
+.modal-info p {
+  margin: 0;
+}
+
 /* Responsive Design */
 @media (max-width: 968px) {
   .page-hero {
@@ -640,6 +813,35 @@
     width: 100%;
     max-width: 300px;
   }
+
+  /* Modal responsive styles */
+  .modal-close {
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+  }
+
+  .modal-arrow {
+    width: 50px;
+    height: 80px;
+    font-size: 2.5rem;
+  }
+
+  .modal-image {
+    max-height: 65vh;
+  }
+
+  .modal-info {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .show-more-button {
+    padding: 12px 28px;
+    font-size: 0.95rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -772,5 +974,52 @@
   .cta-button {
     padding: 1rem 2rem;
     font-size: 0.95rem;
+  }
+
+  /* Modal responsive styles for small mobile */
+  .modal-overlay {
+    padding: 10px;
+  }
+
+  .modal-close {
+    top: 5px;
+    right: 5px;
+    width: 35px;
+    height: 35px;
+    font-size: 1.8rem;
+  }
+
+  .modal-arrow {
+    width: 45px;
+    height: 70px;
+    font-size: 2rem;
+  }
+
+  .modal-arrow-left {
+    left: 0;
+  }
+
+  .modal-arrow-right {
+    right: 0;
+  }
+
+  .modal-image {
+    max-height: 60vh;
+    border-radius: 8px;
+  }
+
+  .modal-info {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    margin-top: 15px;
+  }
+
+  .show-more-button {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+
+  .show-more-button .button-icon {
+    font-size: 1rem;
   }
 }
