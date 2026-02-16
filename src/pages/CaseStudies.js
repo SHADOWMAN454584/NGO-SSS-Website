@@ -340,7 +340,7 @@ const CaseStudies = () => {
           ]
         },
         {
-          initiativeTitle: "Initiative 2: Monsoon Support for the Old Age Home",
+          initiativeTitle: "Monsoon Support for the Old Age Home",
           challenge: "During the monsoon season, the old age home experienced acute shortages of essential medicines and adult diapers, critical for maintaining health, hygiene, and dignity among elderly residents. Due to monsoon-related accessibility challenges and limited resources, the facility was unable to meet these needs independently.",
           objectives: [
             "Provide essential medical supplies during monsoon",
