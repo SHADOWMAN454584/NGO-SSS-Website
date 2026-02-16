@@ -3,32 +3,29 @@ import './CaseStudies.css';
 
 // Import photos for case study 1
 const caseStudy1Photos = [
-  require('../assets/Case Study 1/cs1 1.jpg'),
+  // require('../assets/Case Study 1/cs1 1.jpg'),
+  require('../assets/Case Study 1/CS1Gallery/cs1g2.jpeg'),//imp for front
   require('../assets/Case Study 1/cs1 2.jpg'),
   require('../assets/Case Study 1/cs1 3.jpg'),
   require('../assets/Case Study 1/cs1 4.jpg'),
   require('../assets/Case Study 1/cs1 5.jpg'),
   require('../assets/Case Study 1/cs1 6.jpg'),
-  // require('../assets/Case Study 1/cs1 7.jpg'),
-  require('../assets/Case Study 1/cs1 8.jpg'),
+  require('../assets/Case Study 1/cs1 7.jpg'),
+  // require('../assets/Case Study 1/cs1 8.jpg'), no pad
   require('../assets/Case Study 1/cs1 9.jpg'),
-  require('../assets/Case Study 1/cs1 10.jpg'),
+  // require('../assets/Case Study 1/cs1 10.jpg'),
   require('../assets/Case Study 1/cs1 11.jpg'),
   require('../assets/Case Study 1/cs1 12.jpg'),
-  require('../assets/Case Study 3/cs3 1.jpg'),
-  require('../assets/Case Study 3/cs3 2.jpg'),
-  require('../assets/Case Study 3/cs3 3.jpg'),
-  require('../assets/Case Study 3/cs3 4.jpg'),
-  require('../assets/Case Study 3/cs3 5.jpg'),
-  require('../assets/Case Study 3/cs3 6.jpg'),
-  require('../assets/Case Study 3/cs3 7.jpg'),
-  require('../assets/Case Study 3/cs3 8.jpg'),
+  require('../assets/Case Study 1/cs1 13.jpg'),
+  require('../assets/Case Study 1/cs1 14.jpg'),
+  // require('../assets/Case Study 1/cs1 15.jpg'), no pad
+  // require('../assets/Case Study 1/cs1 16.jpg'), no pad
 ];
 
 // Import photos for CS1 Gallery (additional photos)
 const caseStudy1GalleryPhotos = [
   require('../assets/Case Study 1/CS1Gallery/cs1g1.jpeg'),
-  require('../assets/Case Study 1/CS1Gallery/cs1g2.jpeg'),
+  //require('../assets/Case Study 1/CS1Gallery/cs1g2.jpeg'), no dupicates
   require('../assets/Case Study 1/CS1Gallery/cs1g3.jpeg'),
   require('../assets/Case Study 1/CS1Gallery/cs1g4.jpeg'),
   require('../assets/Case Study 1/CS1Gallery/cs1g5.jpeg'),
@@ -60,19 +57,11 @@ const caseStudy2Photos = [
 
 // Import photos for case study 3
 const caseStudy3Photos = [
-  require('../assets/Case Study 3/cs3 1.jpg'),
-  require('../assets/Case Study 3/cs3 2.jpg'),
-  require('../assets/Case Study 3/cs3 3.jpg'),
-  require('../assets/Case Study 3/cs3 4.jpg'),
-  require('../assets/Case Study 3/cs3 5.jpg'),
-  require('../assets/Case Study 3/cs3 6.jpg'),
-  require('../assets/Case Study 3/cs3 7.jpg'),
-  require('../assets/Case Study 3/cs3 8.jpg'),
+
 ];
 
-// Import photos for case study 4 (using placeholder images for now)
-// Replace these with actual Case Study 4 photos when available
-const caseStudy4Photos = [
+// Import photos for Emergency Relief & Compassionate Care Initiatives
+const caseStudy4Photo = [
   require('../assets/Case Study 4/cs4 1.jpg'),
   require('../assets/Case Study 4/cs4 2.jpg'),
   require('../assets/Case Study 4/cs4 3.jpg'),
@@ -172,13 +161,13 @@ const CaseStudies = () => {
   // Navigation handlers for Case Study 4
   const nextPhotoCS4 = () => {
     setCurrentPhotoIndexCS4((prevIndex) => 
-      (prevIndex + 1) % caseStudy4Photos.length
+      (prevIndex + 1) % caseStudy4Photo.length
     );
   };
 
   const prevPhotoCS4 = () => {
     setCurrentPhotoIndexCS4((prevIndex) => 
-      prevIndex === 0 ? caseStudy4Photos.length - 1 : prevIndex - 1
+      prevIndex === 0 ? caseStudy4Photo.length - 1 : prevIndex - 1
     );
   };
 
@@ -264,7 +253,15 @@ const CaseStudies = () => {
         "Improved economic stability within families",
         "Development of entrepreneurial mindset",
         "Strengthened community empowerment ecosystem"
-      ]
+      ],
+      underDevelopment: [
+        "Support for expanding market reach",
+        "Encouragement to build sustainable micro-enterprises",
+        "Creation of cooperative models for collective marketing",
+        "Urban market access enabled and guidance on online selling provided",
+        "Increased confidence, financial independence, and community pride"
+      ],
+      note: ""
     },
 
     {
@@ -301,21 +298,83 @@ const CaseStudies = () => {
     // },
     {
       id: 4,
-      title: "Flood Relief at Rasikpur Village",
-      location: "Rasikpur Village, Gujarat",
-      year: "During Navratri 2023",
-      image: "🩺",
-      photos: caseStudy4Photos,
-      challenge: "Sudden flooding from the Sabarmati River left homes submerged, crops damaged, and families without food, clean water, or essential supplies.",
-      solution: "Launched the “Anna Daan” Flood Relief Drive, mobilizing volunteers and residents to collect and distribute food grains and necessities to flood-affected families while ensuring support reached unreached households.",
-      impact: [
-        "650 kg of food grains collected through community donations500+ hygiene kits distributed",
-        "350 kg distributed to flood-affected families in Rasikpur",
-        "Improved menstrual health knowledge among beneficiaries",
-        "Over 120+ families received immediate relief support",
-        "Strengthened community participation through the Anna Daan initiative",
-        "Promoted empathy and unity during crisis response",
-        "Inspired ongoing partnerships for future disaster relief efforts"
+      title: "Anna Daan Flood Relief Drive",
+      location: "Flood-Affected Village & Supporting Institutions",
+      year: "2024",
+      image: "🌧️",
+      photos: caseStudy4Photo,
+      overview: "This case study highlights two compassionate emergency response initiatives — the Anna Daan Flood Relief Drive and the Monsoon Medical & Hygiene Support Initiative — aimed at supporting vulnerable communities affected by natural disaster and seasonal challenges.",
+      initiatives: [
+        {
+          initiativeTitle: "Anna Daan Flood Relief Drive",
+          challenge: "Sudden and severe flooding from the river left numerous homes submerged, crops destroyed, and families without access to essential food, clean water, or basic supplies. Many affected households were isolated and unable to access relief independently.",
+          objectives: [
+            "Provide immediate food assistance to flood-affected families",
+            "Ensure relief reaches remote and hard-to-access areas",
+            "Support vulnerable institutions affected by the disaster",
+            "Strengthen community solidarity during crisis"
+          ],
+          solution: "Launch of the 'Anna Daan' Drive — a focused relief effort to collect and distribute food grains and essential supplies to flood-affected families through coordinated volunteer action.",
+          implementationStrategy: [
+            "Mobilized volunteers and community members",
+            "Collected food grains and essential supplies",
+            "Prioritized severely affected areas",
+            "Ensured timely and organized distribution",
+            "Extended support to vulnerable institutions"
+          ],
+          reliefDistributionOverview: {
+            totalCollection: "Approximately 650 kg of food grains and essential food items collected and distributed",
+            distributionBreakdown: [
+              "Major portion distributed to families in the severely affected village",
+              "Remaining food grains distributed equally between:",
+              "1) Old age home",
+              "2) Orphanage",
+              "3) Rural school"
+            ]
+          },
+          impact: [
+            "90+ families in the affected village received food support sufficient for one week",
+            "Additional households received assistance beyond measurable figures",
+            "Improved food security during immediate crisis period",
+            "Strengthened trust and responsiveness within the community"
+          ]
+        },
+        {
+          initiativeTitle: "Initiative 2: Monsoon Support for the Old Age Home",
+          challenge: "During the monsoon season, the old age home experienced acute shortages of essential medicines and adult diapers, critical for maintaining health, hygiene, and dignity among elderly residents. Due to monsoon-related accessibility challenges and limited resources, the facility was unable to meet these needs independently.",
+          objectives: [
+            "Provide essential medical supplies during monsoon",
+            "Ensure hygiene and dignity for elderly residents",
+            "Support healthcare continuity during seasonal vulnerability",
+            "Strengthen care infrastructure for elderly populations"
+          ],
+          solution: "Medical & Hygiene Support Initiative — collaboration with friends, well-wishers, and donors to provide essential medical and hygiene supplies to the old age home.",
+          implementationStrategy: [
+            "Coordinated with donors and supporters",
+            "Identified urgent medical and hygiene requirements",
+            "Procured required supplies",
+            "Ensured timely delivery during monsoon season"
+          ],
+          supportProvided: [
+            "Medicines to manage ongoing health conditions",
+            "Relief support for seasonal ailments",
+            "Adult diapers for hygiene and comfort",
+            "Essential hygiene supplies to maintain dignity and quality of life"
+          ],
+          impact: [
+            "Improved health stability among elderly residents",
+            "Enhanced hygiene and comfort",
+            "Preserved dignity and quality of life",
+            "Ensured uninterrupted care during monsoon challenges"
+          ]
+        }
+      ],
+      collectiveImpact: [
+        "Addressed immediate needs caused by natural disaster",
+        "Supported vulnerable populations including elderly and children",
+        "Strengthened community resilience during crisis",
+        "Demonstrated rapid, compassionate, and organized response",
+        "Reinforced long-term trust within beneficiary communities"
       ]
     }
   ];
@@ -470,6 +529,175 @@ const CaseStudies = () => {
                     </div>
                   </div>
                 </div>
+              ) : study.id === 4 ? (
+                // Special layout for CS4 with initiatives
+                <>
+                  <div className="case-study-header">
+                    <div className="case-study-icon">{study.image}</div>
+                    <div className="case-study-meta">
+                      <h3 className="case-study-title">{study.title}</h3>
+                      <div className="case-study-info">
+                        <span className="location">📍 {study.location}</span>
+                        <span className="year">📅 {study.year}</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Photo Slider */}
+                  {study.photos && study.photos.length > 0 && (
+                    <div className="photo-slider">
+                      <div className="slider-container">
+                        {study.photos.map((photo, photoIndex) => (
+                          <img
+                            key={photoIndex}
+                            src={photo}
+                            alt={`${study.title} - View ${photoIndex + 1}`}
+                            className={`slider-image ${
+                              photoIndex === currentPhotoIndexCS4 ? 'active' : ''
+                            }`}
+                          />
+                        ))}
+                        
+                        <button 
+                          className="slider-arrow slider-arrow-left" 
+                          onClick={prevPhotoCS4}
+                        >
+                          ‹
+                        </button>
+                        <button 
+                          className="slider-arrow slider-arrow-right" 
+                          onClick={nextPhotoCS4}
+                        >
+                          ›
+                        </button>
+                      </div>
+                      <div className="slider-indicators">
+                        {study.photos.map((_, photoIndex) => (
+                          <span
+                            key={photoIndex}
+                            className={`indicator ${
+                              photoIndex === currentPhotoIndexCS4 ? 'active' : ''
+                            }`}
+                            onClick={() => setCurrentPhotoIndexCS4(photoIndex)}
+                          ></span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  <div className="case-study-content">
+                    {/* Overview */}
+                    {study.overview && (
+                      <div className="case-study-section">
+                        <h4>Overview</h4>
+                        <p>{study.overview}</p>
+                      </div>
+                    )}
+
+                    {/* Initiatives */}
+                    {study.initiatives && study.initiatives.map((initiative, initIdx) => (
+                      <div key={initIdx} className="case-study-section initiative-section">
+                        <h4 className="initiative-title">{initiative.initiativeTitle}</h4>
+                        
+                        <div className="case-study-subsection">
+                          <h5>Challenge</h5>
+                          <p>{initiative.challenge}</p>
+                        </div>
+
+                        {initiative.objectives && (
+                          <div className="case-study-subsection">
+                            <h5>Objectives</h5>
+                            <ul className="impact-list">
+                              {initiative.objectives.map((item, idx) => (
+                                <li key={idx}>
+                                  <span className="check-icon">✓</span>
+                                  {item}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        <div className="case-study-subsection">
+                          <h5>Solution</h5>
+                          <p>{initiative.solution}</p>
+                        </div>
+
+                        {initiative.implementationStrategy && (
+                          <div className="case-study-subsection">
+                            <h5>Implementation Strategy</h5>
+                            <ul className="impact-list">
+                              {initiative.implementationStrategy.map((item, idx) => (
+                                <li key={idx}>
+                                  <span className="check-icon">✓</span>
+                                  {item}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        {initiative.reliefDistributionOverview && (
+                          <div className="case-study-subsection">
+                            <h5>Relief Distribution Overview</h5>
+                            <p><strong>{initiative.reliefDistributionOverview.totalCollection}</strong></p>
+                            <ul className="impact-list">
+                              {initiative.reliefDistributionOverview.distributionBreakdown.map((item, idx) => (
+                                <li key={idx}>
+                                  <span className="check-icon">✓</span>
+                                  {item}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        {initiative.supportProvided && (
+                          <div className="case-study-subsection">
+                            <h5>Support Provided</h5>
+                            <ul className="impact-list">
+                              {initiative.supportProvided.map((item, idx) => (
+                                <li key={idx}>
+                                  <span className="check-icon">✓</span>
+                                  {item}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        {initiative.impact && (
+                          <div className="case-study-subsection">
+                            <h5>Impact</h5>
+                            <ul className="impact-list">
+                              {initiative.impact.map((item, idx) => (
+                                <li key={idx}>
+                                  <span className="check-icon">✓</span>
+                                  {item}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                      </div>
+                    ))}
+
+                    {/* Collective Impact */}
+                    {study.collectiveImpact && (
+                      <div className="case-study-section">
+                        <h4>Collective Impact</h4>
+                        <ul className="impact-list">
+                          {study.collectiveImpact.map((item, idx) => (
+                            <li key={idx}>
+                              <span className="check-icon">✓</span>
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                </>
               ) : (
                 // Default layout for other cards
                 <>
@@ -690,6 +918,28 @@ const CaseStudies = () => {
                         </ul>
                       </div>
                     )}
+                    {/* Under Development Section (CS1) */}
+                    {study.underDevelopment && (
+                      <div className="case-study-section">
+                        <h4>Under Development</h4>
+                        <ul className="impact-list">
+                          {study.underDevelopment.map((item, idx) => (
+                            <li key={idx}>
+                              <span className="check-icon">🔄</span>
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {/* Note (if any) */}
+                    {study.note && (
+                      <div className="case-study-section">
+                        <p className="case-study-note"><em>Note: {study.note}</em></p>
+                      </div>
+                    )}
+
                   </div>
                 </>
               )}

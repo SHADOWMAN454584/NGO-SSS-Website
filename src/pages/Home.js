@@ -316,7 +316,7 @@ const Home = () => {
               <div className="work-icon">📚</div>
               <h3>Education</h3>
               <p>Empowered 20 rural girls in Gujarat through tailoring training, helping them gain confidence, skills, and financial independence.</p>
-              <Link to="/case-studies#case-study-3" className="work-card-link">Read Case Study →</Link>
+              <Link to="/case-studies#case-study-1" className="work-card-link">Read Case Study →</Link>
             </div>
             <div className="work-card slide-up">
               <div className="work-icon">🏥</div>
