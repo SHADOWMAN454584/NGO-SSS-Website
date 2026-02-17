@@ -91,7 +91,12 @@ const caseStudy2Photos = [
 
 // Import photos for case study 3
 const caseStudy3Photos = [
-
+  require('../assets/Case Study 3/cs3 1.jpg'),
+  require('../assets/Case Study 3/cs3 2.jpg'),
+  require('../assets/Case Study 3/cs3 3.jpg'),
+  require('../assets/Case Study 3/cs3 4.jpg'),
+  require('../assets/Case Study 3/cs3 5.jpg'),
+  require('../assets/Case Study 3/cs3 6.jpg')
 ];
 
 // Import photos for Emergency Relief & Compassionate Care Initiatives
@@ -314,22 +319,116 @@ const CaseStudies = () => {
         "Promoted sustainability and social responsibility within communities"
       ]
     },
-    // {
-    //   id: 3,
-    //   title: "Empowering Rural Girls Through Tailoring Training",
-    //   location: "Rural Villages, Gujarat",
-    //   year: "2023",
-    //   image: "👧",
-    //   photos: caseStudy3Photos,
-    //   challenge: "Limited access to education and livelihood opportunities for young rural girls due to financial constraints and distant schools.",
-    //   solution: "Collaborated with a local tailoring center under the JOG initiative and sponsored two training batches for 20 girls, providing 3-month hands-on instruction in stitching and garment-making.",
-    //   impact: [
-    //     "20 girls trained and certified in tailoring",
-    //     "60% started earning through small stitching orders",
-    //     "Improved confidence and financial independence",
-    //     "Ongoing expansion to new rural communities"
-    //   ]
-    // },
+    {
+      id: 3,
+      title: "Green Day & Sustainable Community Action Initiatives",
+      location: "Local School & Community Areas",
+      year: "2026",
+      image: "🌿",
+      photos: caseStudy3Photos,
+      overview: "This case study captures three environmentally focused initiatives — Green Day Tree Plantation Drive, Community-Led Plastic Collection & Recycling, and Textile Waste Reduction & Clothing Reuse — aimed at promoting sustainability, reducing waste, and building environmental responsibility within the community.",
+      initiatives: [
+        {
+          initiativeTitle: "Initiative 1: Green Day — Taking a Stand for Trees and the Environment",
+          challenge: "Across many cities and towns, large numbers of trees are being uprooted or cut down for infrastructure projects such as roads, buildings, and public works. While development is important, this widespread removal of trees leads to increased air pollution, higher temperatures, soil erosion, water imbalance, and loss of biodiversity. Recognising these environmental and community impacts, action was initiated at a local school level.",
+          objectives: [
+            "Promote environmental awareness among students",
+            "Encourage tree plantation to counteract deforestation",
+            "Improve school campus ecology and air quality",
+            "Foster long-term environmental responsibility"
+          ],
+          solution: "Organised a Tree-Planting Drive at a nearby school to promote environmental awareness and contribute to restoring green cover.",
+          implementationStrategy: [
+            "Identified a nearby school for plantation activity",
+            "Selected a mix of plant varieties for ecological and educational value",
+            "Donated 25 healthy plants",
+            "Educated students on environmental importance of trees"
+          ],
+          plantsDonated: {
+            total: "25 healthy plants",
+            categories: [
+              "Medicinal plants — promoting awareness of traditional natural remedies",
+              "Decorative plants — enhancing beauty of school grounds",
+              "Shade and support plants — future canopy trees improving air quality and regulating temperature"
+            ]
+          },
+          impact: [
+            "Created greener school environment",
+            "Improved awareness about environmental conservation",
+            "Encouraged ecological balance within campus",
+            "Inspired students to become environmental stewards"
+          ]
+        },
+        {
+          initiativeTitle: "Initiative 2: Community-Led Plastic Collection & Recycling Drive",
+          challenge: "Plastic waste — including bags, bottles, wrappers, and packets — is widespread in streets, drains, open areas, and water bodies. Being non-biodegradable, plastic takes hundreds of years to decompose, causing soil and water pollution, clogging drains, harming wildlife, and contributing to air pollution when burnt openly.",
+          objectives: [
+            "Reduce plastic waste accumulation",
+            "Prevent harmful open burning of plastic",
+            "Promote recycling and responsible disposal",
+            "Increase awareness about single-use plastic reduction"
+          ],
+          solution: "Organised ongoing plastic collection drives in partnership with Project Mumbai, mobilising community participation in responsible waste management.",
+          implementationStrategy: [
+            "Community awareness campaigns about plastic hazards",
+            "Mobilised neighbours and residents for participation",
+            "Regular collection drives organised",
+            "Partnership with Project Mumbai for recycling process"
+          ],
+          operationalProcess: [
+            "Residents brought collected plastic waste (bottles, bags, wrappers, packets)",
+            "Volunteers segregated plastic based on type and usability",
+            "Plastic recycled or transformed into useful items instead of landfill disposal"
+          ],
+          impact: [
+            "Large quantity of plastic collected every month",
+            "Strong and consistent community involvement",
+            "Increased awareness about environmental damage caused by plastic",
+            "Reduction in single-use plastic consumption habits",
+            "Encouraged behavioural change toward sustainability"
+          ]
+        },
+        {
+          initiativeTitle: "Initiative 3: Textile Waste Reduction & Clothing Reuse Initiative",
+          challenge: "Every year, tonnes of clothing are discarded despite being wearable or recyclable. Textile waste in landfills releases harmful greenhouse gases such as methane and toxins into soil and water. This environmental challenge demands sustainable solutions that reduce waste while supporting communities in need.",
+          objectives: [
+            "Reduce textile waste going to landfills",
+            "Promote reuse and sustainable consumption",
+            "Provide clothing support to families in need",
+            "Encourage circular economy practices"
+          ],
+          solution: "Encouraged community members to donate clean, wearable clothes instead of discarding them, ensuring responsible redistribution and creative reuse.",
+          implementationStrategy: [
+            "Community mobilisation through sustainability messaging",
+            "Selfless Serving Society acted as collection partner",
+            "Systematic collection of donated clothes",
+            "Collaboration with Project Mumbai for sorting and processing"
+          ],
+          processingWorkflow: [
+            "Garments sorted based on usability",
+            "Wearable clothes prepared for distribution",
+            "Damaged textiles separated for creative reuse",
+            "Worn-out textiles repurposed into eco-friendly items such as floor wipes, mats, and cleaning cloths"
+          ],
+          impact: [
+            "Bags full of clothes collected during every drive",
+            "Immediate relief provided to families and children in need",
+            "Reduced textile waste entering landfills",
+            "Repurposed materials created useful household products",
+            "Increased awareness of responsible consumption",
+            "Community members became ambassadors of sustainability"
+          ]
+        }
+      ],
+      collectiveImpact: [
+        "Strengthened environmental awareness at grassroots level",
+        "Promoted sustainable waste management practices",
+        "Reduced plastic and textile waste in community",
+        "Improved green cover through plantation efforts",
+        "Encouraged long-term behavioural change toward environmental responsibility",
+        "Built stronger collaboration between community, NGOs, and partner organisations"
+      ]
+    },
     {
       id: 4,
       title: "Anna Daan Flood Relief Drive",
@@ -563,8 +662,8 @@ const CaseStudies = () => {
                     </div>
                   </div>
                 </div>
-              ) : study.id === 4 ? (
-                // Special layout for CS4 with initiatives
+              ) : study.id === 3 || study.id === 4 ? (
+                // Special layout for CS3 and CS4 with initiatives
                 <>
                   <div className="case-study-header">
                     <div className="case-study-icon">{study.image}</div>
@@ -587,20 +686,20 @@ const CaseStudies = () => {
                             src={photo}
                             alt={`${study.title} - View ${photoIndex + 1}`}
                             className={`slider-image ${
-                              photoIndex === currentPhotoIndexCS4 ? 'active' : ''
+                              photoIndex === (study.id === 3 ? currentPhotoIndexCS3 : currentPhotoIndexCS4) ? 'active' : ''
                             }`}
                           />
                         ))}
                         
                         <button 
                           className="slider-arrow slider-arrow-left" 
-                          onClick={prevPhotoCS4}
+                          onClick={study.id === 3 ? prevPhotoCS3 : prevPhotoCS4}
                         >
                           ‹
                         </button>
                         <button 
                           className="slider-arrow slider-arrow-right" 
-                          onClick={nextPhotoCS4}
+                          onClick={study.id === 3 ? nextPhotoCS3 : nextPhotoCS4}
                         >
                           ›
                         </button>
@@ -610,9 +709,9 @@ const CaseStudies = () => {
                           <span
                             key={photoIndex}
                             className={`indicator ${
-                              photoIndex === currentPhotoIndexCS4 ? 'active' : ''
+                              photoIndex === (study.id === 3 ? currentPhotoIndexCS3 : currentPhotoIndexCS4) ? 'active' : ''
                             }`}
-                            onClick={() => setCurrentPhotoIndexCS4(photoIndex)}
+                            onClick={() => study.id === 3 ? setCurrentPhotoIndexCS3(photoIndex) : setCurrentPhotoIndexCS4(photoIndex)}
                           ></span>
                         ))}
                       </div>
@@ -662,6 +761,49 @@ const CaseStudies = () => {
                             <h5>Implementation Strategy</h5>
                             <ul className="impact-list">
                               {initiative.implementationStrategy.map((item, idx) => (
+                                <li key={idx}>
+                                  <span className="check-icon">✓</span>
+                                  {item}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        {initiative.plantsDonated && (
+                          <div className="case-study-subsection">
+                            <h5>Plants Donated</h5>
+                            <p><strong>{initiative.plantsDonated.total}</strong></p>
+                            <ul className="impact-list">
+                              {initiative.plantsDonated.categories.map((item, idx) => (
+                                <li key={idx}>
+                                  <span className="check-icon">✓</span>
+                                  {item}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        {initiative.operationalProcess && (
+                          <div className="case-study-subsection">
+                            <h5>Operational Process</h5>
+                            <ul className="impact-list">
+                              {initiative.operationalProcess.map((item, idx) => (
+                                <li key={idx}>
+                                  <span className="check-icon">✓</span>
+                                  {item}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        {initiative.processingWorkflow && (
+                          <div className="case-study-subsection">
+                            <h5>Processing Workflow</h5>
+                            <ul className="impact-list">
+                              {initiative.processingWorkflow.map((item, idx) => (
                                 <li key={idx}>
                                   <span className="check-icon">✓</span>
                                   {item}
