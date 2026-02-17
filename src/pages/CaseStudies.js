@@ -120,11 +120,22 @@ const caseStudy4Photo = [
   require('../assets/Case Study 4/cs4 18.jpg'),
 ];
 
+// Import photos for Health, Safety & Empowerment Awareness Initiatives
+const healthSafetyInitiativePhotos = [
+  require('../assets/Case Study 5/cs5 1.jpg'),
+  require('../assets/Case Study 5/cs5 2.jpg'),
+  require('../assets/Case Study 5/cs5 3.jpg'),
+  require('../assets/Case Study 5/cs5 4.jpg'),
+  require('../assets/Case Study 5/cs5 5.jpg'),
+  require('../assets/Case Study 5/cs5 6.jpg'),
+];
+
 const CaseStudies = () => {
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
   const [currentPhotoIndexCS2, setCurrentPhotoIndexCS2] = useState(0);
   const [currentPhotoIndexCS3, setCurrentPhotoIndexCS3] = useState(0);
   const [currentPhotoIndexCS4, setCurrentPhotoIndexCS4] = useState(0);
+  const [currentPhotoIndexCS5, setCurrentPhotoIndexCS5] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalPhotoIndex, setModalPhotoIndex] = useState(0);
 
@@ -207,6 +218,19 @@ const CaseStudies = () => {
   const prevPhotoCS4 = () => {
     setCurrentPhotoIndexCS4((prevIndex) => 
       prevIndex === 0 ? caseStudy4Photo.length - 1 : prevIndex - 1
+    );
+  };
+
+  // Navigation handlers for Case Study 5
+  const nextPhotoCS5 = () => {
+    setCurrentPhotoIndexCS5((prevIndex) => 
+      (prevIndex + 1) % healthSafetyInitiativePhotos.length
+    );
+  };
+
+  const prevPhotoCS5 = () => {
+    setCurrentPhotoIndexCS5((prevIndex) => 
+      prevIndex === 0 ? healthSafetyInitiativePhotos.length - 1 : prevIndex - 1
     );
   };
 
@@ -509,6 +533,120 @@ const CaseStudies = () => {
         "Demonstrated rapid, compassionate, and organized response",
         "Reinforced long-term trust within beneficiary communities"
       ]
+    },
+    {
+      id: 5,
+      title: "Health, Safety & Empowerment Awareness Initiatives",
+      location: "Rural Schools & Villages",
+      year: "2026",
+      image: "💛",
+      photos: healthSafetyInitiativePhotos,
+      overview: "This case study highlights three critical awareness initiatives focused on menstrual health education, disaster preparedness training, and self-defense empowerment — all aimed at strengthening knowledge, safety, and confidence among women and children in rural communities.",
+      initiatives: [
+        {
+          initiativeTitle: "Initiative 1: Menstrual Health & Hygiene Awareness",
+          challenge: "In many rural villages, girls and women lack access to accurate information about menstrual health and hygiene. Due to traditional beliefs and limited health education, many continue to follow age-old practices or use unhygienic methods during their menstrual cycle. This creates health risks such as infections and reinforces stigma and discomfort around menstruation. Additionally, there is often little understanding of proper disposal of sanitary products, affecting both community hygiene and the local environment.",
+          objectives: [
+            "Provide accurate education on menstrual health",
+            "Break stigma and misconceptions around menstruation",
+            "Promote safe hygiene practices",
+            "Encourage responsible disposal of sanitary waste",
+            "Improve nutrition awareness among children"
+          ],
+          solution: "Conducted community visits, school awareness workshops, and interactive discussions to educate girls, women, and children on menstrual hygiene, safe disposal practices, and healthy lifestyle habits.",
+          implementationStrategy: [
+            "Organised awareness sessions in schools and villages",
+            "Created safe spaces for open discussion and questions",
+            "Provided biological education on menstruation",
+            "Demonstrated safe usage of hygienic products",
+            "Educated on proper menstrual waste disposal methods",
+            "Promoted healthy eating habits among children"
+          ],
+          keyFocusAreas: [
+            "Understanding the biological process of menstruation",
+            "Importance of maintaining hygiene during menstrual cycle",
+            "Safe and responsible disposal practices",
+            "Clarification of myths and misconceptions",
+            "Encouraging home-made nutritious food over packet foods"
+          ],
+          impact: [
+            "Over 200 girls now understand proper menstrual hygiene practices",
+            "More than 350 women using appropriate menstrual products with correct disposal knowledge",
+            "Reduced health risks and improved sanitation awareness",
+            "Increased confidence and comfort discussing menstrual health",
+            "More children bringing home-made food to school, improving nutrition awareness"
+          ]
+        },
+        {
+          initiativeTitle: "Initiative 2: Disaster Awareness & Preparedness Training",
+          challenge: "In many rural villages, children have limited awareness of disaster preparedness — including how to respond during floods, earthquakes, or fires. Schools often lack resources to provide structured disaster education, leaving students unsure of how to act safely during emergencies. Preparedness is essential to reduce risk, fear, and anxiety during crises.",
+          objectives: [
+            "Build disaster awareness among children",
+            "Teach step-by-step emergency response actions",
+            "Reduce fear and confusion during emergencies",
+            "Strengthen school-level preparedness systems"
+          ],
+          solution: "Partnered with GujAid Disaster and First Aid Foundation to conduct interactive disaster management and first-aid training sessions within the school premises.",
+          implementationStrategy: [
+            "Collaborated with expert trainers from GujAid",
+            "Organised interactive sessions at the school",
+            "Provided step-by-step explanations of different disasters",
+            "Used accessible language for better understanding",
+            "Encouraged questions and active student participation"
+          ],
+          topicsCovered: [
+            "Flood safety measures",
+            "Earthquake response techniques",
+            "Fire emergency actions",
+            "Basic first-aid knowledge",
+            "Helping others during emergencies"
+          ],
+          impact: [
+            "Children and youth gained clearer understanding of disaster response",
+            "Improved preparedness and step-by-step safety knowledge",
+            "Reduced fear through awareness and structured learning",
+            "Strengthened school's disaster education capacity through expert partnership"
+          ]
+        },
+        {
+          initiativeTitle: "Initiative 3: Self-Defense & Personal Safety Training",
+          challenge: "The increasing rise in eve-teasing, harassment, and bullying — in public spaces and transport — has made daily travel unsafe for children, particularly girls. Safety concerns affect confidence, freedom, and mental well-being.",
+          objectives: [
+            "Equip children with practical self-defense techniques",
+            "Increase confidence and personal safety awareness",
+            "Reduce vulnerability in unsafe situations",
+            "Empower girls to protect themselves"
+          ],
+          solution: "Partnered with a professional martial arts trainer, Udaan Sir (Udan Purabiya, Krav Maga self-defense system), to conduct structured self-defense sessions during school hours.",
+          implementationStrategy: [
+            "Coordinated with school authorities",
+            "Invited professional martial arts trainer",
+            "Conducted sessions within school premises",
+            "Taught simple, quick, and easy-to-remember defense techniques",
+            "Focused on real-life scenario-based training"
+          ],
+          trainingHighlights: [
+            "Basic Krav Maga techniques",
+            "Quick reaction and escape strategies",
+            "Confidence-building exercises",
+            "Situational awareness training"
+          ],
+          impact: [
+            "Increased awareness about personal safety",
+            "Students reported feeling safer and more confident",
+            "Positive feedback from school staff and children",
+            "Empowered girls with practical self-defense skills"
+          ]
+        }
+      ],
+      collectiveImpact: [
+        "Improved health awareness among girls and women",
+        "Enhanced disaster preparedness among children",
+        "Strengthened personal safety confidence",
+        "Encouraged open conversations around sensitive topics",
+        "Built stronger school-community partnerships",
+        "Created a culture of awareness, resilience, and empowerment"
+      ]
     }
   ];
 
@@ -662,8 +800,8 @@ const CaseStudies = () => {
                     </div>
                   </div>
                 </div>
-              ) : study.id === 3 || study.id === 4 ? (
-                // Special layout for CS3 and CS4 with initiatives
+              ) : study.id === 3 || study.id === 4 || study.id === 5 ? (
+                // Special layout for CS3, CS4, and CS5 with initiatives
                 <>
                   <div className="case-study-header">
                     <div className="case-study-icon">{study.image}</div>
@@ -686,20 +824,20 @@ const CaseStudies = () => {
                             src={photo}
                             alt={`${study.title} - View ${photoIndex + 1}`}
                             className={`slider-image ${
-                              photoIndex === (study.id === 3 ? currentPhotoIndexCS3 : currentPhotoIndexCS4) ? 'active' : ''
+                              photoIndex === (study.id === 3 ? currentPhotoIndexCS3 : study.id === 4 ? currentPhotoIndexCS4 : currentPhotoIndexCS5) ? 'active' : ''
                             }`}
                           />
                         ))}
                         
                         <button 
                           className="slider-arrow slider-arrow-left" 
-                          onClick={study.id === 3 ? prevPhotoCS3 : prevPhotoCS4}
+                          onClick={study.id === 3 ? prevPhotoCS3 : study.id === 4 ? prevPhotoCS4 : prevPhotoCS5}
                         >
                           ‹
                         </button>
                         <button 
                           className="slider-arrow slider-arrow-right" 
-                          onClick={study.id === 3 ? nextPhotoCS3 : nextPhotoCS4}
+                          onClick={study.id === 3 ? nextPhotoCS3 : study.id === 4 ? nextPhotoCS4 : nextPhotoCS5}
                         >
                           ›
                         </button>
@@ -709,9 +847,9 @@ const CaseStudies = () => {
                           <span
                             key={photoIndex}
                             className={`indicator ${
-                              photoIndex === (study.id === 3 ? currentPhotoIndexCS3 : currentPhotoIndexCS4) ? 'active' : ''
+                              photoIndex === (study.id === 3 ? currentPhotoIndexCS3 : study.id === 4 ? currentPhotoIndexCS4 : currentPhotoIndexCS5) ? 'active' : ''
                             }`}
-                            onClick={() => study.id === 3 ? setCurrentPhotoIndexCS3(photoIndex) : setCurrentPhotoIndexCS4(photoIndex)}
+                            onClick={() => study.id === 3 ? setCurrentPhotoIndexCS3(photoIndex) : study.id === 4 ? setCurrentPhotoIndexCS4(photoIndex) : setCurrentPhotoIndexCS5(photoIndex)}
                           ></span>
                         ))}
                       </div>

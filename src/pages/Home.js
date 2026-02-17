@@ -322,13 +322,13 @@ const Home = () => {
               <div className="work-icon">🏥</div>
               <h3>Healthcare</h3>
               <p>Promoted menstrual hygiene and wellness by distributing essential hygiene kits to adolescent girls in marginalized communities.</p>
-              <Link to="/case-studies#case-study-4" className="work-card-link">Read Case Study →</Link>
+              <Link to="/case-studies#case-study-5" className="work-card-link">Read Case Study →</Link>
             </div>
             <div className="work-card slide-up">
               <div className="work-icon">🌱</div>
               <h3>Environment</h3>
               <p>Collected 31 kg of clothes under the KAPAAD Project, promoting recycling, zero-waste practices, and sustainable living.</p>
-              <Link to="/case-studies#case-study-2" className="work-card-link">Read Case Study →</Link>
+              <Link to="/case-studies#case-study-3" className="work-card-link">Read Case Study →</Link>
             </div>
             <div className="work-card slide-up">
               <div className="work-icon">💼</div>
