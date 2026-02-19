@@ -39,6 +39,22 @@ const caseStudy3Photos = [
   require('../assets/Case Study 3/cs3 6.jpg')
 ];
 
+// Import photos for case study 1
+const caseStudy1Photos = [
+  require('../assets/Case Study 1/CS1Gallery/cs1g2.jpeg'),
+  require('../assets/Case Study 1/cs1 2.jpg'),
+  require('../assets/Case Study 1/cs1 3.jpg'),
+  require('../assets/Case Study 1/cs1 4.jpg'),
+  require('../assets/Case Study 1/cs1 5.jpg'),
+  require('../assets/Case Study 1/cs1 6.jpg'),
+  require('../assets/Case Study 1/cs1 7.jpg'),
+  require('../assets/Case Study 1/cs1 9.jpg'),
+  require('../assets/Case Study 1/cs1 11.jpg'),
+  require('../assets/Case Study 1/cs1 12.jpg'),
+  require('../assets/Case Study 1/cs1 13.jpg'),
+  require('../assets/Case Study 1/cs1 14.jpg'),
+];
+
 // Import photos for case study 4
 const caseStudy4Photo = [
   require('../assets/Case Study 4/cs4 1.jpg'),
@@ -58,6 +74,157 @@ const caseStudy4Photo = [
   require('../assets/Case Study 4/cs4 16.jpg'),
   require('../assets/Case Study 4/cs4 17.jpg'),
   require('../assets/Case Study 4/cs4 18.jpg'),
+];
+
+// Livelihood Impact case studies data (CS1 + CS4 for Livelihood popup)
+const livelihoodImpactCaseStudies = [
+  {
+    id: 1,
+    title: "Skill Development: Building Confidence, Creating Independence",
+    location: "",
+    year: "",
+    image: "💫",
+    photos: caseStudy1Photos,
+    overview: "This initiative focuses on empowering young rural girls and women through structured vocational skill development programs that create sustainable livelihood opportunities and long-term economic independence.",
+    challenge: "Due to limited access to education and livelihood opportunities, many young rural girls face significant barriers to personal and economic growth. Financial constraints and the distance of schools further exacerbate these challenges, leaving them with few avenues to develop practical skills or earn a sustainable income.",
+    objectives: [
+      "Provide accessible vocational skill training to rural girls and women",
+      "Encourage interest-based skill development",
+      "Create pathways for sustainable income generation",
+      "Build long-term financial independence and self-confidence"
+    ],
+    solution: "Skill Development for Economic Independence",
+    implementationStrategy: [
+      "Organized women and girls into focused groups of 10\u201315 participants",
+      "Aligned training programs with individual interests and skill potential",
+      "Collaborated with local tailoring classes",
+      "Partnered with hand-craft and jewelry-making centers",
+      "Provided structured hands-on vocational training"
+    ],
+    trainingModules: {
+      stitchingAndTailoring: [
+        "Training in stitching techniques",
+        "Creation of quality blouses, bags, dresses, and tailored products",
+        "Skill-building for independent order-based work"
+      ],
+      handcraftAndJewelryMaking: [
+        "Training in handwork and creative design",
+        "Jewelry-making skills development",
+        "Product finishing and quality improvement"
+      ]
+    },
+    participantEngagement: "The response was highly positive \u2014 participants showed strong engagement, quickly learned practical skills, and began producing finished products with confidence.",
+    economicEnablement: [
+      "Finished products transported to urban markets for sale at reasonable prices",
+      "Income generation opportunities created for participants",
+      "Guidance provided on online selling platforms",
+      "Support for expanding market reach",
+      "Encouragement to build sustainable micro-enterprises"
+    ],
+    impact: [
+      "30+ participants completed stitching training and are now working independently",
+      "12+ participants progressing toward becoming professional bag designers",
+      "16+ participants engaged in jewelry-making as a livelihood activity",
+      "20 girls trained and certified in tailoring",
+      "60% started earning through small stitching orders",
+      "Urban market access enabled and guidance on online selling provided",
+      "Increased confidence, financial independence, and community pride"
+    ],
+    longTermOutcomes: [
+      "Enhanced self-reliance among rural women and girls",
+      "Improved economic stability within families",
+      "Development of entrepreneurial mindset",
+      "Strengthened community empowerment ecosystem"
+    ],
+    underDevelopment: [
+      "Support for expanding market reach",
+      "Encouragement to build sustainable micro-enterprises",
+      "Creation of cooperative models for collective marketing",
+      "Urban market access enabled and guidance on online selling provided",
+      "Increased confidence, financial independence, and community pride"
+    ]
+  },
+  {
+    id: 4,
+    title: "Anna Daan Flood Relief Drive",
+    location: "Flood-Affected Village & Supporting Institutions",
+    year: "2024",
+    image: "\uD83C\uDF27\uFE0F",
+    photos: caseStudy4Photo,
+    overview: "This case study highlights two compassionate emergency response initiatives \u2014 the Anna Daan Flood Relief Drive and the Monsoon Medical & Hygiene Support Initiative \u2014 aimed at supporting vulnerable communities affected by natural disaster and seasonal challenges.",
+    initiatives: [
+      {
+        initiativeTitle: "Anna Daan Flood Relief Drive",
+        challenge: "Sudden and severe flooding from the river left numerous homes submerged, crops destroyed, and families without access to essential food, clean water, or basic supplies. Many affected households were isolated and unable to access relief independently.",
+        objectives: [
+          "Provide immediate food assistance to flood-affected families",
+          "Ensure relief reaches remote and hard-to-access areas",
+          "Support vulnerable institutions affected by the disaster",
+          "Strengthen community solidarity during crisis"
+        ],
+        solution: "Launch of the 'Anna Daan' Drive \u2014 a focused relief effort to collect and distribute food grains and essential supplies to flood-affected families through coordinated volunteer action.",
+        implementationStrategy: [
+          "Mobilized volunteers and community members",
+          "Collected food grains and essential supplies",
+          "Prioritized severely affected areas",
+          "Ensured timely and organized distribution",
+          "Extended support to vulnerable institutions"
+        ],
+        reliefDistributionOverview: {
+          totalCollection: "Approximately 650 kg of food grains and essential food items collected and distributed",
+          distributionBreakdown: [
+            "Major portion distributed to families in the severely affected village",
+            "Remaining food grains distributed equally between:",
+            "1) Old age home",
+            "2) Orphanage",
+            "3) Rural school"
+          ]
+        },
+        impact: [
+          "90+ families in the affected village received food support sufficient for one week",
+          "Additional households received assistance beyond measurable figures",
+          "Improved food security during immediate crisis period",
+          "Strengthened trust and responsiveness within the community"
+        ]
+      },
+      {
+        initiativeTitle: "Monsoon Support for the Old Age Home",
+        challenge: "During the monsoon season, the old age home experienced acute shortages of essential medicines and adult diapers, critical for maintaining health, hygiene, and dignity among elderly residents. Due to monsoon-related accessibility challenges and limited resources, the facility was unable to meet these needs independently.",
+        objectives: [
+          "Provide essential medical supplies during monsoon",
+          "Ensure hygiene and dignity for elderly residents",
+          "Support healthcare continuity during seasonal vulnerability",
+          "Strengthen care infrastructure for elderly populations"
+        ],
+        solution: "Medical & Hygiene Support Initiative \u2014 collaboration with friends, well-wishers, and donors to provide essential medical and hygiene supplies to the old age home.",
+        implementationStrategy: [
+          "Coordinated with donors and supporters",
+          "Identified urgent medical and hygiene requirements",
+          "Procured required supplies",
+          "Ensured timely delivery during monsoon season"
+        ],
+        supportProvided: [
+          "Medicines to manage ongoing health conditions",
+          "Relief support for seasonal ailments",
+          "Adult diapers for hygiene and comfort",
+          "Essential hygiene supplies to maintain dignity and quality of life"
+        ],
+        impact: [
+          "Improved health stability among elderly residents",
+          "Enhanced hygiene and comfort",
+          "Preserved dignity and quality of life",
+          "Ensured uninterrupted care during monsoon challenges"
+        ]
+      }
+    ],
+    collectiveImpact: [
+      "Addressed immediate needs caused by natural disaster",
+      "Supported vulnerable populations including elderly and children",
+      "Strengthened community resilience during crisis",
+      "Demonstrated rapid, compassionate, and organized response",
+      "Reinforced long-term trust within beneficiary communities"
+    ]
+  }
 ];
 
 // Livelihood case studies data (CS2, CS3, CS4)
@@ -275,9 +442,12 @@ const Home = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [livelihoodModalOpen, setLivelihoodModalOpen] = useState(false);
+  const [livelihoodImpactModalOpen, setLivelihoodImpactModalOpen] = useState(false);
+  const [currentPhotoIndexCS1, setCurrentPhotoIndexCS1] = useState(0);
   const [currentPhotoIndexCS2, setCurrentPhotoIndexCS2] = useState(0);
   const [currentPhotoIndexCS3, setCurrentPhotoIndexCS3] = useState(0);
   const [currentPhotoIndexCS4, setCurrentPhotoIndexCS4] = useState(0);
+  const [currentPhotoIndexCS4L, setCurrentPhotoIndexCS4L] = useState(0);
 
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) => {
@@ -330,6 +500,36 @@ const Home = () => {
   };
   const prevPhotoCS4 = () => {
     setCurrentPhotoIndexCS4((prev) => prev === 0 ? caseStudy4Photo.length - 1 : prev - 1);
+  };
+
+  // Livelihood Impact modal handlers
+  const openLivelihoodImpactModal = (e) => {
+    e.preventDefault();
+    setLivelihoodImpactModalOpen(true);
+    setCurrentPhotoIndexCS1(0);
+    setCurrentPhotoIndexCS4L(0);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeLivelihoodImpactModal = () => {
+    setLivelihoodImpactModalOpen(false);
+    document.body.style.overflow = 'auto';
+  };
+
+  // Navigation handlers for CS1
+  const nextPhotoCS1 = () => {
+    setCurrentPhotoIndexCS1((prev) => (prev + 1) % caseStudy1Photos.length);
+  };
+  const prevPhotoCS1 = () => {
+    setCurrentPhotoIndexCS1((prev) => prev === 0 ? caseStudy1Photos.length - 1 : prev - 1);
+  };
+
+  // Navigation handlers for CS4L (Livelihood modal)
+  const nextPhotoCS4L = () => {
+    setCurrentPhotoIndexCS4L((prev) => (prev + 1) % caseStudy4Photo.length);
+  };
+  const prevPhotoCS4L = () => {
+    setCurrentPhotoIndexCS4L((prev) => prev === 0 ? caseStudy4Photo.length - 1 : prev - 1);
   };
 
   useEffect(() => {
@@ -610,6 +810,304 @@ const Home = () => {
           </div>
         </div>
       )}
+
+      {/* Livelihood Impact Modal (CS1 + CS4) */}
+      {livelihoodImpactModalOpen && (
+        <div className="livelihood-modal-overlay" onClick={closeLivelihoodImpactModal}>
+          <div className="livelihood-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="livelihood-modal-close" onClick={closeLivelihoodImpactModal}>
+              ×
+            </button>
+            <div className="livelihood-modal-body">
+              <h2 className="livelihood-modal-title">Impact in Livelihood</h2>
+              <p className="livelihood-modal-subtitle">Empowering communities through skill development and emergency relief initiatives</p>
+
+              {livelihoodImpactCaseStudies.map((study) => (
+                <div key={study.id} className="livelihood-case-study-card">
+                  {study.id === 1 ? (
+                    /* CS1 — full-width layout with overview, training modules, etc. */
+                    <>
+                      <div className="livelihood-cs-header">
+                        <div className="livelihood-cs-icon">{study.image}</div>
+                        <div className="livelihood-cs-meta">
+                          <h3 className="livelihood-cs-title">{study.title}</h3>
+                          <div className="livelihood-cs-info">
+                            {study.location && <span>📍 {study.location}</span>}
+                            {study.year && <span>📅 {study.year}</span>}
+                          </div>
+                        </div>
+                      </div>
+
+                      {study.photos && study.photos.length > 0 && (
+                        <div className="livelihood-photo-slider">
+                          <div className="livelihood-slider-container">
+                            {study.photos.map((photo, photoIndex) => (
+                              <img
+                                key={photoIndex}
+                                src={photo}
+                                alt={`${study.title} - View ${photoIndex + 1}`}
+                                className={`livelihood-slider-image ${photoIndex === currentPhotoIndexCS1 ? 'active' : ''}`}
+                              />
+                            ))}
+                            <button className="livelihood-slider-arrow livelihood-slider-arrow-left" onClick={prevPhotoCS1}>‹</button>
+                            <button className="livelihood-slider-arrow livelihood-slider-arrow-right" onClick={nextPhotoCS1}>›</button>
+                          </div>
+                          <div className="livelihood-slider-indicators">
+                            {study.photos.map((_, photoIndex) => (
+                              <span
+                                key={photoIndex}
+                                className={`livelihood-indicator ${photoIndex === currentPhotoIndexCS1 ? 'active' : ''}`}
+                                onClick={() => setCurrentPhotoIndexCS1(photoIndex)}
+                              ></span>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      <div className="livelihood-cs-content">
+                        {study.overview && (
+                          <div className="livelihood-cs-section">
+                            <h4>Overview</h4>
+                            <p>{study.overview}</p>
+                          </div>
+                        )}
+                        <div className="livelihood-cs-section">
+                          <h4>The Challenge</h4>
+                          <p>{study.challenge}</p>
+                        </div>
+                        {study.objectives && (
+                          <div className="livelihood-cs-section">
+                            <h4>Objectives</h4>
+                            <ul className="livelihood-impact-list">
+                              {study.objectives.map((item, idx) => (
+                                <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                        <div className="livelihood-cs-section">
+                          <h4>Our Solution</h4>
+                          <p>{study.solution}</p>
+                        </div>
+                        {study.implementationStrategy && (
+                          <div className="livelihood-cs-section">
+                            <h4>Implementation Strategy</h4>
+                            <ul className="livelihood-impact-list">
+                              {study.implementationStrategy.map((item, idx) => (
+                                <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                        {study.trainingModules && (
+                          <div className="livelihood-cs-section">
+                            <h4>Training Modules</h4>
+                            <div className="livelihood-training-modules">
+                              <div className="livelihood-training-module">
+                                <h5>Stitching &amp; Tailoring</h5>
+                                <ul className="livelihood-impact-list">
+                                  {study.trainingModules.stitchingAndTailoring.map((item, idx) => (
+                                    <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                                  ))}
+                                </ul>
+                              </div>
+                              <div className="livelihood-training-module">
+                                <h5>Handcraft &amp; Jewelry Making</h5>
+                                <ul className="livelihood-impact-list">
+                                  {study.trainingModules.handcraftAndJewelryMaking.map((item, idx) => (
+                                    <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                                  ))}
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        )}
+                        {study.participantEngagement && (
+                          <div className="livelihood-cs-section">
+                            <h4>Participant Engagement</h4>
+                            <p>{study.participantEngagement}</p>
+                          </div>
+                        )}
+                        {study.economicEnablement && (
+                          <div className="livelihood-cs-section">
+                            <h4>Economic Enablement</h4>
+                            <ul className="livelihood-impact-list">
+                              {study.economicEnablement.map((item, idx) => (
+                                <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                        <div className="livelihood-cs-section">
+                          <h4>Impact Achieved</h4>
+                          <ul className="livelihood-impact-list">
+                            {study.impact.map((item, idx) => (
+                              <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                            ))}
+                          </ul>
+                        </div>
+                        {study.longTermOutcomes && (
+                          <div className="livelihood-cs-section">
+                            <h4>Long-Term Outcomes</h4>
+                            <ul className="livelihood-impact-list">
+                              {study.longTermOutcomes.map((item, idx) => (
+                                <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                        {study.underDevelopment && (
+                          <div className="livelihood-cs-section">
+                            <h4>Under Development</h4>
+                            <ul className="livelihood-impact-list">
+                              {study.underDevelopment.map((item, idx) => (
+                                <li key={idx}><span className="livelihood-check-icon">🔄</span>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                      </div>
+                    </>
+                  ) : (
+                    /* CS4 — full-width layout with initiatives */
+                    <>
+                      <div className="livelihood-cs-header">
+                        <div className="livelihood-cs-icon">{study.image}</div>
+                        <div className="livelihood-cs-meta">
+                          <h3 className="livelihood-cs-title">{study.title}</h3>
+                          <div className="livelihood-cs-info">
+                            <span>📍 {study.location}</span>
+                            <span>📅 {study.year}</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      {study.photos && study.photos.length > 0 && (
+                        <div className="livelihood-photo-slider">
+                          <div className="livelihood-slider-container">
+                            {study.photos.map((photo, photoIndex) => (
+                              <img
+                                key={photoIndex}
+                                src={photo}
+                                alt={`${study.title} - View ${photoIndex + 1}`}
+                                className={`livelihood-slider-image ${photoIndex === currentPhotoIndexCS4L ? 'active' : ''}`}
+                              />
+                            ))}
+                            <button className="livelihood-slider-arrow livelihood-slider-arrow-left" onClick={prevPhotoCS4L}>‹</button>
+                            <button className="livelihood-slider-arrow livelihood-slider-arrow-right" onClick={nextPhotoCS4L}>›</button>
+                          </div>
+                          <div className="livelihood-slider-indicators">
+                            {study.photos.map((_, photoIndex) => (
+                              <span
+                                key={photoIndex}
+                                className={`livelihood-indicator ${photoIndex === currentPhotoIndexCS4L ? 'active' : ''}`}
+                                onClick={() => setCurrentPhotoIndexCS4L(photoIndex)}
+                              ></span>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      <div className="livelihood-cs-content">
+                        {study.overview && (
+                          <div className="livelihood-cs-section">
+                            <h4>Overview</h4>
+                            <p>{study.overview}</p>
+                          </div>
+                        )}
+
+                        {study.initiatives && study.initiatives.map((initiative, initIdx) => (
+                          <div key={initIdx} className="livelihood-cs-section livelihood-initiative-section">
+                            <h4 className="livelihood-initiative-title">{initiative.initiativeTitle}</h4>
+
+                            <div className="livelihood-cs-subsection">
+                              <h5>Challenge</h5>
+                              <p>{initiative.challenge}</p>
+                            </div>
+
+                            {initiative.objectives && (
+                              <div className="livelihood-cs-subsection">
+                                <h5>Objectives</h5>
+                                <ul className="livelihood-impact-list">
+                                  {initiative.objectives.map((item, idx) => (
+                                    <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
+
+                            <div className="livelihood-cs-subsection">
+                              <h5>Solution</h5>
+                              <p>{initiative.solution}</p>
+                            </div>
+
+                            {initiative.implementationStrategy && (
+                              <div className="livelihood-cs-subsection">
+                                <h5>Implementation Strategy</h5>
+                                <ul className="livelihood-impact-list">
+                                  {initiative.implementationStrategy.map((item, idx) => (
+                                    <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
+
+                            {initiative.reliefDistributionOverview && (
+                              <div className="livelihood-cs-subsection">
+                                <h5>Relief Distribution Overview</h5>
+                                <p><strong>{initiative.reliefDistributionOverview.totalCollection}</strong></p>
+                                <ul className="livelihood-impact-list">
+                                  {initiative.reliefDistributionOverview.distributionBreakdown.map((item, idx) => (
+                                    <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
+
+                            {initiative.supportProvided && (
+                              <div className="livelihood-cs-subsection">
+                                <h5>Support Provided</h5>
+                                <ul className="livelihood-impact-list">
+                                  {initiative.supportProvided.map((item, idx) => (
+                                    <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
+
+                            {initiative.impact && (
+                              <div className="livelihood-cs-subsection">
+                                <h5>Impact</h5>
+                                <ul className="livelihood-impact-list">
+                                  {initiative.impact.map((item, idx) => (
+                                    <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
+                          </div>
+                        ))}
+
+                        {study.collectiveImpact && (
+                          <div className="livelihood-cs-section">
+                            <h4>Collective Impact</h4>
+                            <ul className="livelihood-impact-list">
+                              {study.collectiveImpact.map((item, idx) => (
+                                <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                      </div>
+                    </>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Merged Hero + Navbar Section */}
       <section className="hero">
         {/* Background Image Slider */}
@@ -815,9 +1313,9 @@ const Home = () => {
             <div className="team-card">
               <div className="team-photo">👤</div>
               <h3>Apurva Kulkarni</h3>
-              <p className="team-role">Guiding Member--</p>
+              <p className="team-role">Guiding Member</p>
               <p className="team-bio">
-                Brief biography and background information about this guiding light member. Their experience, qualifications, and contribution to the organization's mission and vision.
+                Apoorva Kulkarni is a Business Strategy Consultant and IIM Kozhikode alumnus. He is the Founder of Apurva Business Strategy, helping businesses scale, expand globally, and achieve sustainable growth.
               </p>
             </div>
             <div className="team-card">
@@ -887,7 +1385,7 @@ const Home = () => {
               <div className="work-icon">💼</div>
               <h3>Livelihood</h3>
               <p>Created livelihood opportunities for 50+ tribal women and differently-abled artisans through handcrafted product sales and exhibitions.</p>
-              <Link to="/case-studies#case-study-1" className="work-card-link">Read Case Study →</Link>
+              <a href="#livelihood-case-studies" className="work-card-link" onClick={openLivelihoodImpactModal}>Read Case Study →</a>
             </div>
           </div>
 

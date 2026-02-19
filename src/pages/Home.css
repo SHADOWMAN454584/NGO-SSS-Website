@@ -1108,6 +1108,34 @@
   margin-top: 2px;
 }
 
+/* Training Modules inside Livelihood Modal */
+.livelihood-training-modules {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.livelihood-training-module {
+  background: #FFFBEA;
+  border-radius: 10px;
+  padding: 14px;
+  border-left: 3px solid #FFD23F;
+}
+
+.livelihood-training-module h5 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+  .livelihood-training-modules {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ========================== */
 /* Livelihood Modal Responsive */
 /* ========================== */
