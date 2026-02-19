@@ -363,8 +363,8 @@ const Home = () => {
               ×
             </button>
             <div className="livelihood-modal-body">
-              <h2 className="livelihood-modal-title">Impact in Livelihood</h2>
-              <p className="livelihood-modal-subtitle">Our initiatives creating sustainable livelihood opportunities and community resilience</p>
+              <h2 className="livelihood-modal-title">Impact in Environment</h2>
+              <p className="livelihood-modal-subtitle">Our initiatives promoting sustainability, reducing waste, and building environmental responsibility</p>
 
               {livelihoodCaseStudies.map((study) => (
                 <div key={study.id} className="livelihood-case-study-card">
@@ -881,13 +881,13 @@ const Home = () => {
               <div className="work-icon">🌱</div>
               <h3>Environment</h3>
               <p>Collected 31 kg of clothes under the KAPAAD Project, promoting recycling, zero-waste practices, and sustainable living.</p>
-              <Link to="/case-studies#case-study-3" className="work-card-link">Read Case Study →</Link>
+              <a href="#environment-case-studies" className="work-card-link" onClick={openLivelihoodModal}>Read Case Study →</a>
             </div>
             <div className="work-card slide-up">
               <div className="work-icon">💼</div>
               <h3>Livelihood</h3>
               <p>Created livelihood opportunities for 50+ tribal women and differently-abled artisans through handcrafted product sales and exhibitions.</p>
-              <a href="#livelihood-case-studies" className="work-card-link" onClick={openLivelihoodModal}>Read Case Study →</a>
+              <Link to="/case-studies#case-study-1" className="work-card-link">Read Case Study →</Link>
             </div>
           </div>
 
