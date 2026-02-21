@@ -76,6 +76,273 @@ const caseStudy4Photo = [
   require('../assets/Case Study 4/cs4 18.jpg'),
 ];
 
+// Import photos for case study 5
+const caseStudy5Photos = [
+  require('../assets/Case Study 5/cs5 1.jpg'),
+  require('../assets/Case Study 5/cs5 2.jpg'),
+  require('../assets/Case Study 5/cs5 3.jpg'),
+  require('../assets/Case Study 5/cs5 4.jpg'),
+  require('../assets/Case Study 5/cs5 5.jpg'),
+  require('../assets/Case Study 5/cs5 6.jpg'),
+];
+
+// Import photos for case study 6
+const wellbeingInitiativePhotos = [
+  require('../assets/Case Study 6/cs6 1.jpeg'),
+  require('../assets/Case Study 6/cs6 2.jpeg'),
+  require('../assets/Case Study 6/cs6 3.jpeg'),
+  require('../assets/Case Study 6/cs6 4.jpeg'),
+  require('../assets/Case Study 6/cs6 5.jpeg'),
+  require('../assets/Case Study 6/cs6 6.jpeg'),
+  require('../assets/Case Study 6/cs6 7.jpeg'),
+  require('../assets/Case Study 6/cs6 8.jpeg'),
+  require('../assets/Case Study 6/cs6 9.jpeg'),
+  require('../assets/Case Study 6/cs6 10.jpeg'),
+  require('../assets/Case Study 6/cs6 11.jpeg'),
+  require('../assets/Case Study 6/cs6 12.jpeg'),
+  require('../assets/Case Study 6/cs6 13.jpeg'),
+  require('../assets/Case Study 6/cs6 14.jpeg'),
+  require('../assets/Case Study 6/cs6 15.jpeg'),
+];
+
+// Education case studies data (CS5 + CS6 for Education popup)
+const educationCaseStudies = [
+  {
+    id: 5,
+    title: "Health, Safety & Empowerment Awareness Initiatives",
+    location: "Rural Schools & Villages",
+    year: "2026",
+    image: "💛",
+    photos: caseStudy5Photos,
+    overview: "This case study highlights three critical awareness initiatives focused on menstrual health education, disaster preparedness training, and self-defense empowerment — all aimed at strengthening knowledge, safety, and confidence among women and children in rural communities.",
+    initiatives: [
+      {
+        initiativeTitle: "Initiative 1: Menstrual Health & Hygiene Awareness",
+        challenge: "In many rural villages, girls and women lack access to accurate information about menstrual health and hygiene. Due to traditional beliefs and limited health education, many continue to follow age-old practices or use unhygienic methods during their menstrual cycle. This creates health risks such as infections and reinforces stigma and discomfort around menstruation. Additionally, there is often little understanding of proper disposal of sanitary products, affecting both community hygiene and the local environment.",
+        objectives: [
+          "Provide accurate education on menstrual health",
+          "Break stigma and misconceptions around menstruation",
+          "Promote safe hygiene practices",
+          "Encourage responsible disposal of sanitary waste",
+          "Improve nutrition awareness among children"
+        ],
+        solution: "Conducted community visits, school awareness workshops, and interactive discussions to educate girls, women, and children on menstrual hygiene, safe disposal practices, and healthy lifestyle habits.",
+        implementationStrategy: [
+          "Organised awareness sessions in schools and villages",
+          "Created safe spaces for open discussion and questions",
+          "Provided biological education on menstruation",
+          "Demonstrated safe usage of hygienic products",
+          "Educated on proper menstrual waste disposal methods",
+          "Promoted healthy eating habits among children"
+        ],
+        keyFocusAreas: [
+          "Understanding the biological process of menstruation",
+          "Importance of maintaining hygiene during menstrual cycle",
+          "Safe and responsible disposal practices",
+          "Clarification of myths and misconceptions",
+          "Encouraging home-made nutritious food over packet foods"
+        ],
+        impact: [
+          "Over 200 girls now understand proper menstrual hygiene practices",
+          "More than 350 women using appropriate menstrual products with correct disposal knowledge",
+          "Reduced health risks and improved sanitation awareness",
+          "Increased confidence and comfort discussing menstrual health",
+          "More children bringing home-made food to school, improving nutrition awareness"
+        ]
+      },
+      {
+        initiativeTitle: "Initiative 2: Disaster Awareness & Preparedness Training",
+        challenge: "In many rural villages, children have limited awareness of disaster preparedness — including how to respond during floods, earthquakes, or fires. Schools often lack resources to provide structured disaster education, leaving students unsure of how to act safely during emergencies. Preparedness is essential to reduce risk, fear, and anxiety during crises.",
+        objectives: [
+          "Build disaster awareness among children",
+          "Teach step-by-step emergency response actions",
+          "Reduce fear and confusion during emergencies",
+          "Strengthen school-level preparedness systems"
+        ],
+        solution: "Partnered with GujAid Disaster and First Aid Foundation to conduct interactive disaster management and first-aid training sessions within the school premises.",
+        implementationStrategy: [
+          "Collaborated with expert trainers from GujAid",
+          "Organised interactive sessions at the school",
+          "Provided step-by-step explanations of different disasters",
+          "Used accessible language for better understanding",
+          "Encouraged questions and active student participation"
+        ],
+        topicsCovered: [
+          "Flood safety measures",
+          "Earthquake response techniques",
+          "Fire emergency actions",
+          "Basic first-aid knowledge",
+          "Helping others during emergencies"
+        ],
+        impact: [
+          "Children and youth gained clearer understanding of disaster response",
+          "Improved preparedness and step-by-step safety knowledge",
+          "Reduced fear through awareness and structured learning",
+          "Strengthened school's disaster education capacity through expert partnership"
+        ]
+      },
+      {
+        initiativeTitle: "Initiative 3: Self-Defense & Personal Safety Training",
+        challenge: "The increasing rise in eve-teasing, harassment, and bullying — in public spaces and transport — has made daily travel unsafe for children, particularly girls. Safety concerns affect confidence, freedom, and mental well-being.",
+        objectives: [
+          "Equip children with practical self-defense techniques",
+          "Increase confidence and personal safety awareness",
+          "Reduce vulnerability in unsafe situations",
+          "Empower girls to protect themselves"
+        ],
+        solution: "Partnered with a professional martial arts trainer, Udaan Sir (Udan Purabiya, Krav Maga self-defense system), to conduct structured self-defense sessions during school hours.",
+        implementationStrategy: [
+          "Coordinated with school authorities",
+          "Invited professional martial arts trainer",
+          "Conducted sessions within school premises",
+          "Taught simple, quick, and easy-to-remember defense techniques",
+          "Focused on real-life scenario-based training"
+        ],
+        trainingHighlights: [
+          "Basic Krav Maga techniques",
+          "Quick reaction and escape strategies",
+          "Confidence-building exercises",
+          "Situational awareness training"
+        ],
+        impact: [
+          "Increased awareness about personal safety",
+          "Students reported feeling safer and more confident",
+          "Positive feedback from school staff and children",
+          "Empowered girls with practical self-defense skills"
+        ]
+      }
+    ],
+    collectiveImpact: [
+      "Improved health awareness among girls and women",
+      "Enhanced disaster preparedness among children",
+      "Strengthened personal safety confidence",
+      "Encouraged open conversations around sensitive topics",
+      "Built stronger school-community partnerships",
+      "Created a culture of awareness, resilience, and empowerment"
+    ]
+  },
+  {
+    id: 6,
+    title: "Well-Being, Digital Awareness & Future Readiness Initiatives",
+    location: "Village Schools & Community Spaces",
+    year: "2026",
+    image: "🧘",
+    photos: wellbeingInitiativePhotos,
+    overview: "This case study highlights three community-strengthening initiatives — Yoga & Wellness Camps, Social Media & Digital Safety Awareness, and Career Counselling for Students — designed to improve physical health, mental resilience, digital responsibility, and future preparedness among children and adults.",
+    initiatives: [
+      {
+        initiativeTitle: "Initiative 1: Yoga — A Constant Need for Physical, Mental & Emotional Well-Being",
+        challenge: "In today's fast-paced world, stress and lifestyle-related issues affect women, children, office staff, and workers alike. Many experience physical discomfort, anxiety, lack of concentration, exam-related stress, poor posture, and mental fatigue. Prolonged sitting and incorrect body alignment have become common concerns impacting overall health and quality of life.",
+        objectives: [
+          "Improve physical health and posture",
+          "Reduce anxiety and mental fatigue",
+          "Build focus and concentration in children",
+          "Promote emotional balance and overall well-being",
+          "Encourage consistent healthy lifestyle habits"
+        ],
+        solution: "Organised ongoing Yoga camps in village schools and community spaces in collaboration with CSR partners, offering structured and group-specific sessions.",
+        implementationStrategy: [
+          "Regular yoga camps conducted in schools and community areas",
+          "Targeted yoga modules designed for different age groups and professions",
+          "Guided sessions led by experienced Yoga Guru Neelam Pandya ji",
+          "Educational insights on long-term benefits of yoga"
+        ],
+        groupFocusedApproach: {
+          women: [
+            "Practices for easing body pains",
+            "Reducing restlessness",
+            "Improving overall physical health"
+          ],
+          children: [
+            "Managing anxiety",
+            "Improving focus and concentration",
+            "Reducing exam stress"
+          ],
+          officeStaffAndWorkers: [
+            "Improving posture",
+            "Enhancing body balance",
+            "Cultivating calmness and mental clarity"
+          ]
+        },
+        impact: [
+          "Participants report feeling calmer and mentally balanced",
+          "Visible improvement in physical strength and flexibility",
+          "Enhanced concentration among children",
+          "Positive community response and regular participation",
+          "Increased awareness of yoga as a lifestyle practice, not just exercise"
+        ]
+      },
+      {
+        initiativeTitle: "Initiative 2: Social Media & Digital Safety Awareness",
+        challenge: "Widespread use of mobile phones and social media platforms such as Facebook, Instagram, and Twitter has led to increased screen addiction, family tensions, and exposure to harmful content. Children often consume digital content without awareness of risks. Additionally, rising cases of cyber fraud, scams, photo theft, and online exploitation make digital awareness essential.",
+        objectives: [
+          "Educate children about digital safety",
+          "Create awareness about cybercrime and online fraud",
+          "Promote responsible mobile phone usage",
+          "Encourage critical thinking about social media consumption"
+        ],
+        solution: "Invited social media expert Mr. Ankit Momaya to conduct an awareness session on responsible and safe mobile phone usage.",
+        implementationStrategy: [
+          "Organised expert-led interactive session",
+          "Explained digital threats in accessible language",
+          "Discussed real-life examples of cybercrime and scams",
+          "Encouraged questions and active participation"
+        ],
+        topicsCovered: [
+          "Cybercrime awareness",
+          "Photo theft and misuse",
+          "Online money fraud",
+          "Risks of oversharing personal information",
+          "Pros and cons of social media platforms"
+        ],
+        impact: [
+          "Increased awareness about digital threats",
+          "Improved understanding of responsible phone usage",
+          "Greater clarity among children about online safety",
+          "Community enlightened about both benefits and risks of social media"
+        ]
+      },
+      {
+        initiativeTitle: "Initiative 3: Career Counselling & Future Pathway Guidance",
+        challenge: "Many rural students lack exposure to diverse career opportunities and structured guidance about higher education. Limited awareness can restrict aspirations and prevent students from aligning their strengths with suitable career paths.",
+        objectives: [
+          "Expose students to a wide range of career options",
+          "Help students identify strengths and interests",
+          "Encourage higher education aspirations",
+          "Build confidence in future planning"
+        ],
+        solution: "Conducted interactive career counselling sessions for students of classes 9 to 12 with support from CSR partners.",
+        implementationStrategy: [
+          "Organised structured guidance session",
+          "Introduced students to multiple career pathways",
+          "Conducted small assessment activities",
+          "Encouraged interactive discussion and engagement"
+        ],
+        keyActivities: [
+          "Career awareness presentations",
+          "Interest-based assessment exercises",
+          "Discussion on higher education opportunities",
+          "Guidance on aligning skills with professions"
+        ],
+        impact: [
+          "Renewed enthusiasm among students for higher education",
+          "Improved clarity about future career options",
+          "Increased motivation to pursue structured academic paths",
+          "Positive influence on families to support education",
+          "Inspiration for the next generation to dream bigger"
+        ]
+      }
+    ],
+    collectiveImpact: [
+      "Improved physical, mental, and emotional well-being",
+      "Enhanced digital responsibility and awareness",
+      "Strengthened career readiness among rural youth",
+      "Built long-term resilience and informed decision-making",
+      "Created a supportive ecosystem for holistic development"
+    ]
+  }
+];
+
 // Livelihood Impact case studies data (CS1 + CS4 for Livelihood popup)
 const livelihoodImpactCaseStudies = [
   {
@@ -443,11 +710,14 @@ const Home = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [livelihoodModalOpen, setLivelihoodModalOpen] = useState(false);
   const [livelihoodImpactModalOpen, setLivelihoodImpactModalOpen] = useState(false);
+  const [educationModalOpen, setEducationModalOpen] = useState(false);
   const [currentPhotoIndexCS1, setCurrentPhotoIndexCS1] = useState(0);
   const [currentPhotoIndexCS2, setCurrentPhotoIndexCS2] = useState(0);
   const [currentPhotoIndexCS3, setCurrentPhotoIndexCS3] = useState(0);
   const [currentPhotoIndexCS4, setCurrentPhotoIndexCS4] = useState(0);
   const [currentPhotoIndexCS4L, setCurrentPhotoIndexCS4L] = useState(0);
+  const [currentPhotoIndexCS5, setCurrentPhotoIndexCS5] = useState(0);
+  const [currentPhotoIndexCS6, setCurrentPhotoIndexCS6] = useState(0);
 
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) => {
@@ -530,6 +800,36 @@ const Home = () => {
   };
   const prevPhotoCS4L = () => {
     setCurrentPhotoIndexCS4L((prev) => prev === 0 ? caseStudy4Photo.length - 1 : prev - 1);
+  };
+
+  // Education modal handlers
+  const openEducationModal = (e) => {
+    e.preventDefault();
+    setEducationModalOpen(true);
+    setCurrentPhotoIndexCS5(0);
+    setCurrentPhotoIndexCS6(0);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeEducationModal = () => {
+    setEducationModalOpen(false);
+    document.body.style.overflow = 'auto';
+  };
+
+  // Navigation handlers for CS5
+  const nextPhotoCS5 = () => {
+    setCurrentPhotoIndexCS5((prev) => (prev + 1) % caseStudy5Photos.length);
+  };
+  const prevPhotoCS5 = () => {
+    setCurrentPhotoIndexCS5((prev) => prev === 0 ? caseStudy5Photos.length - 1 : prev - 1);
+  };
+
+  // Navigation handlers for CS6
+  const nextPhotoCS6 = () => {
+    setCurrentPhotoIndexCS6((prev) => (prev + 1) % wellbeingInitiativePhotos.length);
+  };
+  const prevPhotoCS6 = () => {
+    setCurrentPhotoIndexCS6((prev) => prev === 0 ? wellbeingInitiativePhotos.length - 1 : prev - 1);
   };
 
   useEffect(() => {
@@ -1108,6 +1408,209 @@ const Home = () => {
         </div>
       )}
 
+      {/* Education Case Studies Modal (CS5) */}
+      {educationModalOpen && (
+        <div className="livelihood-modal-overlay" onClick={closeEducationModal}>
+          <div className="livelihood-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="livelihood-modal-close" onClick={closeEducationModal}>
+              ×
+            </button>
+            <div className="livelihood-modal-body">
+              <h2 className="livelihood-modal-title">Impact in Education</h2>
+              <p className="livelihood-modal-subtitle">Awareness and empowerment initiatives fostering health, safety, and resilience in rural schools and communities</p>
+
+              {educationCaseStudies.map((study) => (
+                <div key={study.id} className="livelihood-case-study-card">
+                  <div className="livelihood-cs-header">
+                    <div className="livelihood-cs-icon">{study.image}</div>
+                    <div className="livelihood-cs-meta">
+                      <h3 className="livelihood-cs-title">{study.title}</h3>
+                      <div className="livelihood-cs-info">
+                        {study.location && <span>📍 {study.location}</span>}
+                        {study.year && <span>📅 {study.year}</span>}
+                      </div>
+                    </div>
+                  </div>
+
+                  {study.photos && study.photos.length > 0 && (
+                    <div className="livelihood-photo-slider">
+                      <div className="livelihood-slider-container">
+                        {study.photos.map((photo, photoIndex) => (
+                          <img
+                            key={photoIndex}
+                            src={photo}
+                            alt={`${study.title} - View ${photoIndex + 1}`}
+                            className={`livelihood-slider-image ${photoIndex === (study.id === 6 ? currentPhotoIndexCS6 : currentPhotoIndexCS5) ? 'active' : ''}`}
+                          />
+                        ))}
+                        <button className="livelihood-slider-arrow livelihood-slider-arrow-left" onClick={study.id === 6 ? prevPhotoCS6 : prevPhotoCS5}>‹</button>
+                        <button className="livelihood-slider-arrow livelihood-slider-arrow-right" onClick={study.id === 6 ? nextPhotoCS6 : nextPhotoCS5}>›</button>
+                      </div>
+                      <div className="livelihood-slider-indicators">
+                        {study.photos.map((_, photoIndex) => (
+                          <span
+                            key={photoIndex}
+                            className={`livelihood-indicator ${photoIndex === (study.id === 6 ? currentPhotoIndexCS6 : currentPhotoIndexCS5) ? 'active' : ''}`}
+                            onClick={() => study.id === 6 ? setCurrentPhotoIndexCS6(photoIndex) : setCurrentPhotoIndexCS5(photoIndex)}
+                          ></span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  <div className="livelihood-cs-content">
+                    {study.overview && (
+                      <div className="livelihood-cs-section">
+                        <h4>Overview</h4>
+                        <p>{study.overview}</p>
+                      </div>
+                    )}
+
+                    {study.initiatives && study.initiatives.map((initiative, initIdx) => (
+                      <div key={initIdx} className="livelihood-cs-section livelihood-initiative-section">
+                        <h4 className="livelihood-initiative-title">{initiative.initiativeTitle}</h4>
+
+                        <div className="livelihood-cs-subsection">
+                          <h5>Challenge</h5>
+                          <p>{initiative.challenge}</p>
+                        </div>
+
+                        {initiative.objectives && (
+                          <div className="livelihood-cs-subsection">
+                            <h5>Objectives</h5>
+                            <ul className="livelihood-impact-list">
+                              {initiative.objectives.map((item, idx) => (
+                                <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        <div className="livelihood-cs-subsection">
+                          <h5>Solution</h5>
+                          <p>{initiative.solution}</p>
+                        </div>
+
+                        {initiative.implementationStrategy && (
+                          <div className="livelihood-cs-subsection">
+                            <h5>Implementation Strategy</h5>
+                            <ul className="livelihood-impact-list">
+                              {initiative.implementationStrategy.map((item, idx) => (
+                                <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        {initiative.keyFocusAreas && (
+                          <div className="livelihood-cs-subsection">
+                            <h5>Key Focus Areas</h5>
+                            <ul className="livelihood-impact-list">
+                              {initiative.keyFocusAreas.map((item, idx) => (
+                                <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        {initiative.topicsCovered && (
+                          <div className="livelihood-cs-subsection">
+                            <h5>Topics Covered</h5>
+                            <ul className="livelihood-impact-list">
+                              {initiative.topicsCovered.map((item, idx) => (
+                                <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        {initiative.trainingHighlights && (
+                          <div className="livelihood-cs-subsection">
+                            <h5>Training Highlights</h5>
+                            <ul className="livelihood-impact-list">
+                              {initiative.trainingHighlights.map((item, idx) => (
+                                <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        {initiative.groupFocusedApproach && (
+                          <div className="livelihood-cs-subsection">
+                            <h5>Group-Focused Approach</h5>
+                            {initiative.groupFocusedApproach.women && (
+                              <div className="livelihood-training-modules">
+                                <div className="livelihood-training-module">
+                                  <h5>Women</h5>
+                                  <ul className="livelihood-impact-list">
+                                    {initiative.groupFocusedApproach.women.map((item, idx) => (
+                                      <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                                    ))}
+                                  </ul>
+                                </div>
+                                <div className="livelihood-training-module">
+                                  <h5>Children</h5>
+                                  <ul className="livelihood-impact-list">
+                                    {initiative.groupFocusedApproach.children.map((item, idx) => (
+                                      <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                                    ))}
+                                  </ul>
+                                </div>
+                                <div className="livelihood-training-module">
+                                  <h5>Office Staff &amp; Workers</h5>
+                                  <ul className="livelihood-impact-list">
+                                    {initiative.groupFocusedApproach.officeStaffAndWorkers.map((item, idx) => (
+                                      <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        )}
+
+                        {initiative.keyActivities && (
+                          <div className="livelihood-cs-subsection">
+                            <h5>Key Activities</h5>
+                            <ul className="livelihood-impact-list">
+                              {initiative.keyActivities.map((item, idx) => (
+                                <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        {initiative.impact && (
+                          <div className="livelihood-cs-subsection">
+                            <h5>Impact</h5>
+                            <ul className="livelihood-impact-list">
+                              {initiative.impact.map((item, idx) => (
+                                <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                      </div>
+                    ))}
+
+                    {study.collectiveImpact && (
+                      <div className="livelihood-cs-section">
+                        <h4>Collective Impact</h4>
+                        <ul className="livelihood-impact-list">
+                          {study.collectiveImpact.map((item, idx) => (
+                            <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Merged Hero + Navbar Section */}
       <section className="hero">
         {/* Background Image Slider */}
@@ -1367,7 +1870,7 @@ const Home = () => {
               <div className="work-icon">📚</div>
               <h3>Education</h3>
               <p>Empowered 20 rural girls in Gujarat through tailoring training, helping them gain confidence, skills, and financial independence.</p>
-              <Link to="/case-studies#case-study-1" className="work-card-link">Read Case Study →</Link>
+              <a href="#education-case-studies" className="work-card-link" onClick={openEducationModal}>Read Case Study →</a>
             </div>
             <div className="work-card slide-up">
               <div className="work-icon">🏥</div>
