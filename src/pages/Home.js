@@ -1712,11 +1712,11 @@ const Home = () => {
             <div className="section-content">
               <h2 className="section-title">Who We Are</h2>
               <p className="section-text">
-                Selfless Serving Society was born from a shared belief: basic health and hygiene knowledge can change lives and strengthen entire communities. In many underserved areas, lack of access to essential health supplies and minimal awareness of simple hygienic practices allow preventable illnesses to quietly impact families — especially women, children, and the elderly.
+                Selfless Serving Society was founded on a simple belief: basic health and hygiene knowledge can transform lives and strengthen communities. In many underserved areas, lack of awareness and limited access to essential health supplies allow preventable illnesses to disproportionately affect women, children, and the elderly.
 
               </p>
               <p className="section-text">
-                We are a non-governmental, non-profit organization committed to closing this gap. Through outreach programs, workshops, seminars, talks, and distribution of health products, we equip people with the knowledge and tools they need to live healthier, happier, and more dignified lives.
+                We are a registered non-governmental, non-profit organisation with 80G, 12A, and CSR1 certifications. Through targeted outreach programs, workshops, seminars, talks, and distribution of health products, we equip communities with the knowledge and tools they need to live healthier, happier, and more dignified lives
               </p>
               <Link to="/About" className="btn btn-link">
                 Learn About Us →

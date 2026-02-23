@@ -12,25 +12,30 @@
 }
 
 .page-hero {
-  background: linear-gradient(135deg, #FFE066 0%, #FFD23F 50%, #E8B10D 100%);
-  color: #2C2C2C;
-  padding: 6rem 2rem;
-  text-align: center;
   position: relative;
-  overflow: hidden;
+  color: #fff;
+  text-align: left;
   margin: 20px;
   border-radius: 50px;
+  overflow: hidden;
 }
 
-.page-hero::before {
-  content: '';
+.page-hero-bg-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 30px;
+}
+
+.page-hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,101.3C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
-  background-size: cover;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 50px;
+  z-index: 0;
 }
 
 /* Our Approach Section */
@@ -48,10 +53,15 @@
 }
 
 .page-hero-content {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
   z-index: 1;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 700px;
+  width: 90%;
+  padding: 0 2rem;
+  text-align: left;
 }
 
 .page-title {

@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './About.css';
 
+// Import title image
+import aboutHeroImage from '../assets/Title Images/about-us.jpg.jpeg';
+
 // Import About Us page photos
 import ourStory1 from '../assets/About us page photoes/our story 1.jpg';
 import ourStory2 from '../assets/About us page photoes/our story 2.jpg';
@@ -67,11 +70,13 @@ const About = () => {
     <div className="about-page">
       {/* Hero Section */}
       <section className="page-hero">
+        <img src={aboutHeroImage} alt="About Us" className="page-hero-bg-img" />
+        <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
-          <h1 className="page-title fade-in">About Us</h1>
+          {/* <h1 className="page-title fade-in">About Us</h1>
           <p className="page-subtitle fade-in">
             Dedicated to creating positive change through compassion and action
-          </p>
+          </p> */}
         </div>
       </section>
 

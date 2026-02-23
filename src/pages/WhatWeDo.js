@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './WhatWeDo.css';
+import whatWeDoHeroImage from '../assets/Title Images/what we-do-concept.jpg.jpeg';
 
 const WhatWeDo = () => {
   useEffect(() => {
@@ -134,8 +135,10 @@ const WhatWeDo = () => {
     <div className="what-we-do-page">
       {/* Hero Section */}
       <section className="page-hero">
+        <img src={whatWeDoHeroImage} alt="What We Do" className="page-hero-bg-img" />
+        <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
-          <h1 className="page-title fade-in">What We Do</h1>
+          <h1 className="page-title fade-in ">What We Do</h1>
           <p className="page-subtitle fade-in">
             Transforming lives through comprehensive programs focused on education, health, and sustainable development
           </p>
@@ -145,7 +148,7 @@ const WhatWeDo = () => {
       {/* Introduction */}
       <section className="section intro-section">
         <div className="container">
-          <div className="intro-content fade-in">
+          <div className="intro-content ">
             <h2 className="section-heading centered">Our Mission in Action</h2>
             <p className="intro-text">
               At Selfless Serving Society, we believe in creating lasting change through holistic community development. 
