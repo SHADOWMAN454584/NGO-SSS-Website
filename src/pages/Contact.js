@@ -60,36 +60,36 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
-      {/* Hero Section */}
-      <section className="page-hero">
-        <div className="page-hero-content">
-          <h1 className="page-title fade-in">Contact Us</h1>
-          <p className="page-subtitle fade-in">
+      {/* Page Header */}
+      <section className="page-header">
+        <div className="page-header-content">
+          <h1 className="page-title">Contact Us</h1>
+          <p className="page-subtitle">
             We'd love to hear from you. Let's start a conversation.
           </p>
         </div>
       </section>
 
       {/* Contact Information */}
-      <section className="section">
+      <section className="section contact-info-section">
         <div className="container">
           <div className="contact-info-grid">
-            <div className="info-card ">
+            <div className="info-card">
               <div className="info-icon">📍</div>
               <h3>Visit Us</h3>
               <p>123 Hope Street<br />City, State 12345<br />Country</p>
             </div>
-            <div className="info-card ">
+            <div className="info-card">
               <div className="info-icon">📧</div>
               <h3>Email Us</h3>
               <p>info@selflessserving.org<br />support@selflessserving.org</p>
             </div>
-            <div className="info-card ">
+            <div className="info-card">
               <div className="info-icon">📞</div>
               <h3>Call Us</h3>
               <p>+1 (555) 123-4567<br />Mon-Fri: 9AM - 6PM</p>
             </div>
-            <div className="info-card ">
+            <div className="info-card">
               <div className="info-icon">🌐</div>
               <h3>Follow Us</h3>
               <p>@selflessserving on social media<br />Stay connected with us</p>
