@@ -185,7 +185,7 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      placeholder="john@example.com"
+                      placeholder="Your Email"
                     />
                   </div>
                 </div>
@@ -199,7 +199,7 @@ const Contact = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="+1 (555) 123-4567"
+                      placeholder="Your Number"
                     />
                   </div>
                   <div className="form-group">
