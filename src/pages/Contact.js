@@ -1,5 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
+
+// ─── EmailJS Configuration ────────────────────────────────────────────────────
+// Replace the placeholder values below with your real EmailJS credentials.
+// See setup instructions in the README or follow the steps Copilot provided.
+const EMAILJS_SERVICE_ID  = 'service_eal20vk';   // e.g. 'service_abc123'
+const EMAILJS_TEMPLATE_ID = 'template_wwa1oal';  // e.g. 'template_xyz456'
+const EMAILJS_PUBLIC_KEY  = 'YTkqio45e2L9f07WR';   // e.g. 'xxxxxxxxxxxxxxxxxxx'
+// ─────────────────────────────────────────────────────────────────────────────
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +20,8 @@ const Contact = () => {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading]     = useState(false);
+  const [error, setError]         = useState('');
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -41,21 +52,42 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
-    // In production, replace this with actual API call
-    setSubmitted(true);
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: ''
+    setLoading(true);
+    setError('');
+
+    const now = new Date();
+    const templateParams = {
+      name:       formData.name,
+      from_email: formData.email,
+      phone:      formData.phone || 'Not provided',
+      subject:    formData.subject,
+      message:    formData.message,
+      time:       now.toLocaleString('en-IN', {
+                    weekday: 'long',
+                    year:    'numeric',
+                    month:   'long',
+                    day:     'numeric',
+                    hour:    '2-digit',
+                    minute:  '2-digit',
+                    hour12:  true,
+                  }),
+      to_email:   'psoham2017@gmail.com',
+    };
+
+    emailjs
+      .send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_PUBLIC_KEY)
+      .then(() => {
+        setLoading(false);
+        setSubmitted(true);
+        setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+        // Hide success message after 5 seconds
+        setTimeout(() => setSubmitted(false), 5000);
+      })
+      .catch((err) => {
+        setLoading(false);
+        setError('Failed to send message. Please try again or email us directly.');
+        console.error('EmailJS error:', err);
       });
-      setSubmitted(false);
-    }, 3000);
   };
 
   return (
@@ -112,6 +144,13 @@ const Contact = () => {
                 <div className="success-message">
                   <div className="success-icon">✓</div>
                   <p>Thank you for reaching out! We'll be in touch soon.</p>
+                </div>
+              )}
+
+              {error && (
+                <div className="error-message">
+                  <div className="error-icon">⚠</div>
+                  <p>{error}</p>
                 </div>
               )}
 
@@ -187,8 +226,12 @@ const Contact = () => {
                   ></textarea>
                 </div>
 
-                <button type="submit" className="btn btn-primary btn-large">
-                  Send Message
+                <button
+                  type="submit"
+                  className="btn btn-primary btn-large"
+                  disabled={loading}
+                >
+                  {loading ? 'Sending...' : 'Send Message'}
                 </button>
               </form>
             </div>
