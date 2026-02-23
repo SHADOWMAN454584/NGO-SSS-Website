@@ -1679,9 +1679,6 @@ const Home = () => {
                 <Link to="/what-we-do" className="hero-nav-link" onClick={() => setMobileMenuOpen(false)}>What We Do</Link>
               </li>
               <li className="hero-nav-item">
-                <Link to="/case-studies" className="hero-nav-link" onClick={() => setMobileMenuOpen(false)}>Case Studies</Link>
-              </li>
-              <li className="hero-nav-item">
                 <Link to="/contact" className="hero-nav-link hero-nav-link-button" onClick={() => setMobileMenuOpen(false)}>Contact Us</Link>
               </li>
             </ul>
@@ -1876,7 +1873,7 @@ const Home = () => {
               <div className="work-icon">🏥</div>
               <h3>Healthcare</h3>
               <p>Promoted menstrual hygiene and wellness by distributing essential hygiene kits to adolescent girls in marginalized communities.</p>
-              <Link to="/case-studies#case-study-5" className="work-card-link">Read Case Study →</Link>
+
             </div>
             <div className="work-card slide-up">
               <div className="work-icon">🌱</div>
@@ -1892,9 +1889,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="centered">
-            <Link to="/case-studies" className="btn btn-primary">View All Projects</Link>
-          </div>
+
         </div>
       </section>
 

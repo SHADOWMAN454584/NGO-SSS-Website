@@ -66,15 +66,6 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <Link 
-              to="/case-studies" 
-              className={`nav-link ${location.pathname === '/case-studies' ? 'active' : ''}`}
-              onClick={closeMenu}
-            >
-              Case Studies
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link 
               to="/contact" 
               className="nav-link nav-link-button"
               onClick={closeMenu}

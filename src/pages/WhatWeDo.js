@@ -282,7 +282,6 @@ const WhatWeDo = () => {
             <p>Your support enables us to expand our reach and create more impact</p>
             <div className="cta-buttons">
               <a href="/contact" className="cta-button primary">Get Involved</a>
-              <a href="/case-studies" className="cta-button secondary">View Impact Stories</a>
             </div>
           </div>
         </div>

@@ -109,22 +109,30 @@ const Contact = () => {
             <div className="info-card">
               <div className="info-icon">📍</div>
               <h3>Visit Us</h3>
-              <p>123 Hope Street<br />City, State 12345<br />Country</p>
-            </div>
-            <div className="info-card">
-              <div className="info-icon">📧</div>
-              <h3>Email Us</h3>
-              <p>info@selflessserving.org<br />support@selflessserving.org</p>
+              <p>Bhagirath, Dahisar (E), Mumbai 400068</p>
             </div>
             <div className="info-card">
               <div className="info-icon">📞</div>
               <h3>Call Us</h3>
-              <p>+1 (555) 123-4567<br />Mon-Fri: 9AM - 6PM</p>
+              <p>+91 9892702063</p>
             </div>
             <div className="info-card">
-              <div className="info-icon">🌐</div>
+              <div className="info-icon">📧</div>
+              <h3>Email Us</h3>
+              <p>selflessservingsociety@gmail.com</p>
+            </div>
+            <div className="info-card">
+              <div className="info-icon">📸</div>
               <h3>Follow Us</h3>
-              <p>@selflessserving on social media<br />Stay connected with us</p>
+              <p>Stay connected with us on Instagram</p>
+              <a
+                href="https://www.instagram.com/selfless_serving_society_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="instagram-badge"
+              >
+                <span className="instagram-at">@</span>selfless_serving_society_
+              </a>
             </div>
           </div>
         </div>
