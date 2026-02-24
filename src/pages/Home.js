@@ -3,6 +3,14 @@ import { Link } from 'react-router-dom';
 import sssLogo from '../assets/images/Logo.svg';
 import './Home.css';
 
+// Import leader photos
+import konicaPhoto from '../assets/Leader Photoes/Konica.jpeg';
+import nasreenPhoto from '../assets/Leader Photoes/Nasreen.jpeg';
+import mamtaPhoto from '../assets/Leader Photoes/Mamta.jpeg';
+import poojaPhoto from '../assets/Leader Photoes/Pooja.jpeg';
+import apoorvaPhoto from '../assets/Leader Photoes/Apoorva.jpeg';
+import gauriPhoto from '../assets/Leader Photoes/Gauri.jpeg';
+
 // Import hero images (add your images to src/assets/home hero image/)
 // Uncomment these lines and add your actual image files
 import heroImage1 from '../assets/home hero image/image1.jpg';
@@ -1735,15 +1743,15 @@ const Home = () => {
           </p>
           <div className="team-grid">
             <div className="team-card ">
-              <div className="team-photo">👤</div>
+              <div className="team-photo"><img src={konicaPhoto} alt="Konica Lishoy" /></div>
               <h3>Konica Lishoy</h3>
               <p className="team-role">Trustee</p>
               <p className="team-bio">
-                KoNica Lishoy holds a diploma in Commercial Art. After working professionally, she took a break for motherhood. Her experience with the Teach for India project inspired her to support underprivileged children and women. After several years with an NGO, she founded the Selfless Serving Society, bringing her experience and compassion to its work.
+                Konica Lishoy holds a diploma in Commercial Art. After working professionally, she took a break for motherhood. Her experience with the Teach for India project inspired her to support underprivileged children and women. After several years with an NGO, she founded the Selfless Serving Society, bringing her experience and compassion to its work.
               </p>
             </div>
             <div className="team-card">
-              <div className="team-photo">👤</div>
+              <div className="team-photo"><img src={nasreenPhoto} alt="Nasreen Rishi Madaan" /></div>
               <h3>Nasreen Rishi Madaan</h3>
               <p className="team-role">Trustee</p>
               <p className="team-bio">
@@ -1759,7 +1767,7 @@ const Home = () => {
               </p>
             </div>
             <div className="team-card ">
-              <div className="team-photo">👤</div>
+              <div className="team-photo"><img src={mamtaPhoto} alt="Mamata Hulke John" /></div>
               <h3>Mamata Hulke John</h3>
               <p className="team-role">Trustee</p>
               <p className="team-bio">
@@ -1767,7 +1775,7 @@ const Home = () => {
               </p>
             </div>
             <div className="team-card ">
-              <div className="team-photo">👤</div>
+              <div className="team-photo"><img src={poojaPhoto} alt="Pooja Nirala" /></div>
               <h3>Pooja Nirala</h3>
               <p className="team-role">Trustee</p>
               <p className="team-bio">
@@ -1811,8 +1819,8 @@ const Home = () => {
               </p>
             </div>
             <div className="team-card">
-              <div className="team-photo">👤</div>
-              <h3>Apurva Kulkarni</h3>
+              <div className="team-photo"><img src={apoorvaPhoto} alt="Apurva Kulkarni" /></div>
+              <h3>Apoorva Kulkarni</h3>
               <p className="team-role">Guiding Member</p>
               <p className="team-bio">
                 Apoorva Kulkarni is a Business Strategy Consultant and IIM Kozhikode alumnus. He is the Founder of Apurva Business Strategy, helping businesses scale, expand globally, and achieve sustainable growth.
@@ -1843,7 +1851,7 @@ const Home = () => {
               </p>
             </div>
             <div className="team-card">
-              <div className="team-photo">👤</div>
+              <div className="team-photo"><img src={gauriPhoto} alt="Gauri Chapekar" /></div>
               <h3>Gauri Chapekar</h3>
               <p className="team-role">Guiding Member</p>
               <p className="team-bio">
