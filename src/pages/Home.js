@@ -10,6 +10,9 @@ import mamtaPhoto from '../assets/Leader Photoes/Mamta.jpeg';
 import poojaPhoto from '../assets/Leader Photoes/Pooja.jpeg';
 import apoorvaPhoto from '../assets/Leader Photoes/Apoorva.jpeg';
 import gauriPhoto from '../assets/Leader Photoes/Gauri.jpeg';
+import Kirti from '../assets/Leader Photoes/Kirti.jpeg';
+import Lalita from '../assets/Leader Photoes/Lalita.jpeg';
+import Vevek from '../assets/Leader Photoes/Vevek.jpeg';
 
 // Import hero images (add your images to src/assets/home hero image/)
 // Uncomment these lines and add your actual image files
@@ -1811,7 +1814,7 @@ const Home = () => {
           </p>
           <div className="team-grid">
             <div className="team-card">
-              <div className="team-photo">👤</div>
+              <div className="team-photo"><img src={Vevek} alt="Vivek Kamble" /></div>
               <h3>Vivek Kamble</h3>
               <p className="team-role">Guiding Member</p>
               <p className="team-bio">
@@ -1819,11 +1822,11 @@ const Home = () => {
               </p>
             </div>
             <div className="team-card">
-              <div className="team-photo"><img src={apoorvaPhoto} alt="Apurva Kulkarni" /></div>
-              <h3>Apoorva Kulkarni</h3>
-              <p className="team-role">Guiding Member</p>
+              <div className="team-photo"><img src={Kirti} alt="Kirti" /></div>
+              <h3>Kirti</h3>
+              <p className="team-role">Guiding Member--</p>
               <p className="team-bio">
-                Apoorva Kulkarni is a Business Strategy Consultant and IIM Kozhikode alumnus. He is the Founder of Apurva Business Strategy, helping businesses scale, expand globally, and achieve sustainable growth.
+                Bachelor of Science - Chemistry, Post Graduate Diploma in Business Administration. Self employed
               </p>
             </div>
             <div className="team-card">
@@ -1835,7 +1838,7 @@ const Home = () => {
               </p>
             </div>
             <div className="team-card">
-              <div className="team-photo">👤</div>
+              <div className="team-photo"><img src={Lalita} alt="Lalita"/></div>
               <h3>Lalita Jaykrishnan</h3>
               <p className="team-role">Guiding Member</p>
               <p className="team-bio">
@@ -1843,11 +1846,11 @@ const Home = () => {
               </p>
             </div>
             <div className="team-card">
-              <div className="team-photo">👤</div>
-              <h3>Kirti</h3>
-              <p className="team-role">Guiding Member--</p>
+              <div className="team-photo"><img src={apoorvaPhoto} alt="Apurva Kulkarni" /></div>
+              <h3>Apoorva Kulkarni</h3>
+              <p className="team-role">Guiding Member</p>
               <p className="team-bio">
-                Brief biography and background information about this guiding light member. Their experience, qualifications, and contribution to the organization's mission and vision.
+                Apoorva Kulkarni is a Business Strategy Consultant and IIM Kozhikode alumnus. He is the Founder of Apurva Business Strategy, helping businesses scale, expand globally, and achieve sustainable growth.
               </p>
             </div>
             <div className="team-card">
