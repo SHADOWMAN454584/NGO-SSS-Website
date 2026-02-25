@@ -130,12 +130,16 @@ const healthSafetyInitiativePhotos = [
   require('../assets/Case Study 5/cs5 6.jpg'),
 ];
 
+// Healthcare camp photos for Eye & Dental case study (add photos to src/assets/Case Study 7/ when available)
+const healthCampPhotos = [];
+
 const CaseStudies = () => {
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
   const [currentPhotoIndexCS2, setCurrentPhotoIndexCS2] = useState(0);
   const [currentPhotoIndexCS3, setCurrentPhotoIndexCS3] = useState(0);
   const [currentPhotoIndexCS4, setCurrentPhotoIndexCS4] = useState(0);
   const [currentPhotoIndexCS5, setCurrentPhotoIndexCS5] = useState(0);
+  const [currentPhotoIndexCS6, setCurrentPhotoIndexCS6] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalPhotoIndex, setModalPhotoIndex] = useState(0);
 
@@ -231,6 +235,19 @@ const CaseStudies = () => {
   const prevPhotoCS5 = () => {
     setCurrentPhotoIndexCS5((prevIndex) => 
       prevIndex === 0 ? healthSafetyInitiativePhotos.length - 1 : prevIndex - 1
+    );
+  };
+
+  // Navigation handlers for Case Study 6 (Eye & Dental)
+  const nextPhotoCS6 = () => {
+    setCurrentPhotoIndexCS6((prevIndex) => 
+      (prevIndex + 1) % (healthCampPhotos.length || 1)
+    );
+  };
+
+  const prevPhotoCS6 = () => {
+    setCurrentPhotoIndexCS6((prevIndex) => 
+      prevIndex === 0 ? Math.max(healthCampPhotos.length - 1, 0) : prevIndex - 1
     );
   };
 
@@ -647,6 +664,83 @@ const CaseStudies = () => {
         "Built stronger school-community partnerships",
         "Created a culture of awareness, resilience, and empowerment"
       ]
+    },
+    {
+      id: 6,
+      title: "Eye & Dental Health Camps \u2014 Bridging Rural Healthcare Gaps",
+      location: "Multiple Rural Villages",
+      year: "2026",
+      image: "\ud83d\udc41\ufe0f",
+      photos: healthCampPhotos,
+      overview: "This initiative focused on improving access to essential healthcare services in rural communities through specialised eye and dental health camps, organised in collaboration with CSR partner JTI.",
+      initiatives: [
+        {
+          initiativeTitle: "Eye Health Screening Camp",
+          challenge: "Access to basic eye care services remains limited in many rural areas. Lack of awareness and limited availability of specialists often result in undiagnosed vision problems such as refractive errors and cataracts, affecting productivity, education, and overall quality of life.",
+          objectives: [
+            "Provide accessible vision screening services",
+            "Promote awareness about eye health and early detection",
+            "Identify common visual impairments",
+            "Improve quality of life through corrective support"
+          ],
+          solution: "Organised eye health camps in rural villages with trained eye care specialists conducting comprehensive vision check-ups.",
+          implementationStrategy: [
+            "Collaboration with CSR partner JTI",
+            "Deployment of trained eye care specialists",
+            "On-site comprehensive vision screening",
+            "Educational sessions on eye health and preventive care",
+            "Immediate distribution of corrective spectacles when required"
+          ],
+          servicesProvided: [
+            "Thorough vision examinations",
+            "Screening for refractive errors and cataracts",
+            "Free spectacles provided to individuals with visual impairment",
+            "Awareness on maintaining eye health"
+          ],
+          impact: [
+            "Improved vision and independence for beneficiaries",
+            "Enhanced ability to work and study",
+            "Increased awareness of early detection importance",
+            "Reduced barriers to specialised healthcare access"
+          ]
+        },
+        {
+          initiativeTitle: "Dental Health & Hygiene Camp",
+          challenge: "Oral hygiene and preventive dental care are often overlooked in rural healthcare awareness. Limited access to dentists and lack of knowledge about dental hygiene contribute to untreated dental issues and long-term oral health problems.",
+          objectives: [
+            "Promote awareness about oral hygiene",
+            "Provide accessible dental examinations",
+            "Encourage preventive dental care practices",
+            "Improve long-term oral health outcomes"
+          ],
+          solution: "Conducted dental health camps where dentists and support staff provided examinations, guidance, and hygiene kits to villagers.",
+          implementationStrategy: [
+            "On-site dental check-ups in rural villages",
+            "Practical demonstrations on proper brushing techniques",
+            "Awareness sessions on preventive oral care",
+            "Distribution of dental care kits"
+          ],
+          servicesProvided: [
+            "Dental examinations by qualified professionals",
+            "Education on maintaining healthy teeth and gums",
+            "Identification of warning signs of dental issues",
+            "Distribution of toothbrushes, toothpaste, and educational material"
+          ],
+          impact: [
+            "Improved understanding of oral hygiene importance",
+            "Increased motivation to adopt better dental habits",
+            "Early identification of dental health concerns",
+            "Enhanced access to preventive healthcare services"
+          ]
+        }
+      ],
+      collectiveImpact: [
+        "Reduced healthcare access barriers in rural communities",
+        "Improved quality of life through better vision and oral health",
+        "Increased awareness of preventive healthcare practices",
+        "Demonstrated effective CSR-community collaboration",
+        "Strengthened trust between healthcare providers and rural residents"
+      ]
     }
   ];
 
@@ -800,7 +894,7 @@ const CaseStudies = () => {
                     </div>
                   </div>
                 </div>
-              ) : study.id === 3 || study.id === 4 || study.id === 5 ? (
+              ) : study.id === 3 || study.id === 4 || study.id === 5 || study.id === 6 ? (
                 // Special layout for CS3, CS4, and CS5 with initiatives
                 <>
                   <div className="case-study-header">
@@ -824,20 +918,20 @@ const CaseStudies = () => {
                             src={photo}
                             alt={`${study.title} - View ${photoIndex + 1}`}
                             className={`slider-image ${
-                              photoIndex === (study.id === 3 ? currentPhotoIndexCS3 : study.id === 4 ? currentPhotoIndexCS4 : currentPhotoIndexCS5) ? 'active' : ''
+                              photoIndex === (study.id === 3 ? currentPhotoIndexCS3 : study.id === 4 ? currentPhotoIndexCS4 : study.id === 6 ? currentPhotoIndexCS6 : currentPhotoIndexCS5) ? 'active' : ''
                             }`}
                           />
                         ))}
                         
                         <button 
                           className="slider-arrow slider-arrow-left" 
-                          onClick={study.id === 3 ? prevPhotoCS3 : study.id === 4 ? prevPhotoCS4 : prevPhotoCS5}
+                          onClick={study.id === 3 ? prevPhotoCS3 : study.id === 4 ? prevPhotoCS4 : study.id === 6 ? prevPhotoCS6 : prevPhotoCS5}
                         >
                           ‹
                         </button>
                         <button 
                           className="slider-arrow slider-arrow-right" 
-                          onClick={study.id === 3 ? nextPhotoCS3 : study.id === 4 ? nextPhotoCS4 : nextPhotoCS5}
+                          onClick={study.id === 3 ? nextPhotoCS3 : study.id === 4 ? nextPhotoCS4 : study.id === 6 ? nextPhotoCS6 : nextPhotoCS5}
                         >
                           ›
                         </button>
@@ -847,9 +941,9 @@ const CaseStudies = () => {
                           <span
                             key={photoIndex}
                             className={`indicator ${
-                              photoIndex === (study.id === 3 ? currentPhotoIndexCS3 : study.id === 4 ? currentPhotoIndexCS4 : currentPhotoIndexCS5) ? 'active' : ''
+                              photoIndex === (study.id === 3 ? currentPhotoIndexCS3 : study.id === 4 ? currentPhotoIndexCS4 : study.id === 6 ? currentPhotoIndexCS6 : currentPhotoIndexCS5) ? 'active' : ''
                             }`}
-                            onClick={() => study.id === 3 ? setCurrentPhotoIndexCS3(photoIndex) : study.id === 4 ? setCurrentPhotoIndexCS4(photoIndex) : setCurrentPhotoIndexCS5(photoIndex)}
+                            onClick={() => study.id === 3 ? setCurrentPhotoIndexCS3(photoIndex) : study.id === 4 ? setCurrentPhotoIndexCS4(photoIndex) : study.id === 6 ? setCurrentPhotoIndexCS6(photoIndex) : setCurrentPhotoIndexCS5(photoIndex)}
                           ></span>
                         ))}
                       </div>
@@ -971,6 +1065,20 @@ const CaseStudies = () => {
                             <h5>Support Provided</h5>
                             <ul className="impact-list">
                               {initiative.supportProvided.map((item, idx) => (
+                                <li key={idx}>
+                                  <span className="check-icon">✓</span>
+                                  {item}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        {initiative.servicesProvided && (
+                          <div className="case-study-subsection">
+                            <h5>Services Provided</h5>
+                            <ul className="impact-list">
+                              {initiative.servicesProvided.map((item, idx) => (
                                 <li key={idx}>
                                   <span className="check-icon">✓</span>
                                   {item}

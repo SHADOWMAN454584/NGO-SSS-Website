@@ -116,6 +116,9 @@ const wellbeingInitiativePhotos = [
   require('../assets/Case Study 6/cs6 15.jpeg'),
 ];
 
+// Healthcare camp photos (add photos to src/assets/Case Study 7/ when available)
+const healthCampPhotos = [];
+
 // Education case studies data (CS5 + CS6 for Education popup)
 const educationCaseStudies = [
   {
@@ -716,12 +719,97 @@ const livelihoodCaseStudies = [
   }
 ];
 
+// Healthcare case studies data (CS5 Health/Safety + CS6 Eye & Dental for Healthcare popup)
+const healthcareCaseStudies = [
+  
+  {
+    id: 6,
+    title: "Eye & Dental Health Camps — Bridging Rural Healthcare Gaps",
+    location: "Multiple Rural Villages",
+    year: "2026",
+    image: "👁️",
+    photos: healthCampPhotos,
+    overview: "This initiative focused on improving access to essential healthcare services in rural communities through specialised eye and dental health camps, organised in collaboration with CSR partner JTI.",
+    initiatives: [
+      {
+        initiativeTitle: "Eye Health Screening Camp",
+        challenge: "Access to basic eye care services remains limited in many rural areas. Lack of awareness and limited availability of specialists often result in undiagnosed vision problems such as refractive errors and cataracts, affecting productivity, education, and overall quality of life.",
+        objectives: [
+          "Provide accessible vision screening services",
+          "Promote awareness about eye health and early detection",
+          "Identify common visual impairments",
+          "Improve quality of life through corrective support"
+        ],
+        solution: "Organised eye health camps in rural villages with trained eye care specialists conducting comprehensive vision check-ups.",
+        implementationStrategy: [
+          "Collaboration with CSR partner JTI",
+          "Deployment of trained eye care specialists",
+          "On-site comprehensive vision screening",
+          "Educational sessions on eye health and preventive care",
+          "Immediate distribution of corrective spectacles when required"
+        ],
+        servicesProvided: [
+          "Thorough vision examinations",
+          "Screening for refractive errors and cataracts",
+          "Free spectacles provided to individuals with visual impairment",
+          "Awareness on maintaining eye health"
+        ],
+        impact: [
+          "Improved vision and independence for beneficiaries",
+          "Enhanced ability to work and study",
+          "Increased awareness of early detection importance",
+          "Reduced barriers to specialised healthcare access"
+        ]
+      },
+      {
+        initiativeTitle: "Dental Health & Hygiene Camp",
+        challenge: "Oral hygiene and preventive dental care are often overlooked in rural healthcare awareness. Limited access to dentists and lack of knowledge about dental hygiene contribute to untreated dental issues and long-term oral health problems.",
+        objectives: [
+          "Promote awareness about oral hygiene",
+          "Provide accessible dental examinations",
+          "Encourage preventive dental care practices",
+          "Improve long-term oral health outcomes"
+        ],
+        solution: "Conducted dental health camps where dentists and support staff provided examinations, guidance, and hygiene kits to villagers.",
+        implementationStrategy: [
+          "On-site dental check-ups in rural villages",
+          "Practical demonstrations on proper brushing techniques",
+          "Awareness sessions on preventive oral care",
+          "Distribution of dental care kits"
+        ],
+        servicesProvided: [
+          "Dental examinations by qualified professionals",
+          "Education on maintaining healthy teeth and gums",
+          "Identification of warning signs of dental issues",
+          "Distribution of toothbrushes, toothpaste, and educational material"
+        ],
+        impact: [
+          "Improved understanding of oral hygiene importance",
+          "Increased motivation to adopt better dental habits",
+          "Early identification of dental health concerns",
+          "Enhanced access to preventive healthcare services"
+        ]
+      }
+    ],
+    collectiveImpact: [
+      "Reduced healthcare access barriers in rural communities",
+      "Improved quality of life through better vision and oral health",
+      "Increased awareness of preventive healthcare practices",
+      "Demonstrated effective CSR-community collaboration",
+      "Strengthened trust between healthcare providers and rural residents"
+    ]
+  }
+];
+
 const Home = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [livelihoodModalOpen, setLivelihoodModalOpen] = useState(false);
   const [livelihoodImpactModalOpen, setLivelihoodImpactModalOpen] = useState(false);
   const [educationModalOpen, setEducationModalOpen] = useState(false);
+  const [healthcareModalOpen, setHealthcareModalOpen] = useState(false);
+  const [currentPhotoIndexHC5, setCurrentPhotoIndexHC5] = useState(0);
+  const [currentPhotoIndexHC6, setCurrentPhotoIndexHC6] = useState(0);
   const [currentPhotoIndexCS1, setCurrentPhotoIndexCS1] = useState(0);
   const [currentPhotoIndexCS2, setCurrentPhotoIndexCS2] = useState(0);
   const [currentPhotoIndexCS3, setCurrentPhotoIndexCS3] = useState(0);
@@ -825,6 +913,36 @@ const Home = () => {
   const closeEducationModal = () => {
     setEducationModalOpen(false);
     document.body.style.overflow = 'auto';
+  };
+
+  // Healthcare modal handlers
+  const openHealthcareModal = (e) => {
+    e.preventDefault();
+    setHealthcareModalOpen(true);
+    setCurrentPhotoIndexHC5(0);
+    setCurrentPhotoIndexHC6(0);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeHealthcareModal = () => {
+    setHealthcareModalOpen(false);
+    document.body.style.overflow = 'auto';
+  };
+
+  // Navigation handlers for Healthcare CS5
+  const nextPhotoHC5 = () => {
+    setCurrentPhotoIndexHC5((prev) => (prev + 1) % caseStudy5Photos.length);
+  };
+  const prevPhotoHC5 = () => {
+    setCurrentPhotoIndexHC5((prev) => prev === 0 ? caseStudy5Photos.length - 1 : prev - 1);
+  };
+
+  // Navigation handlers for Healthcare CS6 (Eye & Dental)
+  const nextPhotoHC6 = () => {
+    setCurrentPhotoIndexHC6((prev) => (prev + 1) % (healthCampPhotos.length || 1));
+  };
+  const prevPhotoHC6 = () => {
+    setCurrentPhotoIndexHC6((prev) => prev === 0 ? Math.max(healthCampPhotos.length - 1, 0) : prev - 1);
   };
 
   // Navigation handlers for CS5
@@ -1622,6 +1740,175 @@ const Home = () => {
         </div>
       )}
 
+      {/* Healthcare Case Studies Modal */}
+      {healthcareModalOpen && (
+        <div className="livelihood-modal-overlay" onClick={closeHealthcareModal}>
+          <div className="livelihood-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="livelihood-modal-close" onClick={closeHealthcareModal}>
+              ×
+            </button>
+            <div className="livelihood-modal-body">
+              <h2 className="livelihood-modal-title">Impact in Healthcare</h2>
+              <p className="livelihood-modal-subtitle">Health awareness, empowerment, and essential healthcare access initiatives for rural communities</p>
+
+              {healthcareCaseStudies.map((study) => (
+                <div key={study.id} className="livelihood-case-study-card">
+                  <div className="livelihood-cs-header">
+                    <div className="livelihood-cs-icon">{study.image}</div>
+                    <div className="livelihood-cs-meta">
+                      <h3 className="livelihood-cs-title">{study.title}</h3>
+                      <div className="livelihood-cs-info">
+                        {study.location && <span>📍 {study.location}</span>}
+                        {study.year && <span>📅 {study.year}</span>}
+                      </div>
+                    </div>
+                  </div>
+
+                  {study.photos && study.photos.length > 0 && (
+                    <div className="livelihood-photo-slider">
+                      <div className="livelihood-slider-container">
+                        {study.photos.map((photo, photoIndex) => (
+                          <img
+                            key={photoIndex}
+                            src={photo}
+                            alt={`${study.title} - View ${photoIndex + 1}`}
+                            className={`livelihood-slider-image ${photoIndex === (study.id === 6 ? currentPhotoIndexHC6 : currentPhotoIndexHC5) ? 'active' : ''}`}
+                          />
+                        ))}
+                        <button className="livelihood-slider-arrow livelihood-slider-arrow-left" onClick={study.id === 6 ? prevPhotoHC6 : prevPhotoHC5}>‹</button>
+                        <button className="livelihood-slider-arrow livelihood-slider-arrow-right" onClick={study.id === 6 ? nextPhotoHC6 : nextPhotoHC5}>›</button>
+                      </div>
+                      <div className="livelihood-slider-indicators">
+                        {study.photos.map((_, photoIndex) => (
+                          <span
+                            key={photoIndex}
+                            className={`livelihood-indicator ${photoIndex === (study.id === 6 ? currentPhotoIndexHC6 : currentPhotoIndexHC5) ? 'active' : ''}`}
+                            onClick={() => study.id === 6 ? setCurrentPhotoIndexHC6(photoIndex) : setCurrentPhotoIndexHC5(photoIndex)}
+                          ></span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  <div className="livelihood-cs-content">
+                    {study.overview && (
+                      <div className="livelihood-cs-section">
+                        <h4>Overview</h4>
+                        <p>{study.overview}</p>
+                      </div>
+                    )}
+
+                    {study.initiatives && study.initiatives.map((initiative, initIdx) => (
+                      <div key={initIdx} className="livelihood-cs-section livelihood-initiative-section">
+                        <h4 className="livelihood-initiative-title">{initiative.initiativeTitle}</h4>
+
+                        <div className="livelihood-cs-subsection">
+                          <h5>Challenge</h5>
+                          <p>{initiative.challenge}</p>
+                        </div>
+
+                        {initiative.objectives && (
+                          <div className="livelihood-cs-subsection">
+                            <h5>Objectives</h5>
+                            <ul className="livelihood-impact-list">
+                              {initiative.objectives.map((item, idx) => (
+                                <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        <div className="livelihood-cs-subsection">
+                          <h5>Solution</h5>
+                          <p>{initiative.solution}</p>
+                        </div>
+
+                        {initiative.implementationStrategy && (
+                          <div className="livelihood-cs-subsection">
+                            <h5>Implementation Strategy</h5>
+                            <ul className="livelihood-impact-list">
+                              {initiative.implementationStrategy.map((item, idx) => (
+                                <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        {initiative.keyFocusAreas && (
+                          <div className="livelihood-cs-subsection">
+                            <h5>Key Focus Areas</h5>
+                            <ul className="livelihood-impact-list">
+                              {initiative.keyFocusAreas.map((item, idx) => (
+                                <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        {initiative.topicsCovered && (
+                          <div className="livelihood-cs-subsection">
+                            <h5>Topics Covered</h5>
+                            <ul className="livelihood-impact-list">
+                              {initiative.topicsCovered.map((item, idx) => (
+                                <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        {initiative.trainingHighlights && (
+                          <div className="livelihood-cs-subsection">
+                            <h5>Training Highlights</h5>
+                            <ul className="livelihood-impact-list">
+                              {initiative.trainingHighlights.map((item, idx) => (
+                                <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        {initiative.servicesProvided && (
+                          <div className="livelihood-cs-subsection">
+                            <h5>Services Provided</h5>
+                            <ul className="livelihood-impact-list">
+                              {initiative.servicesProvided.map((item, idx) => (
+                                <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        {initiative.impact && (
+                          <div className="livelihood-cs-subsection">
+                            <h5>Impact</h5>
+                            <ul className="livelihood-impact-list">
+                              {initiative.impact.map((item, idx) => (
+                                <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                      </div>
+                    ))}
+
+                    {study.collectiveImpact && (
+                      <div className="livelihood-cs-section">
+                        <h4>Collective Impact</h4>
+                        <ul className="livelihood-impact-list">
+                          {study.collectiveImpact.map((item, idx) => (
+                            <li key={idx}><span className="livelihood-check-icon">✓</span>{item}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Merged Hero + Navbar Section */}
       <section className="hero">
         {/* Background Image Slider */}
@@ -1884,7 +2171,7 @@ const Home = () => {
               <div className="work-icon">🏥</div>
               <h3>Healthcare</h3>
               <p>Promoted menstrual hygiene and wellness by distributing essential hygiene kits to adolescent girls in marginalized communities.</p>
-
+              <a href="#healthcare-case-studies" className="work-card-link" onClick={openHealthcareModal}>Read Case Study →</a>
             </div>
             <div className="work-card slide-up">
               <div className="work-icon">🌱</div>
