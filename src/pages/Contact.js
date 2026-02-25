@@ -114,7 +114,10 @@ const Contact = () => {
             <div className="info-card">
               <div className="info-icon">📞</div>
               <h3>Call Us</h3>
-              <p>+91 9892702063</p>
+              <p>
+                +91 98927 02063
+                +91 95949 00346
+              </p>
             </div>
             <div className="info-card">
               <div className="info-icon">📧</div>

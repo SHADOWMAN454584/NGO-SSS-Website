@@ -87,7 +87,7 @@ const WhatWeDo = () => {
         "Awareness on Sustainable Living",
         "Textile Waste Repurposing (Mats & Cleaning Items)",
       ],
-      impact: "31 kg of clothes collected and repurposed sustainably"
+      impact: "43 kg of clothes collected and repurposed sustainably"
     },
     {
       id: 6,
@@ -169,7 +169,7 @@ const WhatWeDo = () => {
           
           <div className="programs-grid">
             {programs.map((program, index) => (
-              <div key={program.id} className="program-card slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
+              <div key={program.id} className="program-card" style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className="program-icon">{program.icon}</div>
                 <h3 className="program-title">{program.title}</h3>
                 <p className="program-description">{program.description}</p>

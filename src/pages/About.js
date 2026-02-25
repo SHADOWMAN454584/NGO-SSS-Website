@@ -160,13 +160,13 @@ const About = () => {
             <div className="content-text ">
               <h2 className="section-heading">Our Approach</h2>
               <p>
-                At Selfless Serving Society, our approach focuses on empowering women and girls through education, awareness, and community support. We conduct workshops and sessions for adolescent girls on menstrual health, puberty, body changes, self-care, hygiene, and breaking taboos. By creating safe spaces in schools and communities, we encourage open conversations, provide guidance, and ensure access to sanitary supplies without shame.
+                We are a registered non-governmental, non-profit organisation committed to closing health and hygiene gaps in underserved communities. With 80G, 12A, and CSR1 certifications for tax benefits, we leverage strategic partnerships and grassroots engagement to deliver sustainable impact
               </p>
               <p>
-                We also distribute hygiene kits with biodegradable sanitary pads, soap, and other essentials to those who cannot afford them. Alongside this, we promote community engagement by involving parents, teachers, boys, and local leaders to build a supportive and stigma-free environment.
+                Through targeted outreach programs, workshops, seminars, and health product distribution, we empower individuals with the knowledge, tools, and habits necessary for healthier, more dignified lives. Over the years, we have expanded our reach and deepened our impact by collaborating closely with communities to address their most pressing challenges.
               </p>
               <p>
-                Finally, we monitor our impact not just by counting kits or events, but by observing real outcomes — improved knowledge, confidence, school attendance, and reduced hygiene-related illnesses. Through this approach, we strive to create lasting change and promote dignity and health for all.
+                Selfless Serving Society is dedicated to spreading health and hygiene awareness, providing essential care and education, and inspiring positive change across underserved areas.
               </p>
             </div>
           </div>
