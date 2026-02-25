@@ -223,16 +223,7 @@ const About = () => {
               <h3>Collaboration</h3>
               <p>We believe in the power of partnerships and collective action for greater impact.</p>
             </div>
-            <div className="value-card ">
-              <div className="value-icon">♻️</div>
-              <h3>Sustainability</h3>
-              <p>We create solutions that endure, building long-term capacity within communities.</p>
-            </div>
-            <div className="value-card">
-              <div className="value-icon">✨</div>
-              <h3>Innovation</h3>
-              <p>We embrace creative approaches and continuously adapt to serve communities better.</p>
-            </div>
+            
           </div>
         </div>
       </section>

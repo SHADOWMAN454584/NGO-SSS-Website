@@ -18,6 +18,11 @@
   margin: 20px;
   border-radius: 50px;
   overflow: hidden;
+  background: transparent;
+}
+
+.page-hero-overlay {
+  background: transparent !important;
 }
 
 .page-hero-bg-img {
@@ -27,16 +32,7 @@
   border-radius: 30px;
 }
 
-.page-hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.45);
-  border-radius: 50px;
-  z-index: 0;
-}
+
 
 /* Our Approach Section */
 .approach-section {
