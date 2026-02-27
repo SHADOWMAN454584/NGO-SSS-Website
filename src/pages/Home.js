@@ -17,14 +17,16 @@ import Vevek from '../assets/Leader Photoes/Vevek.jpeg';
 // Import hero images (add your images to src/assets/home hero image/)
 // Uncomment these lines and add your actual image files
 import heroImage1 from '../assets/home hero image/image1.jpg';
-// import heroImage2 from '../assets/home hero image/image2.jpg';
+import heroImage2 from '../assets/home hero image/image2.jpeg';
+import heroImage4 from '../assets/home hero image/image4.jpg';
 // import heroImage3 from '../assets/home hero image/image3.jpg';
 
 // Placeholder images array - replace with your actual images
 const heroImages = [
   heroImage1,
-  // heroImage2,
+  heroImage2,
   // heroImage3,
+  heroImage4
 ];
 
 // Import photos for case study 2
@@ -59,11 +61,11 @@ const caseStudy1Photos = [
   require('../assets/Case Study 1/cs1 5.jpg'),
   require('../assets/Case Study 1/cs1 6.jpg'),
   require('../assets/Case Study 1/cs1 7.jpg'),
-  require('../assets/Case Study 1/cs1 9.jpg'),
+  //require('../assets/Case Study 1/cs1 9.jpg'),
   require('../assets/Case Study 1/cs1 11.jpg'),
   require('../assets/Case Study 1/cs1 12.jpg'),
   require('../assets/Case Study 1/cs1 13.jpg'),
-  require('../assets/Case Study 1/cs1 14.jpg'),
+  //require('../assets/Case Study 1/cs1 14.jpg'),
 ];
 
 // Import photos for case study 4
@@ -95,6 +97,7 @@ const caseStudy5Photos = [
   require('../assets/Case Study 5/cs5 4.jpg'),
   require('../assets/Case Study 5/cs5 5.jpg'),
   require('../assets/Case Study 5/cs5 6.jpg'),
+  require('../assets/Case Study 5/cs5 8.jpg'),
 ];
 
 // Import photos for case study 6
