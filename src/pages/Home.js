@@ -56,12 +56,12 @@ const caseStudy3Photos = [
 // Import photos for case study 1
 const caseStudy1Photos = [
   require('../assets/Case Study 1/CS1Gallery/cs1g2.jpeg'),
-  require('../assets/Case Study 1/cs1 2.jpg'),
+  //require('../assets/Case Study 1/cs1 2.jpg'),
   require('../assets/Case Study 1/cs1 3.jpg'),
   require('../assets/Case Study 1/cs1 4.jpg'),
-  require('../assets/Case Study 1/cs1 5.jpg'),
+  //require('../assets/Case Study 1/cs1 5.jpg'),
   require('../assets/Case Study 1/cs1 6.jpg'),
-  require('../assets/Case Study 1/cs1 7.jpg'),
+  //require('../assets/Case Study 1/cs1 7.jpg'),
   //require('../assets/Case Study 1/cs1 9.jpg'),
   require('../assets/Case Study 1/cs1 11.jpg'),
   require('../assets/Case Study 1/cs1 12.jpg'),
@@ -97,7 +97,7 @@ const caseStudy5Photos = [
   require('../assets/Case Study 5/cs5 3.jpg'),
   require('../assets/Case Study 5/cs5 4.jpg'),
   require('../assets/Case Study 5/cs5 5.jpg'),
-  require('../assets/Case Study 5/cs5 6.jpg'),
+  //require('../assets/Case Study 5/cs5 6.jpg'),
   require('../assets/Case Study 5/cs5 8.jpg'),
 ];
 
