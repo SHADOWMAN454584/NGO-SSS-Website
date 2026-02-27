@@ -41,9 +41,10 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Contact Info</h4>
           <ul className="contact-info">
-            <li>📧 info@selflessserving.org</li>
-            <li>📞 +1 (555) 123-4567</li>
-            <li>📍 123 Hope Street, City</li>
+            <li>📧selflessservingsociety@gmail.com</li>
+            <li>📞9892702063|9594900346
+            </li>
+            <li>📍Bhagirath,Dahisar(E),Mumbai-400068</li>
           </ul>
         </div>
       </div>
