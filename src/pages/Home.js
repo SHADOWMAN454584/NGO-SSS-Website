@@ -17,7 +17,7 @@ import Vevek from '../assets/Leader Photoes/Vevek.jpeg';
 // Import hero images (add your images to src/assets/home hero image/)
 // Uncomment these lines and add your actual image files
 import heroImage1 from '../assets/home hero image/image1.jpeg';
-import heroImage2 from '../assets/home hero image/image2.jpeg';
+//import heroImage2 from '../assets/home hero image/image2.jpeg';
 import heroImage3 from '../assets/home hero image/image3.jpeg';
 import heroImage4 from '../assets/home hero image/image4.jpg';
 // import heroImage3 from '../assets/home hero image/image3.jpg';
@@ -25,7 +25,7 @@ import heroImage4 from '../assets/home hero image/image4.jpg';
 // Placeholder images array - replace with your actual images
 const heroImages = [
   heroImage1,
-  heroImage2,
+  //heroImage2,
   heroImage3,
   heroImage4
 ];
