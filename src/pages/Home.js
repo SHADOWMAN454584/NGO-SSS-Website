@@ -23,7 +23,7 @@ import heroImage4 from '../assets/home hero image/image4.jpg';
 
 // Placeholder images array - replace with your actual images
 const heroImages = [
-  heroImage1,
+  //heroImage1,
   heroImage2,
   // heroImage3,
   heroImage4
