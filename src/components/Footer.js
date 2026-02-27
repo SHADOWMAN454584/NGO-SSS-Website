@@ -42,8 +42,7 @@ const Footer = () => {
           <h4>Contact Info</h4>
           <ul className="contact-info">
             <li>📧selflessservingsociety@gmail.com</li>
-            <li>📞9892702063|9594900346
-            </li>
+            <li><pre>📞+91 9892702063||+91 9594900346</pre></li>
             <li>📍Bhagirath,Dahisar(E),Mumbai-400068</li>
           </ul>
         </div>
