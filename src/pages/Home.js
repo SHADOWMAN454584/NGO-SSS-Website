@@ -105,19 +105,19 @@ const caseStudy5Photos = [
 const wellbeingInitiativePhotos = [
   require('../assets/Case Study 6/cs6 1.jpeg'),
   require('../assets/Case Study 6/cs6 2.jpeg'),
-  require('../assets/Case Study 6/cs6 3.jpeg'),
-  require('../assets/Case Study 6/cs6 4.jpeg'),
+  //require('../assets/Case Study 6/cs6 3.jpeg'),
+  //require('../assets/Case Study 6/cs6 4.jpeg'),
   require('../assets/Case Study 6/cs6 5.jpeg'),
   require('../assets/Case Study 6/cs6 6.jpeg'),
   require('../assets/Case Study 6/cs6 7.jpeg'),
-  require('../assets/Case Study 6/cs6 8.jpeg'),
+  //require('../assets/Case Study 6/cs6 8.jpeg'),
   require('../assets/Case Study 6/cs6 9.jpeg'),
-  require('../assets/Case Study 6/cs6 10.jpeg'),
+  //require('../assets/Case Study 6/cs6 10.jpeg'),
   require('../assets/Case Study 6/cs6 11.jpeg'),
-  require('../assets/Case Study 6/cs6 12.jpeg'),
-  require('../assets/Case Study 6/cs6 13.jpeg'),
-  require('../assets/Case Study 6/cs6 14.jpeg'),
-  require('../assets/Case Study 6/cs6 15.jpeg'),
+  //('../assets/Case Study 6/cs6 12.jpeg'),
+  //require('../assets/Case Study 6/cs6 13.jpeg'),
+  //require('../assets/Case Study 6/cs6 14.jpeg'),
+  //require('../assets/Case Study 6/cs6 15.jpeg'),
 ];
 
 // Healthcare camp photos (add photos to src/assets/Case Study 7/ when available)
