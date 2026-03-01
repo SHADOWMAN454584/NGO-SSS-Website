@@ -260,6 +260,125 @@ const Contact = () => {
         </div>
       </section>
 
+      {/* Donation Section */}
+      <section className="section donation-section">
+        <div className="container">
+          <h2 className="section-heading centered">💛 Why Partner with Selfless Serving Society?</h2>
+
+          {/* Why Partner Cards */}
+          <div className="donation-why-grid">
+            <div className="donation-why-card">
+              <div className="donation-why-icon">🌟</div>
+              <h3>Transparency</h3>
+              <p>Over 95% of all funds directly support on-ground initiatives, ensuring your contribution creates real change.</p>
+            </div>
+            <div className="donation-why-card">
+              <div className="donation-why-icon">🤝</div>
+              <h3>Community-Centric Approach</h3>
+              <p>Work alongside a passionate network of volunteers, partners, and beneficiaries dedicated to social transformation.</p>
+            </div>
+            <div className="donation-why-card">
+              <div className="donation-why-icon">📈</div>
+              <h3>Tangible Impact</h3>
+              <p>Every contribution leads to measurable improvements in health, education, and livelihoods.</p>
+            </div>
+          </div>
+
+          {/* Ways to Contribute */}
+          <div className="donation-contribute-block">
+            <h2 className="donation-sub-heading">🎁 Ways You Can Contribute</h2>
+            <p className="donation-sub-desc">You can support us by donating:</p>
+            <div className="donation-items-grid">
+              {[
+                { icon: '👕', label: 'Old Clothes' },
+                { icon: '♻️', label: 'Plastic (for recycling initiatives)' },
+                { icon: '💻', label: 'E-Waste' },
+                { icon: '🍚', label: 'Dry Food' },
+                { icon: '💰', label: 'Monetary Support' },
+              ].map((item) => (
+                <div className="donation-item-chip" key={item.label}>
+                  <span className="donation-item-icon">{item.icon}</span>
+                  <span>{item.label}</span>
+                </div>
+              ))}
+            </div>
+            <p className="donation-tagline">Every donation—big or small—helps us serve communities better.</p>
+          </div>
+
+          {/* Tax Benefits */}
+          <div className="donation-tax-block">
+            <h2 className="donation-sub-heading">🏦 Maximize Your Impact with Tax Benefits</h2>
+            <p className="donation-sub-desc">Selfless Serving Society complies with all statutory guidelines.</p>
+            <div className="donation-tax-grid">
+              <div className="donation-tax-card highlight-card">
+                <p className="tax-check">✅ Donations are eligible for tax deductions under <strong>Section 80G</strong> and <strong>CSR-1</strong>.</p>
+                <h4>Eligible Donors:</h4>
+                <ul className="tax-list">
+                  <li>Individuals</li>
+                  <li>Companies</li>
+                  <li>Firms</li>
+                </ul>
+              </div>
+              <div className="donation-tax-card">
+                <h4>💰 Benefits Include:</h4>
+                <ul className="tax-list">
+                  <li>Contributions of <strong>₹2,000 or more</strong> via Cheque, Demand Draft, or Electronic Transfer</li>
+                  <li>Deductions ranging from <strong>50% to 100%</strong> (as per Section 80G guidelines)</li>
+                </ul>
+                <p className="tax-note">⚠️ <strong>Note:</strong> Donations in-kind or cash exceeding ₹2,000 are not eligible for deduction.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* How to Donate */}
+          <div className="donation-how-block">
+            <h2 className="donation-sub-heading">💳 How to Donate</h2>
+            <div className="donation-methods-grid">
+              <div className="donation-method-card">
+                <div className="donation-method-badge">1️⃣</div>
+                <h3>NEFT / Bank Transfer</h3>
+                <table className="bank-details-table">
+                  <tbody>
+                    <tr><td>Account Name</td><td><strong>SELFLESS SERVING SOCIETY</strong></td></tr>
+                    <tr><td>Account Number</td><td><strong>50200107953797</strong></td></tr>
+                    <tr><td>IFSC Code</td><td><strong>HDFC0000443</strong></td></tr>
+                    <tr><td>Bank &amp; Branch</td><td><strong>HDFC Bank, Anand Nagar, Dahisar, Mumbai</strong></td></tr>
+                  </tbody>
+                </table>
+                <p className="donation-method-note">
+                  📩 After transferring, please email your donation details to&nbsp;
+                  <a href="mailto:selflessservingsociety@gmail.com" className="donation-email-link">
+                    selflessservingsociety@gmail.com
+                  </a>
+                  &nbsp;for receipt generation.
+                </p>
+              </div>
+
+              <div className="donation-method-card">
+                <div className="donation-method-badge">2️⃣</div>
+                <h3>Cheque Donation</h3>
+                <table className="bank-details-table">
+                  <tbody>
+                    <tr><td>Payable To</td><td><strong>SELFLESS SERVING SOCIETY</strong></td></tr>
+                    <tr><td>Payable At</td><td><strong>Mumbai</strong></td></tr>
+                  </tbody>
+                </table>
+                <p className="donation-method-note" style={{ marginTop: '1rem' }}>
+                  Send the cheque to our office address along with:
+                </p>
+                <ul className="cheque-details-list">
+                  <li>Full Name</li>
+                  <li>Phone Number</li>
+                  <li>Email Address</li>
+                  <li>PAN Number <em>(mandatory for donations above ₹9,999)</em></li>
+                  <li>Postal Address <em>(for receipt delivery)</em></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Map Section (Placeholder) */}
       <section className="map-section">
         <div className="map-container">

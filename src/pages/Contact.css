@@ -311,6 +311,320 @@
   line-height: 1.6;
 }
 
+/* ─── Donation Section ──────────────────────────────────────────────────── */
+.donation-section {
+  background: #fffdf4;
+}
+
+/* Why Partner Grid */
+.donation-why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2.5rem 0 3.5rem;
+}
+
+.donation-why-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem 1.75rem;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid #FFD23F;
+}
+
+.donation-why-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.donation-why-icon {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.donation-why-card h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.donation-why-card p {
+  color: #7f8c8d;
+  line-height: 1.7;
+  font-size: 0.97rem;
+}
+
+/* Sub-headings */
+.donation-sub-heading {
+  font-size: 1.9rem;
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.donation-sub-desc {
+  color: #7f8c8d;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+/* Contribute Block */
+.donation-contribute-block {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+  margin-bottom: 3rem;
+}
+
+.donation-items-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.donation-item-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #FFFBEA;
+  border: 1.5px solid #FFD23F;
+  border-radius: 50px;
+  padding: 0.55rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2c3e50;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.donation-item-chip:hover {
+  background: #FFD23F;
+  transform: scale(1.04);
+}
+
+.donation-item-icon {
+  font-size: 1.2rem;
+}
+
+.donation-tagline {
+  font-size: 1rem;
+  color: #555;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* Tax Block */
+.donation-tax-block {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+  margin-bottom: 3rem;
+}
+
+.donation-tax-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.donation-tax-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.75rem;
+  border-left: 4px solid #84A59D;
+}
+
+.donation-tax-card.highlight-card {
+  border-left-color: #FFD23F;
+  background: #FFFBEA;
+}
+
+.tax-check {
+  font-size: 0.98rem;
+  color: #2c3e50;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.donation-tax-card h4 {
+  font-size: 1.05rem;
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.tax-list {
+  padding-left: 1.4rem;
+  color: #555;
+  line-height: 2;
+  font-size: 0.97rem;
+}
+
+.tax-note {
+  margin-top: 1.25rem;
+  font-size: 0.93rem;
+  color: #7f7f7f;
+  background: #fff3cd;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid #ffc107;
+}
+
+/* How to Donate Block */
+.donation-how-block {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+}
+
+.donation-methods-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.donation-method-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 2rem;
+  border-top: 4px solid #FFD23F;
+  transition: box-shadow 0.3s ease;
+}
+
+.donation-method-card:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+.donation-method-badge {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.donation-method-card h3 {
+  font-size: 1.25rem;
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.bank-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+}
+
+.bank-details-table td {
+  padding: 0.55rem 0.6rem;
+  color: #555;
+  vertical-align: top;
+}
+
+.bank-details-table td:first-child {
+  color: #7f8c8d;
+  white-space: nowrap;
+  width: 40%;
+  font-size: 0.9rem;
+}
+
+.bank-details-table tr {
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.bank-details-table tr:last-child {
+  border-bottom: none;
+}
+
+.donation-method-note {
+  font-size: 0.93rem;
+  color: #555;
+  line-height: 1.7;
+  margin-top: 0.5rem;
+}
+
+.donation-email-link {
+  color: #b8860b;
+  font-weight: 600;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.donation-email-link:hover {
+  text-decoration: underline;
+}
+
+.cheque-details-list {
+  padding-left: 1.4rem;
+  color: #555;
+  line-height: 2;
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+}
+
+.cheque-details-list em {
+  color: #7f8c8d;
+  font-size: 0.88rem;
+}
+
+/* Donation responsive */
+@media screen and (max-width: 968px) {
+  .donation-why-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .donation-tax-grid,
+  .donation-methods-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .donation-sub-heading {
+    font-size: 1.5rem;
+  }
+
+  .donation-contribute-block,
+  .donation-tax-block,
+  .donation-how-block {
+    padding: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .donation-why-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .donation-sub-heading {
+    font-size: 1.3rem;
+  }
+
+  .donation-contribute-block,
+  .donation-tax-block,
+  .donation-how-block {
+    padding: 1.25rem;
+  }
+
+  .donation-method-card {
+    padding: 1.25rem;
+  }
+
+  .bank-details-table td:first-child {
+    white-space: normal;
+    width: 38%;
+  }
+}
+
 /* Map Section */
 .map-section {
   background: #f9f9f9;
