@@ -39,7 +39,7 @@ const caseStudy2Photos = [
   require('../assets/Case Study 2/cs2 5.jpg'),
   require('../assets/Case Study 2/cs2 6.jpeg'),
   require('../assets/Case Study 2/cs2 7.jpeg'),
-  require('../assets/Case Study 2/cs2 8.jpg'),
+  //require('../assets/Case Study 2/cs2 8.jpg'),
   require('../assets/Case Study 2/cs2 9.jpeg'),
 ];
 
@@ -56,16 +56,20 @@ const caseStudy3Photos = [
 // Import photos for case study 1
 const caseStudy1Photos = [
   require('../assets/Case Study 1/CS1Gallery/cs1g2.jpeg'),
-  //require('../assets/Case Study 1/cs1 2.jpg'),
+  require('../assets/Case Study 1/cs1 2.jpeg'),
   require('../assets/Case Study 1/cs1 3.jpg'),
   require('../assets/Case Study 1/cs1 4.jpg'),
   //require('../assets/Case Study 1/cs1 5.jpg'),
-  require('../assets/Case Study 1/cs1 6.jpg'),
+  require('../assets/Case Study 1/cs1g1.jpeg'),
+  require('../assets/Case Study 1/cs1g2.jpeg'),
+  require('../assets/Case Study 1/cs1g3.jpeg'),
+  require('../assets/Case Study 1/cs1g4.jpeg'),
+  require('../assets/Case Study 1/cs1g5.jpeg'),
   //require('../assets/Case Study 1/cs1 7.jpg'),
   //require('../assets/Case Study 1/cs1 9.jpg'),
-  require('../assets/Case Study 1/cs1 11.jpg'),
-  require('../assets/Case Study 1/cs1 12.jpg'),
-  require('../assets/Case Study 1/cs1 13.jpg'),
+  //require('../assets/Case Study 1/cs1 11.jpg'), well being Photo
+  //require('../assets/Case Study 1/cs1 12.jpg'),
+  //require('../assets/Case Study 1/cs1 13.jpg'),
   //require('../assets/Case Study 1/cs1 14.jpg'),
 ];
 
@@ -599,37 +603,37 @@ const livelihoodCaseStudies = [
           "Encouraged behavioural change toward sustainability"
         ]
       },
-      {
-        initiativeTitle: "Initiative 3: Textile Waste Reduction & Clothing Reuse Initiative",
-        challenge: "Every year, tonnes of clothing are discarded despite being wearable or recyclable. Textile waste in landfills releases harmful greenhouse gases such as methane and toxins into soil and water. This environmental challenge demands sustainable solutions that reduce waste while supporting communities in need.",
-        objectives: [
-          "Reduce textile waste going to landfills",
-          "Promote reuse and sustainable consumption",
-          "Provide clothing support to families in need",
-          "Encourage circular economy practices"
-        ],
-        solution: "Encouraged community members to donate clean, wearable clothes instead of discarding them, ensuring responsible redistribution and creative reuse.",
-        implementationStrategy: [
-          "Community mobilisation through sustainability messaging",
-          "Selfless Serving Society acted as collection partner",
-          "Systematic collection of donated clothes",
-          "Collaboration with Project Mumbai for sorting and processing"
-        ],
-        processingWorkflow: [
-          "Garments sorted based on usability",
-          "Wearable clothes prepared for distribution",
-          "Damaged textiles separated for creative reuse",
-          "Worn-out textiles repurposed into eco-friendly items such as floor wipes, mats, and cleaning cloths"
-        ],
-        impact: [
-          "Bags full of clothes collected during every drive",
-          "Immediate relief provided to families and children in need",
-          "Reduced textile waste entering landfills",
-          "Repurposed materials created useful household products",
-          "Increased awareness of responsible consumption",
-          "Community members became ambassadors of sustainability"
-        ]
-      }
+      // {
+      //   initiativeTitle: "Initiative 3: Textile Waste Reduction & Clothing Reuse Initiative",
+      //   challenge: "Every year, tonnes of clothing are discarded despite being wearable or recyclable. Textile waste in landfills releases harmful greenhouse gases such as methane and toxins into soil and water. This environmental challenge demands sustainable solutions that reduce waste while supporting communities in need.",
+      //   objectives: [
+      //     "Reduce textile waste going to landfills",
+      //     "Promote reuse and sustainable consumption",
+      //     "Provide clothing support to families in need",
+      //     "Encourage circular economy practices"
+      //   ],
+      //   solution: "Encouraged community members to donate clean, wearable clothes instead of discarding them, ensuring responsible redistribution and creative reuse.",
+      //   implementationStrategy: [
+      //     "Community mobilisation through sustainability messaging",
+      //     "Selfless Serving Society acted as collection partner",
+      //     "Systematic collection of donated clothes",
+      //     "Collaboration with Project Mumbai for sorting and processing"
+      //   ],
+      //   processingWorkflow: [
+      //     "Garments sorted based on usability",
+      //     "Wearable clothes prepared for distribution",
+      //     "Damaged textiles separated for creative reuse",
+      //     "Worn-out textiles repurposed into eco-friendly items such as floor wipes, mats, and cleaning cloths"
+      //   ],
+      //   impact: [
+      //     "Bags full of clothes collected during every drive",
+      //     "Immediate relief provided to families and children in need",
+      //     "Reduced textile waste entering landfills",
+      //     "Repurposed materials created useful household products",
+      //     "Increased awareness of responsible consumption",
+      //     "Community members became ambassadors of sustainability"
+      //   ]
+      // }
     ],
     collectiveImpact: [
       "Strengthened environmental awareness at grassroots level",
@@ -640,87 +644,87 @@ const livelihoodCaseStudies = [
       "Built stronger collaboration between community, NGOs, and partner organisations"
     ]
   },
-  {
-    id: 4,
-    title: "Anna Daan Flood Relief Drive",
-    location: "Flood-Affected Village & Supporting Institutions",
-    year: "2024",
-    image: "🌧️",
-    photos: caseStudy4Photo,
-    overview: "This case study highlights two compassionate emergency response initiatives — the Anna Daan Flood Relief Drive and the Monsoon Medical & Hygiene Support Initiative — aimed at supporting vulnerable communities affected by natural disaster and seasonal challenges.",
-    initiatives: [
-      {
-        initiativeTitle: "Anna Daan Flood Relief Drive",
-        challenge: "Sudden and severe flooding from the river left numerous homes submerged, crops destroyed, and families without access to essential food, clean water, or basic supplies. Many affected households were isolated and unable to access relief independently.",
-        objectives: [
-          "Provide immediate food assistance to flood-affected families",
-          "Ensure relief reaches remote and hard-to-access areas",
-          "Support vulnerable institutions affected by the disaster",
-          "Strengthen community solidarity during crisis"
-        ],
-        solution: "Launch of the 'Anna Daan' Drive — a focused relief effort to collect and distribute food grains and essential supplies to flood-affected families through coordinated volunteer action.",
-        implementationStrategy: [
-          "Mobilized volunteers and community members",
-          "Collected food grains and essential supplies",
-          "Prioritized severely affected areas",
-          "Ensured timely and organized distribution",
-          "Extended support to vulnerable institutions"
-        ],
-        reliefDistributionOverview: {
-          totalCollection: "Approximately 650 kg of food grains and essential food items collected and distributed",
-          distributionBreakdown: [
-            "Major portion distributed to families in the severely affected village",
-            "Remaining food grains distributed equally between:",
-            "1) Old age home",
-            "2) Orphanage",
-            "3) Rural school"
-          ]
-        },
-        impact: [
-          "90+ families in the affected village received food support sufficient for one week",
-          "Additional households received assistance beyond measurable figures",
-          "Improved food security during immediate crisis period",
-          "Strengthened trust and responsiveness within the community"
-        ]
-      },
-      {
-        initiativeTitle: "Monsoon Support for the Old Age Home",
-        challenge: "During the monsoon season, the old age home experienced acute shortages of essential medicines and adult diapers, critical for maintaining health, hygiene, and dignity among elderly residents. Due to monsoon-related accessibility challenges and limited resources, the facility was unable to meet these needs independently.",
-        objectives: [
-          "Provide essential medical supplies during monsoon",
-          "Ensure hygiene and dignity for elderly residents",
-          "Support healthcare continuity during seasonal vulnerability",
-          "Strengthen care infrastructure for elderly populations"
-        ],
-        solution: "Medical & Hygiene Support Initiative — collaboration with friends, well-wishers, and donors to provide essential medical and hygiene supplies to the old age home.",
-        implementationStrategy: [
-          "Coordinated with donors and supporters",
-          "Identified urgent medical and hygiene requirements",
-          "Procured required supplies",
-          "Ensured timely delivery during monsoon season"
-        ],
-        supportProvided: [
-          "Medicines to manage ongoing health conditions",
-          "Relief support for seasonal ailments",
-          "Adult diapers for hygiene and comfort",
-          "Essential hygiene supplies to maintain dignity and quality of life"
-        ],
-        impact: [
-          "Improved health stability among elderly residents",
-          "Enhanced hygiene and comfort",
-          "Preserved dignity and quality of life",
-          "Ensured uninterrupted care during monsoon challenges"
-        ]
-      }
-    ],
-    collectiveImpact: [
-      "Addressed immediate needs caused by natural disaster",
-      "Supported vulnerable populations including elderly and children",
-      "Strengthened community resilience during crisis",
-      "Demonstrated rapid, compassionate, and organized response",
-      "Reinforced long-term trust within beneficiary communities"
-    ]
-  }
+  // {
+  //   id: 4,
+  //   title: "Anna Daan Flood Relief Drive",
+  //   location: "Flood-Affected Village & Supporting Institutions",
+  //   year: "2024",
+  //   image: "🌧️",
+  //   photos: caseStudy4Photo,
+  //   overview: "This case study highlights two compassionate emergency response initiatives — the Anna Daan Flood Relief Drive and the Monsoon Medical & Hygiene Support Initiative — aimed at supporting vulnerable communities affected by natural disaster and seasonal challenges.",
+  //   initiatives: [
+  //     {
+  //       initiativeTitle: "Anna Daan Flood Relief Drive",
+  //       challenge: "Sudden and severe flooding from the river left numerous homes submerged, crops destroyed, and families without access to essential food, clean water, or basic supplies. Many affected households were isolated and unable to access relief independently.",
+  //       objectives: [
+  //         "Provide immediate food assistance to flood-affected families",
+  //         "Ensure relief reaches remote and hard-to-access areas",
+  //         "Support vulnerable institutions affected by the disaster",
+  //         "Strengthen community solidarity during crisis"
+  //       ],
+  //       solution: "Launch of the 'Anna Daan' Drive — a focused relief effort to collect and distribute food grains and essential supplies to flood-affected families through coordinated volunteer action.",
+  //       implementationStrategy: [
+  //         "Mobilized volunteers and community members",
+  //         "Collected food grains and essential supplies",
+  //         "Prioritized severely affected areas",
+  //         "Ensured timely and organized distribution",
+  //         "Extended support to vulnerable institutions"
+  //       ],
+  //       reliefDistributionOverview: {
+  //         totalCollection: "Approximately 650 kg of food grains and essential food items collected and distributed",
+  //         distributionBreakdown: [
+  //           "Major portion distributed to families in the severely affected village",
+  //           "Remaining food grains distributed equally between:",
+  //           "1) Old age home",
+  //           "2) Orphanage",
+  //           "3) Rural school"
+  //         ]
+  //       },
+  //       impact: [
+  //         "90+ families in the affected village received food support sufficient for one week",
+  //         "Additional households received assistance beyond measurable figures",
+  //         "Improved food security during immediate crisis period",
+  //         "Strengthened trust and responsiveness within the community"
+  //       ]
+  //     },
+  //     {
+  //       initiativeTitle: "Monsoon Support for the Old Age Home",
+  //       challenge: "During the monsoon season, the old age home experienced acute shortages of essential medicines and adult diapers, critical for maintaining health, hygiene, and dignity among elderly residents. Due to monsoon-related accessibility challenges and limited resources, the facility was unable to meet these needs independently.",
+  //       objectives: [
+  //         "Provide essential medical supplies during monsoon",
+  //         "Ensure hygiene and dignity for elderly residents",
+  //         "Support healthcare continuity during seasonal vulnerability",
+  //         "Strengthen care infrastructure for elderly populations"
+  //       ],
+  //       solution: "Medical & Hygiene Support Initiative — collaboration with friends, well-wishers, and donors to provide essential medical and hygiene supplies to the old age home.",
+  //       implementationStrategy: [
+  //         "Coordinated with donors and supporters",
+  //         "Identified urgent medical and hygiene requirements",
+  //         "Procured required supplies",
+  //         "Ensured timely delivery during monsoon season"
+  //       ],
+  //       supportProvided: [
+  //         "Medicines to manage ongoing health conditions",
+  //         "Relief support for seasonal ailments",
+  //         "Adult diapers for hygiene and comfort",
+  //         "Essential hygiene supplies to maintain dignity and quality of life"
+  //       ],
+  //       impact: [
+  //         "Improved health stability among elderly residents",
+  //         "Enhanced hygiene and comfort",
+  //         "Preserved dignity and quality of life",
+  //         "Ensured uninterrupted care during monsoon challenges"
+  //       ]
+  //     }
+  //   ],
+  //   collectiveImpact: [
+  //     "Addressed immediate needs caused by natural disaster",
+  //     "Supported vulnerable populations including elderly and children",
+  //     "Strengthened community resilience during crisis",
+  //     "Demonstrated rapid, compassionate, and organized response",
+  //     "Reinforced long-term trust within beneficiary communities"
+  //   ]
+  // }
 ];
 
 // Healthcare case studies data (CS5 Health/Safety + CS6 Eye & Dental for Healthcare popup)
@@ -2205,7 +2209,7 @@ const Home = () => {
             </p>
             <div className="cta-buttons">
               <Link to="/partner" className="btn btn-primary-inverse">Become a Partner</Link>
-              <Link to="/contact" className="btn btn-outline">Contact Us</Link>
+              <Link to="/contact/section-heading" className="btn btn-outline">Contact Us</Link>
             </div>
           </div>
         </div>
