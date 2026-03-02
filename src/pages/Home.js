@@ -2209,7 +2209,7 @@ const Home = () => {
             </p>
             <div className="cta-buttons">
               <Link to="/partner" className="btn btn-primary-inverse">Become a Partner</Link>
-              <Link to="/contact/section-heading" className="btn btn-outline">Contact Us</Link>
+              <Link to="/contact" className="btn btn-outline">Contact Us</Link>
             </div>
           </div>
         </div>
