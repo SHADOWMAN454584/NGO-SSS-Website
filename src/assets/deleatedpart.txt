@@ -1,0 +1,130 @@
+<section className="section team-section">
+        <div className="container">
+          <h2 className="section-heading centered">Our Pillars</h2>
+          <p className="section-subheading centered">
+            Dedicated leaders guiding our mission with expertise and compassion
+          </p>
+          <div className="team-grid">
+            <div className="team-card ">
+              <div className="team-photo"><img src={konicaPhoto} alt="Konica Lishoy" /></div>
+              <h3>Konica Lishoy</h3>
+              <p className="team-role">Trustee</p>
+              <p className="team-bio">
+                Konica Lishoy holds a diploma in Commercial Art. After working professionally, she took a break for motherhood. Her experience with the Teach for India project inspired her to support underprivileged children and women. After several years with an NGO, she founded the Selfless Serving Society, bringing her experience and compassion to its work.
+              </p>
+            </div>
+            <div className="team-card">
+              <div className="team-photo"><img src={nasreenPhoto} alt="Nasreen Rishi Madaan" /></div>
+              <h3>Nasreen Rishi Madaan</h3>
+              <p className="team-role">Trustee</p>
+              <p className="team-bio">
+                Nasreen Rishi Madaan holds a Master’s degree in Economics and has a successful background in banking. As a Trustee of the Selfless Serving Society, she offers financial expertise and a compassionate perspective to its initiatives. A homemaker and mother of two, she actively supports the organisation’s mission to empower communities.
+              </p>
+            </div>
+            <div className="team-card ">
+              <div className="team-photo">👤</div>
+              <h3>Sunita Fernandes</h3>
+              <p className="team-role">Trustee</p>
+              <p className="team-bio">
+                Sunita Fernandes holds a Post Graduate Diploma in Human Resources and has nearly 20 years of experience across East Africa and India. As a Trustee, she brings her HR expertise and a people-centered approach to support the Society’s programs and operations.
+              </p>
+            </div>
+            <div className="team-card ">
+              <div className="team-photo"><img src={mamtaPhoto} alt="Mamata Hulke John" /></div>
+              <h3>Mamata Hulke John</h3>
+              <p className="team-role">Trustee</p>
+              <p className="team-bio">
+                Mamata Hulke John holds degrees in Commerce, Physical Education, and Sports Management. A teacher turned entrepreneur with an interest in finance, she brings energy and a people-focused approach as a Trustee, contributing effectively to the organisation’s programs and initiatives.
+              </p>
+            </div>
+            <div className="team-card ">
+              <div className="team-photo"><img src={poojaPhoto} alt="Pooja Nirala" /></div>
+              <h3>Pooja Nirala</h3>
+              <p className="team-role">Trustee</p>
+              <p className="team-bio">
+                Pooja Nirala holds a Master’s degree in Accounts and Finance and has over ten years of experience as a Senior Accountant. As a Trustee, she uses her financial expertise and passion for social development to support the Selfless Serving Society’s mission.
+              </p>
+            </div>
+            <div className="team-card ">
+              <div className="team-photo">👤</div>
+              <h3>Catherine Mrinal Dutta</h3>
+              <p className="team-role">Trustee</p>
+              <p className="team-bio">
+                Catherine Mrinal Dutta, the senior-most Trustee, brings deep experience, resilience, and compassion. After a career with a leading newspaper, she now dedicates her time to supporting and empowering women and children through the Society’s initiatives.
+              </p>
+            </div>
+            <div className="team-card ">
+              <div className="team-photo">👤</div>
+              <h3>Lishoy George</h3>
+              <p className="team-role">Trustee</p>
+              <p className="team-bio">
+                Lishoy George holds a degree from a reputed art college and has over 20 years of experience in advertising. Currently working with a leading agency, he uses his creative and strategic expertise to support the Society’s initiatives and outreach efforts, contributing actively to its mission.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Guiding Light Section */}
+      <section className="section team-section">
+        <div className="container">
+          <h2 className="section-heading centered">Our Guiding Light</h2>
+          <p className="section-subheading centered">
+            Dedicated leaders guiding our mission with expertise and compassion
+          </p>
+          <div className="team-grid">
+            <div className="team-card">
+              <div className="team-photo"><img src={Vevek} alt="Vivek Kamble" /></div>
+              <h3>Vivek Kamble</h3>
+              <p className="team-role">Guiding Member</p>
+              <p className="team-bio">
+                MSc. With over 21 years of experience in the biopharmaceutical and healthcare industry. works with a leading clinical research organization dedicated to patient safety and well-being.
+              </p>
+            </div>
+            <div className="team-card">
+              <div className="team-photo"><img src={Kirti} alt="Kirti" /></div>
+              <h3>Kirti</h3>
+              <p className="team-role">Guiding Member--</p>
+              <p className="team-bio">
+                Bachelor of Science - Chemistry, Post Graduate Diploma in Business Administration. Self employed
+              </p>
+            </div>
+            <div className="team-card">
+              <div className="team-photo">👤</div>
+              <h3>Mahima Raval</h3>
+              <p className="team-role">Guiding Member</p>
+              <p className="team-bio">
+                Master's in Biotechnology, experienced in treatment counselling, and conducting sessions with respect to women health & hygiene, environment and surroundings hygiene.
+              </p>
+            </div>
+            <div className="team-card">
+              <div className="team-photo"><img src={Lalita} alt="Lalita"/></div>
+              <h3>Lalita Jaykrishnan</h3>
+              <p className="team-role">Guiding Member</p>
+              <p className="team-bio">
+                BA Entrepreneur Life Style Bags Manufacturing Also dealing in Natural Gas (petroleum sector) Love to explore new things, travelling, and gardening.
+              </p>
+            </div>
+            <div className="team-card">
+              <div className="team-photo"><img src={apoorvaPhoto} alt="Apurva Kulkarni" /></div>
+              <h3>Apoorva Kulkarni</h3>
+              <p className="team-role">Guiding Member</p>
+              <p className="team-bio">
+                Apoorva Kulkarni is a Business Strategy Consultant and IIM Kozhikode alumnus. He is the Founder of Apurva Business Strategy, helping businesses scale, expand globally, and achieve sustainable growth.
+              </p>
+            </div>
+            <div className="team-card">
+              <div className="team-photo"><img src={gauriPhoto} alt="Gauri Chapekar" /></div>
+              <h3>Gauri Chapekar</h3>
+              <p className="team-role">Guiding Member</p>
+              <p className="team-bio">
+                Masters in Counselling Psychology, Certified in many therapies like CBT, REBT, DBT, Inner child healing etc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+if wanted to add members in homepage 
+then add it above the feature work 
+css is already set just add the above info
