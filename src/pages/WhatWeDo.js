@@ -224,22 +224,22 @@ const WhatWeDo = () => {
         <div className="container">
           <h2 className="section-heading centered white">Collective Impact</h2>
           <div className="stats-grid">
-            <div className="stat-card fade-in">
+            <div className="stat-card ">
               <div className="stat-icon">👨‍👩‍👧‍👦</div>
               <div className="stat-number">2690</div>
               <div className="stat-label">Lives Touched</div>
             </div>
-            <div className="stat-card fade-in">
+            <div className="stat-card ">
               <div className="stat-icon">🎯</div>
               <div className="stat-number">4</div>
               <div className="stat-label">Active Programs</div>
             </div>
-            <div className="stat-card fade-in">
+            <div className="stat-card ">
               <div className="stat-icon">🏘️</div>
               <div className="stat-number">12+</div>
               <div className="stat-label">Communities Served</div>
             </div>
-            <div className="stat-card fade-in">
+            <div className="stat-card ">
               <div className="stat-icon">🤝</div>
               <div className="stat-number">3</div>
               <div className="stat-label">Partner Organizations</div>
@@ -253,22 +253,22 @@ const WhatWeDo = () => {
         <div className="container">
           <h2 className="section-heading centered">Our Core Values</h2>
           <div className="values-grid">
-            <div className="value-card slide-up">
+            <div className="value-card ">
               <div className="value-icon">💫</div>
               <h3>Integrity</h3>
               <p>Maintaining transparency and accountability in all our actions</p>
             </div>
-            <div className="value-card slide-up">
+            <div className="value-card ">
               <div className="value-icon">❤️</div>
               <h3>Compassion</h3>
               <p>Serving with empathy and understanding the needs of others</p>
             </div>
-            <div className="value-card slide-up">
+            <div className="value-card ">
               <div className="value-icon">🌟</div>
               <h3>Excellence</h3>
               <p>Striving for the highest quality in everything we do</p>
             </div>
-            <div className="value-card slide-up">
+            <div className="value-card ">
               <div className="value-icon">🔄</div>
               <h3>Sustainability</h3>
               <p>Creating long-term solutions that empower communities</p>
@@ -280,7 +280,7 @@ const WhatWeDo = () => {
       {/* CTA Section */}
       <section className="section cta-section">
         <div className="container">
-          <div className="cta-content fade-in">
+          <div className="cta-content ">
             <h2>Join Us in Making a Difference</h2>
             <p>Your support enables us to expand our reach and create more impact</p>
             <div className="cta-buttons">
