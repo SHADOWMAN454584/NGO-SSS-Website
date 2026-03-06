@@ -226,22 +226,22 @@ const WhatWeDo = () => {
           <div className="stats-grid">
             <div className="stat-card fade-in">
               <div className="stat-icon">👨‍👩‍👧‍👦</div>
-              <div className="stat-number">20,000+</div>
+              <div className="stat-number">2690</div>
               <div className="stat-label">Lives Touched</div>
             </div>
             <div className="stat-card fade-in">
               <div className="stat-icon">🎯</div>
-              <div className="stat-number">15+</div>
+              <div className="stat-number">4</div>
               <div className="stat-label">Active Programs</div>
             </div>
             <div className="stat-card fade-in">
               <div className="stat-icon">🏘️</div>
-              <div className="stat-number">100+</div>
+              <div className="stat-number">12+</div>
               <div className="stat-label">Communities Served</div>
             </div>
             <div className="stat-card fade-in">
               <div className="stat-icon">🤝</div>
-              <div className="stat-number">50+</div>
+              <div className="stat-number">3</div>
               <div className="stat-label">Partner Organizations</div>
             </div>
           </div>
