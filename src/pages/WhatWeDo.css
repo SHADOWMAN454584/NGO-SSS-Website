@@ -715,3 +715,19 @@
 .page-hero-content * {
   color: #ffffff !important;
 }
+
+/* Case Study Link at bottom of program cards */
+.program-case-study-link {
+  margin-top: auto;
+  display: inline-block;
+  color: #E8B10D;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.program-case-study-link:hover {
+  color: #FFD23F;
+  transform: translateX(5px);
+}
