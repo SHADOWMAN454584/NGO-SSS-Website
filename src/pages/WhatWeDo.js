@@ -146,7 +146,7 @@ const WhatWeDo = () => {
       </section>
 
       {/* Introduction */}
-      <section className="section intro-section">
+      {/* <section className="section intro-section">
         <div className="container">
           <div className="intro-content ">
             <h2 className="section-heading centered">Our Mission in Action</h2>
@@ -157,7 +157,7 @@ const WhatWeDo = () => {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Programs Grid */}
       <section className="section programs-section">
