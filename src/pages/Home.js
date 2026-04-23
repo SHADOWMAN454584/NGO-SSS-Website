@@ -124,8 +124,18 @@ const wellbeingInitiativePhotos = [
   //require('../assets/Case Study 6/cs6 15.jpeg'),
 ];
 
-// Healthcare camp photos (add photos to src/assets/Case Study 7/ when available)
-const healthCampPhotos = [];
+// Healthcare camp photos — add your photos to src/assets/Case Study 7/
+// Then uncomment each line below (adjust filenames to match your actual files)
+const healthCampPhotos = [
+  //require('../assets/Case Study 7/cs7 1.jpg'),
+  //require('../assets/Case Study 7/cs7 2.jpg'),
+  //require('../assets/Case Study 7/cs7 3.jpg'),
+  //require('../assets/Case Study 7/cs7 4.jpg'),
+  //require('../assets/Case Study 7/cs7 5.jpg'),
+  //require('../assets/Case Study 7/cs7 6.jpg'),
+  //require('../assets/Case Study 7/cs7 7.jpg'),
+  //require('../assets/Case Study 7/cs7 8.jpg'),
+];
 
 // Education case studies data (CS5 + CS6 for Education popup)
 const educationCaseStudies = [
