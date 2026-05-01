@@ -694,7 +694,6 @@ const WhatWeDo = () => {
   const [currentPhotoIndexCS6, setCurrentPhotoIndexCS6] = useState(0);
   const [currentPhotoIndexHC5, setCurrentPhotoIndexHC5] = useState(0);
   const [currentPhotoIndexHC6, setCurrentPhotoIndexHC6] = useState(0);
-  const [currentCoreHealthPhotoIndex, setCurrentCoreHealthPhotoIndex] = useState(0);
 
   // Education modal handlers
   const openEducationModal = (e) => {
@@ -768,18 +767,6 @@ const WhatWeDo = () => {
   const prevPhotoHC5 = () => setCurrentPhotoIndexHC5((prev) => prev === 0 ? caseStudy5Photos.length - 1 : prev - 1);
   const nextPhotoHC6 = () => setCurrentPhotoIndexHC6((prev) => (prev + 1) % (healthCampPhotos.length || 1));
   const prevPhotoHC6 = () => setCurrentPhotoIndexHC6((prev) => prev === 0 ? Math.max(healthCampPhotos.length - 1, 0) : prev - 1);
-
-  useEffect(() => {
-    if (healthCampPhotos.length <= 1) {
-      return undefined;
-    }
-
-    const intervalId = window.setInterval(() => {
-      setCurrentCoreHealthPhotoIndex((prev) => (prev + 1) % healthCampPhotos.length);
-    }, 3500);
-
-    return () => window.clearInterval(intervalId);
-  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
