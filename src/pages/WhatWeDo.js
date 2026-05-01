@@ -97,7 +97,16 @@ const wellbeingInitiativePhotos = [
 ];
 
 // Healthcare camp photos
-const healthCampPhotos = [];
+const healthCampPhotos = [
+  require('../assets/Case Study 7/cs7 1.jpeg'),
+  require('../assets/Case Study 7/cs7 2.jpeg'),
+  require('../assets/Case Study 7/cs7 3.jpeg'),
+  require('../assets/Case Study 7/cs7 4.jpeg'),
+  require('../assets/Case Study 7/cs7 5.jpeg'),
+  //require('../assets/Case Study 7/cs7 6.jpg'),
+  //require('../assets/Case Study 7/cs7 7.jpg'),
+  //require('../assets/Case Study 7/cs7 8.jpg'),
+];
 
 // Education case studies data (CS5 + CS6 for Education popup)
 const educationCaseStudies = [
@@ -685,6 +694,7 @@ const WhatWeDo = () => {
   const [currentPhotoIndexCS6, setCurrentPhotoIndexCS6] = useState(0);
   const [currentPhotoIndexHC5, setCurrentPhotoIndexHC5] = useState(0);
   const [currentPhotoIndexHC6, setCurrentPhotoIndexHC6] = useState(0);
+  const [currentCoreHealthPhotoIndex, setCurrentCoreHealthPhotoIndex] = useState(0);
 
   // Education modal handlers
   const openEducationModal = (e) => {
@@ -760,6 +770,18 @@ const WhatWeDo = () => {
   const prevPhotoHC6 = () => setCurrentPhotoIndexHC6((prev) => prev === 0 ? Math.max(healthCampPhotos.length - 1, 0) : prev - 1);
 
   useEffect(() => {
+    if (healthCampPhotos.length <= 1) {
+      return undefined;
+    }
+
+    const intervalId = window.setInterval(() => {
+      setCurrentCoreHealthPhotoIndex((prev) => (prev + 1) % healthCampPhotos.length);
+    }, 3500);
+
+    return () => window.clearInterval(intervalId);
+  }, []);
+
+  useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -792,6 +814,7 @@ const WhatWeDo = () => {
       icon: "\u{1F3E5}",
       title: "Healthcare Services",
       description: "Providing accessible healthcare and hygiene awareness to underserved communities",
+      photos: healthCampPhotos,
       modalHandler: openHealthcareModal
     },
     {
@@ -891,6 +914,20 @@ const WhatWeDo = () => {
             {programs.map((program, index) => (
               <div key={program.id} className="program-card" style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className="program-icon">{program.icon}</div>
+                {/* {program.photos?.length > 0 && (
+                  <div className="program-photo-slider">
+                    <div className="program-photo-slider-container">
+                      {program.photos.map((photo, photoIndex) => (
+                        <img
+                          key={photoIndex}
+                          src={photo}
+                          alt={`${program.title} - View ${photoIndex + 1}`}
+                          className={`program-photo ${photoIndex === currentCoreHealthPhotoIndex ? 'active' : ''}`}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                )} */}
                 <h3 className="program-title">{program.title}</h3>
                 <p className="program-description">{program.description}</p>
                 
