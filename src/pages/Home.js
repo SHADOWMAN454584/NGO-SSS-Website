@@ -127,11 +127,11 @@ const wellbeingInitiativePhotos = [
 // Healthcare camp photos — add your photos to src/assets/Case Study 7/
 // Then uncomment each line below (adjust filenames to match your actual files)
 const healthCampPhotos = [
-  //require('../assets/Case Study 7/cs7 1.jpg'),
-  //require('../assets/Case Study 7/cs7 2.jpg'),
-  //require('../assets/Case Study 7/cs7 3.jpg'),
-  //require('../assets/Case Study 7/cs7 4.jpg'),
-  //require('../assets/Case Study 7/cs7 5.jpg'),
+  require('../assets/Case Study 7/cs7 1.jpeg'),
+  require('../assets/Case Study 7/cs7 2.jpeg'),
+  require('../assets/Case Study 7/cs7 3.jpeg'),
+  require('../assets/Case Study 7/cs7 4.jpeg'),
+  require('../assets/Case Study 7/cs7 5.jpeg'),
   //require('../assets/Case Study 7/cs7 6.jpg'),
   //require('../assets/Case Study 7/cs7 7.jpg'),
   //require('../assets/Case Study 7/cs7 8.jpg'),
