@@ -787,20 +787,20 @@ const WhatWeDo = () => {
       observer.disconnect();
     };
   }, []);
-
+// Our Corevalues section data
   const programs = [
     {
       id: 1,
       icon: "\u{1F4DA}",
-      title: "Education & Literacy",
-      description: "Empowering rural girls through quality education and skill-based training",
+      title: "Education & Personal Development",
+      description: "Conducting career guidance, personality development, leadership, and life-skills programs to help individuals build confidence and achieve their goals.",
       modalHandler: openEducationModal
     },
     {
       id: 2,
       icon: "\u{1F3E5}",
       title: "Healthcare Services",
-      description: "Providing accessible healthcare and hygiene awareness to underserved communities",
+      description: "Organizing eye check-up, dental care, general health screening, women's wellness, and other preventive healthcare camps to improve access to quality healthcare services.",
       photos: healthCampPhotos,
       modalHandler: openHealthcareModal
     },
@@ -808,7 +808,7 @@ const WhatWeDo = () => {
       id: 3,
       icon: "\u{1F4BC}",
       title: "Livelihood & Skill Development",
-      description: "Creating sustainable income opportunities through skill training and entrepreneurship",
+      description: "Empowering women and youth through vocational training, entrepreneurship support, and skill-building programs that encourage self-reliance and financial independence.",
       modalHandler: openLivelihoodImpactModal
     },
     {
@@ -829,7 +829,7 @@ const WhatWeDo = () => {
       id: 6,
       icon: "\u{1F91D}",
       title: "Community Development",
-      description: "Building resilient and compassionate communities through collective action",
+      description: "Working closely with communities to implement sustainable initiatives that foster inclusion, empowerment, and long-term social impact.",
       modalHandler: openLivelihoodImpactModal
     }
   ];
@@ -949,33 +949,33 @@ const WhatWeDo = () => {
       </section>
 
       {/* Impact Stats */}
-      <section className="section stats-section">
-        <div className="container">
-          <h2 className="section-heading centered white">Collective Impact</h2>
-          <div className="stats-grid">
-            <div className="stat-card ">
-              <div className="stat-icon">👨‍👩‍👧‍👦</div>
-              <div className="stat-number">2690</div>
-              <div className="stat-label">Lives Touched</div>
-            </div>
-            <div className="stat-card ">
-              <div className="stat-icon">🎯</div>
-              <div className="stat-number">4</div>
-              <div className="stat-label">Active Programs</div>
-            </div>
-            <div className="stat-card ">
-              <div className="stat-icon">🏘️</div>
-              <div className="stat-number">12+</div>
-              <div className="stat-label">Communities Served</div>
-            </div>
-            <div className="stat-card ">
-              <div className="stat-icon">🤝</div>
-              <div className="stat-number">3</div>
-              <div className="stat-label">Partner Organizations</div>
+        {/* <section className="section stats-section">
+          <div className="container">
+            <h2 className="section-heading centered white">Collective Impact</h2>
+            <div className="stats-grid">
+              <div className="stat-card ">
+                <div className="stat-icon">👨‍👩‍👧‍👦</div>
+                <div className="stat-number">2690</div>
+                <div className="stat-label">Lives Touched</div>
+              </div>
+              <div className="stat-card ">
+                <div className="stat-icon">🎯</div>
+                <div className="stat-number">4</div>
+                <div className="stat-label">Active Programs</div>
+              </div>
+              <div className="stat-card ">
+                <div className="stat-icon">🏘️</div>
+                <div className="stat-number">12+</div>
+                <div className="stat-label">Communities Served</div>
+              </div>
+              <div className="stat-card ">
+                <div className="stat-icon">🤝</div>
+                <div className="stat-number">3</div>
+                <div className="stat-label">Partner Organizations</div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section> */}
 
       {/* Values Section */}
       <section className="section values-section">

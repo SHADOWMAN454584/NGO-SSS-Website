@@ -2028,11 +2028,11 @@ const Home = () => {
             <div className="section-content">
               <h2 className="section-title">Who We Are</h2>
               <p className="section-text">
-                Selfless Serving Society was founded on a simple belief: basic health and hygiene knowledge can transform lives and strengthen communities. In many underserved areas, lack of awareness and limited access to essential health supplies allow preventable illnesses to disproportionately affect women, children, and the elderly.
+                Selfless Serving Society is a Mumbai-based registered organization committed to creating meaningful and sustainable change in the lives of individuals and communities. We believe that awareness, education, health, and skill development are powerful tools that enable people to lead healthier, more confident, and self-reliant lives. Through our various initiatives, we strive to empower women, children, youth, and marginalized communities to overcome challenges and unlock their full potential.
 
               </p>
               <p className="section-text">
-                We are a registered non-governmental, non-profit organisation with 80G, 12A, and CSR1 certifications. Through targeted outreach programs, workshops, seminars, talks, and distribution of health products, we equip communities with the knowledge and tools they need to live healthier, happier, and more dignified lives
+                Our organization is registered under the relevant statutory provisions and is recognized under 12A and 80G of the Income Tax Act, enabling donors to avail tax benefits on eligible contributions. We are also CSR-1 registered, making us eligible to partner with corporate organizations for Corporate Social Responsibility (CSR) initiatives and community development projects.
               </p>
               <Link to="/About" className="btn btn-link">
                 Learn About Us →
@@ -2057,7 +2057,7 @@ const Home = () => {
             <div className="work-card slide-up">
               <div className="work-icon">📚</div>
               <h3>Education</h3>
-              <p>Empowered 20 rural girls in Gujarat through tailoring training, helping them gain confidence, skills, and financial independence.</p>
+              <p>Empowered rural girls in Gujarat through tailoring training, helping them gain confidence, skills, and financial independence.</p>
               <a href="#education-case-studies" className="work-card-link" onClick={openEducationModal}>Read Case Study →</a>
             </div>
             <div className="work-card slide-up">
@@ -2069,13 +2069,13 @@ const Home = () => {
             <div className="work-card slide-up">
               <div className="work-icon">🌱</div>
               <h3>Environment</h3>
-              <p>Collected 31 kg of clothes under the KAPAAD Project, promoting recycling, zero-waste practices, and sustainable living.</p>
+              <p>Collection of clothes under the KAPAAD Project, promoting recycling, zero-waste practices, and sustainable living.</p>
               <a href="#environment-case-studies" className="work-card-link" onClick={openLivelihoodModal}>Read Case Study →</a>
             </div>
             <div className="work-card slide-up">
               <div className="work-icon">💼</div>
               <h3>Livelihood</h3>
-              <p>Created livelihood opportunities for 50+ tribal women and differently-abled artisans through handcrafted product sales and exhibitions.</p>
+              <p>Created livelihood opportunities for tribal women and differently-abled artisans through handcrafted product sales and exhibitions.</p>
               <a href="#livelihood-case-studies" className="work-card-link" onClick={openLivelihoodImpactModal}>Read Case Study →</a>
             </div>
           </div>
@@ -2093,7 +2093,7 @@ const Home = () => {
               Your support can transform lives. Join us in our mission to create lasting change.
             </p>
             <div className="cta-buttons">
-              <Link to="/partner" className="btn btn-primary-inverse">Become a Partner</Link>
+              {/* <Link to="/partner" className="btn btn-primary-inverse">Become a Partner</Link> */}
               <Link to="/contact" className="btn btn-outline">Contact Us</Link>
             </div>
           </div>

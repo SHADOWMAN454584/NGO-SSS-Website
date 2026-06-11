@@ -26,6 +26,7 @@ const approachImages = [approach1, approach2];
 
 const About = () => {
   const [storyImageIndex, setStoryImageIndex] = useState(0);
+  // eslint-disable-next-line
   const [approachImageIndex, setApproachImageIndex] = useState(0);
   const [lightboxImage, setLightboxImage] = useState(null);
 
@@ -39,10 +40,12 @@ const About = () => {
     );
   };
 
+  // eslint-disable-next-line
   const nextApproachImage = () => {
     setApproachImageIndex((prevIndex) => (prevIndex + 1) % approachImages.length);
   };
 
+  // eslint-disable-next-line
   const prevApproachImage = () => {
     setApproachImageIndex((prevIndex) => 
       prevIndex === 0 ? approachImages.length - 1 : prevIndex - 1
@@ -56,6 +59,7 @@ const About = () => {
   const closeLightbox = () => {
     setLightboxImage(null);
   };
+  
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -98,9 +102,9 @@ const About = () => {
             <div className="content-text">
               <h2 className="section-heading">Our Story</h2>
               <p>
-                We are a non-governmental, non-profit organisation dedicated to closing this gap. Through outreach programs, workshops, seminars, talks, and distribution of health-related products, we strive to empower people with knowledge, tools, and habits that help them live healthier, more dignified lives.
+                At Selfless Serving Society, we work at the grassroots level through health camps, awareness drives, training programs, workshops, seminars, counseling sessions, and community outreach activities. Our programs focus on promoting physical, mental, emotional, and social well-being while equipping individuals with practical skills that improve their quality of life and livelihood opportunities.
               </p>
-              <p>
+              {/* <p>
                 Over the years, we have expanded our reach and deepened our impact, working 
                 alongside communities to address their most pressing challenges. Our approach 
                 combines grassroots engagement with strategic partnerships to create sustainable 
@@ -108,7 +112,7 @@ const About = () => {
               </p>
               <p>
                 Selfless Serving Society empowers communities by spreading health and hygiene awareness. Through workshops and outreach programs, it provides essential care and education to underserved areas, inspiring healthier and more dignified lives for all.
-              </p>
+              </p> */}
             </div>
             <div className="content-image">
               <div className="image-box image-slider-container">
@@ -139,7 +143,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Approach */}
+      {/* Our Approach
       <section className="section approach-section">
         <div className="container">
           <div className="content-grid">
@@ -182,7 +186,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Vision & Mission */}
       <section className="section vision-mission-section">
@@ -324,9 +328,9 @@ const About = () => {
               </p>
             </div>
             <div className="team-card">
-              <div className="team-photo"><img src={Kirti} alt="Kirti" /></div>
-              <h3>Kirti</h3>
-              <p className="team-role">Guiding Member--</p>
+              <div className="team-photo"><img src={Kirti} alt="Kirti Paranjape" /></div>
+              <h3>Kirti Paranjape</h3>
+              <p className="team-role">Guiding Member</p>
               <p className="team-bio">
                 Bachelor of Science - Chemistry, Post Graduate Diploma in Business Administration. Self employed.
               </p>
